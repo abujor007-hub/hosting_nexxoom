@@ -73,7 +73,7 @@
     $('.plugin-slider').slick({
       slidesToShow: 5,
       slidesToScroll: 1,
-      arrows: false,  // arrow বন্ধ থাকবে সব স্ক্রিনে
+      arrows: true,  // arrow বন্ধ থাকবে সব স্ক্রিনে
       dots: true,
       infinite: true,
       autoplay: true,
