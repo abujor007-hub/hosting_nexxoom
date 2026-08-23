@@ -1,135 +1,373 @@
+/* ---------- Card uniform height ---------- */
 
-  /* ---------- Card uniform height ---------- */
-  .product-card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: box-shadow .2s;
-  }
-  .product-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.1); }
-  .product-card .card-body {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    padding: 8px;
-  }
-  .product-card .card-info { flex: 1; }
-  .product-card .card-footer { margin-top: auto; padding-top: 8px; }
-  .eye-btn {
-    width: 30px; height: 28px;
-    border: 1px solid #d1d5db;
-    border-radius: 4px;
-    background: #fff;
-    display: flex; align-items: center; justify-content: center;
-    color: #2563eb;
-    font-size: 13px;
-    cursor: pointer;
-    flex-shrink: 0;
-    transition: background .15s, color .15s;
-  }
-  .eye-btn:hover { background: #2563eb; color: #fff; }
-  /* Category slider arrows */
-  .category-slider .slick-prev,
-  .category-slider .slick-next {
-    width: 32px; height: 32px;
-    background: #fff;
-    border: 1px solid #e5e7eb;
-    border-radius: 50%;
-    z-index: 10;
-    box-shadow: 0 1px 4px rgba(0,0,0,.1);
-  }
-  .category-slider .slick-prev { left: -40px; }
-  .category-slider .slick-next { right: -40px; }
-  .category-slider .slick-prev:before,
-  .category-slider .slick-next:before { font-size: 14px; color: #374151; opacity: 1; }
-  .category-slider .slick-prev:hover,
-  .category-slider .slick-next:hover { background: #2563eb; border-color: #2563eb; }
-  .category-slider .slick-prev:hover:before,
-  .category-slider .slick-next:hover:before { color: #fff; }
-  .category-slider .slick-slide { padding: 0 8px; }
+.product-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow .2s;
+}
 
+.product-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,.1);
+}
 
-  /* ---------- Slick plugin slider ---------- */
-  .plugin-slider .slick-prev,
-  .plugin-slider .slick-next {
-    width: 34px; height: 34px;
-    background: #2563eb;
-    border-radius: 50%;
-    z-index: 10;
-  }
-  .plugin-slider .slick-prev { left: -18px; }
-  .plugin-slider .slick-next { right: -18px; }
-  .plugin-slider .slick-prev:before,
-  .plugin-slider .slick-next:before { font-size: 15px; color: #fff; opacity: 1; }
-  .plugin-slider .slick-prev:hover,
-  .plugin-slider .slick-next:hover { background: #1d4ed8; }
-  .plugin-slider .slick-dots li button:before { font-size: 10px; color: #93c5fd; }
-  .plugin-slider .slick-dots li.slick-active button:before { color: #2563eb; }
-  .plugin-slider .slick-slide { padding: 0 6px; }
-  .plugin-slider { margin: 0 14px; }
-  .plugin-slider .slick-track { display: flex !important; }
-  .plugin-slider .slick-slide { display: flex !important; height: auto !important; }
-  .plugin-slider .slick-slide > div { width: 100%; display: flex; }
+.product-card .card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 8px;
+}
 
-  /* Template grid equal height */
-  .template-grid .product-card { height: 100%; }
+.product-card .card-info {
+  flex: 1;
+}
+
+.product-card .card-footer {
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.eye-btn {
+  width: 30px;
+  height: 28px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #16a34a;
+  font-size: 13px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background .15s, color .15s;
+}
+
+.eye-btn:hover {
+  background: #16a34a;
+  color: #fff;
+}
 
 
-  /* ===== Base fixes so the page is self-contained + fully responsive ===== */
-  * { box-sizing: border-box; }
-  body { overflow-x: hidden; }
+/* Category slider arrows */
 
-  /* Product card - fluid, no fixed px sizes anywhere */
-  .product-card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    border: 1px solid #e5e7eb;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    background: #fff;
-    transition: box-shadow .2s ease, transform .2s ease;
-  }
-  .product-card:hover { box-shadow: 0 6px 18px rgba(0,0,0,.08); transform: translateY(-2px); }
+.category-slider .slick-prev,
+.category-slider .slick-next {
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 50%;
+  z-index: 10;
+  box-shadow: 0 1px 4px rgba(0,0,0,.1);
+}
 
-  .card-thumb { width: 100%; aspect-ratio: 1 / 1; overflow: hidden; background: #f3f4f6; }
-  .card-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.category-slider .slick-prev {
+  left: -40px;
+}
 
-  .card-body { display: flex; flex-direction: column; flex: 1; padding: .6rem .75rem; gap: .5rem; }
-  .card-info { flex: 1; }
-  .card-footer { margin-top: auto; }
+.category-slider .slick-next {
+  right: -40px;
+}
 
-  .eye-btn {
-    width: 2rem; height: 2rem; flex-shrink: 0;
-    display: flex; align-items: center; justify-content: center;
-    border: 1px solid #d1d5db; border-radius: .375rem;
-    color: #4b5563; transition: background .2s ease, color .2s ease;
-  }
-  .eye-btn:hover { background: #2563eb; color: #fff; border-color: #2563eb; }
+.category-slider .slick-prev:before,
+.category-slider .slick-next:before {
+  font-size: 14px;
+  color: #374151;
+  opacity: 1;
+}
 
-  /* Category icon slider (Slick) */
-  .category-slider .slick-slide { padding: 0 .5rem; }
-  .category-slider .slick-prev, .category-slider .slick-next { z-index: 10; }
-  .category-slider .slick-prev:before, .category-slider .slick-next:before { color: #2563eb; }
+.category-slider .slick-prev:hover,
+.category-slider .slick-next:hover {
+  background: #16a34a;
+  border-color: #16a34a;
+}
 
-  /* Plugin/template slick slider */
-  .plugin-slider .slick-slide { padding: 0 .5rem; display: flex; height: auto; }
-  .plugin-slider .slick-track { display: flex !important; }
-  .plugin-slider .slick-slide > div { width: 100%; }
-  .plugin-slider .slick-prev:before, .plugin-slider .slick-next:before { color }
+.category-slider .slick-prev:hover:before,
+.category-slider .slick-next:hover:before {
+  color: #fff;
+}
 
-  /* Bottom green footer bar: responsive so the WhatsApp button never overlaps content on mobile */
+.category-slider .slick-slide {
+  padding: 0 8px;
+}
+
+
+/* ---------- Slick plugin slider ---------- */
+
+.plugin-slider .slick-prev,
+.plugin-slider .slick-next {
+  width: 34px;
+  height: 34px;
+  background: #16a34a;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.plugin-slider .slick-prev {
+  left: -18px;
+}
+
+.plugin-slider .slick-next {
+  right: -18px;
+}
+
+.plugin-slider .slick-prev:before,
+.plugin-slider .slick-next:before {
+  font-size: 15px;
+  color: #fff;
+  opacity: 1;
+}
+
+.plugin-slider .slick-prev:hover,
+.plugin-slider .slick-next:hover {
+  background: #15803d;
+}
+
+.plugin-slider .slick-dots li button:before {
+  font-size: 10px;
+  color: #86efac;
+}
+
+.plugin-slider .slick-dots li.slick-active button:before {
+  color: #16a34a;
+}
+
+.plugin-slider .slick-slide {
+  padding: 0 6px;
+}
+
+.plugin-slider {
+  margin: 0 14px;
+}
+
+.plugin-slider .slick-track {
+  display: flex !important;
+}
+
+.plugin-slider .slick-slide {
+  display: flex !important;
+  height: auto !important;
+}
+
+.plugin-slider .slick-slide > div {
+  width: 100%;
+  display: flex;
+}
+
+
+/* Template grid equal height */
+
+.template-grid .product-card {
+  height: 100%;
+}
+
+
+/* ===== Base fixes so the page is self-contained + fully responsive ===== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+/* Product card - fluid, no fixed px sizes anywhere */
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #fff;
+  transition: box-shadow .2s ease, transform .2s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  transform: translateY(-2px);
+}
+
+.card-thumb {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #f3f4f6;
+}
+
+.card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: .6rem .75rem;
+  gap: .5rem;
+}
+
+.card-info {
+  flex: 1;
+}
+
+.card-footer {
+  margin-top: auto;
+}
+
+.eye-btn {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d1d5db;
+  border-radius: .375rem;
+  color: #4b5563;
+  transition: background .2s ease, color .2s ease;
+}
+
+.eye-btn:hover {
+  background: #16a34a;
+  color: #fff;
+  border-color: #16a34a;
+}
+
+
+/* Category icon slider (Slick) */
+
+.category-slider .slick-slide {
+  padding: 0 .5rem;
+}
+
+.category-slider .slick-prev,
+.category-slider .slick-next {
+  z-index: 10;
+}
+
+.category-slider .slick-prev:before,
+.category-slider .slick-next:before {
+  color: #16a34a;
+}
+
+
+/* Plugin/template slick slider */
+
+.plugin-slider .slick-slide {
+  padding: 0 .5rem;
+  display: flex;
+  height: auto;
+}
+
+.plugin-slider .slick-track {
+  display: flex !important;
+}
+
+.plugin-slider .slick-slide > div {
+  width: 100%;
+}
+
+.plugin-slider .slick-prev:before,
+.plugin-slider .slick-next:before {
+  color: #16a34a;
+}
+
+
+/* Bottom green footer bar:
+   responsive so the WhatsApp button never overlaps content on mobile */
+
+.site-bottom-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .75rem;
+  padding: 1.25rem 1rem;
+}
+
+@media (min-width: 768px) {
   .site-bottom-bar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .75rem;
-    padding: 1.25rem 1rem;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    min-height: 118px;
+    padding: 0 1rem;
   }
-  @media (min-width: 768px) {
-    .site-bottom-bar { flex-direction: row; justify-content: center; position: relative; min-height: 118px; padding: 0 1rem; }
-    .site-bottom-bar .whatsapp-btn { position: absolute; left: 1.25rem; top: 50%; transform: translateY(-50%); }
+
+  .site-bottom-bar .whatsapp-btn {
+    position: absolute;
+    left: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
   }
+}
+
+    /* override any inline blue with green via custom classes if needed */
+    .bg-blue-600 {
+      background-color: #16a34a !important;
+    }
+    .bg-blue-600\/40 {
+      background-color: rgba(22, 163, 74, 0.4) !important;
+    }
+    .bg-blue-700 {
+      background-color: #15803d !important;
+    }
+    .hover\:bg-blue-700:hover {
+      background-color: #15803d !important;
+    }
+    .hover\:bg-blue-200:hover {
+      background-color: #bbf7d0 !important;
+    }
+    .border-blue-600 {
+      border-color: #16a34a !important;
+    }
+    .border-blue-400\/50 {
+      border-color: rgba(74, 222, 128, 0.5) !important;
+    }
+    .text-blue-600 {
+      color: #16a34a !important;
+    }
+    .text-blue-100 {
+      color: #dcfce7 !important;
+    }
+    .text-blue-400 {
+      color: #4ade80 !important;
+    }
+    .hover\:text-blue-200:hover {
+      color: #bbf7d0 !important;
+    }
+    .hover\:text-blue-600:hover {
+      color: #16a34a !important;
+    }
+    .border-b-2.border-blue-600 {
+      border-bottom-color: #16a34a !important;
+    }
+    .shadow-blue-200 {
+      --tw-shadow-color: #86efac !important;
+    }
+    .hover\:border-blue-200:hover {
+      border-color: #bbf7d0 !important;
+    }
+    .from-blue-600 {
+      --tw-gradient-from: #16a34a !important;
+    }
+    .to-blue-600 {
+      --tw-gradient-to: #16a34a !important;
+    }
+    .bg-blue-500 {
+      background-color: #22c55e !important;
+    }
+    .hover\:bg-blue-500:hover {
+      background-color: #22c55e !important;
+    }
+    /* fix for announcement bar orange stays, but we keep it */
