@@ -11,81 +11,160 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./style.css">
 
+
 </head>
 <body class="bg-white font-sans text-gray-800">
 
   <!-- ===== Announcement bar ===== -->
-  <div class="bg-orange-500 text-white text-center text-xs py-1 px-2 flex items-center justify-center gap-2 flex-wrap">
-    <span>🔥 Buy All - Lifetime Access</span>
-    <span class="font-bold">৳9950 Only</span>
-    <span>Ends In <span class="font-mono font-bold">01d 23h 56m 30s</span></span>
-    <a href="#" class="bg-white text-orange-500 font-bold px-3 py-0.5 rounded text-xs hover:bg-orange-100 transition">Get Offer</a>
+<div class="bg-orange-500 text-white text-center text-xs py-1 px-2 flex items-center justify-center gap-2 flex-wrap">
+
+  <!-- First Part: Phone + Mail -->
+  <div class="flex items-center gap-3 flex-wrap">
+
+    <a href="tel:+8801823552979"
+       class="flex items-center gap-1 hover:text-white">
+      <i class="fa-solid fa-phone"></i>
+      <span>01823-552979</span>
+    </a>
+
+    <a href="mailto:info@example.com"
+       class="flex items-center gap-1 hover:text-white">
+      <i class="fa-solid fa-envelope"></i>
+      <span>info@example.com</span>
+    </a>
+
   </div>
 
+
+  <!-- Second Part: Social Icons -->
+<div class="flex items-center gap-2">
+
+  <!-- Facebook -->
+  <a href="#"
+     class="w-7 h-7 rounded-full bg-[#1877F2]
+            flex items-center justify-center
+            hover:scale-110 transition">
+    <i class="fa-brands fa-facebook-f text-white text-xs"></i>
+  </a>
+
+  <!-- YouTube -->
+  <a href="#"
+     class="w-7 h-7 rounded-full bg-[#FF0000]
+            flex items-center justify-center
+            hover:scale-110 transition">
+    <i class="fa-brands fa-youtube text-white text-xs"></i>
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="#"
+     class="w-7 h-7 rounded-full bg-[#0A66C2]
+            flex items-center justify-center
+            hover:scale-110 transition">
+    <i class="fa-brands fa-linkedin-in text-white text-xs"></i>
+  </a>
+
+  <!-- Twitter / X -->
+  <a href="#"
+     class="w-7 h-7 rounded-full bg-black
+            flex items-center justify-center
+            hover:scale-110 transition">
+    <i class="fa-brands fa-x-twitter text-white text-xs"></i>
+  </a>
+
+  <!-- GitHub -->
+  <a href="#"
+     class="w-7 h-7 rounded-full bg-[#181717]
+            flex items-center justify-center
+            hover:scale-110 transition">
+    <i class="fa-brands fa-github text-white text-xs"></i>
+  </a>
+
+</div>
+
+  <!-- তোমার আগের সব code এখানে আগের মতোই থাকবে -->
+
+</div>
   <!-- ===== Navbar ===== -->
-  <nav class="bg-green-600 text-white sticky top-0 z-50 shadow-md">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+<!-- ===== Navbar ===== -->
+<nav class="bg-green-600 text-white sticky top-0 z-50 shadow-md">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
 
-      <!-- Logo + Desktop Menu -->
-      <div class="flex items-center gap-6">
-        <a href="#" class="flex items-center gap-2 font-bold text-lg shrink-0">
-          <span class="bg-white text-green-600 w-7 h-7 rounded flex items-center justify-center font-black text-sm">N</span>
-          NexXoom
-        </a>
+    <!-- Logo + Desktop Menu -->
+    <div class="flex items-center gap-6">
+      <a href="#" class="flex items-center gap-2 font-bold text-lg shrink-0">
+        <span class="bg-white text-green-600 w-7 h-7 rounded flex items-center justify-center font-black text-sm">N</span>
+        NexXoom
+      </a>
 
-        <!-- Desktop Menu -->
-        <div class="hidden md:flex gap-5 text-sm">
-          <a href="#" class="hover:text-green-200">All Product</a>
-          <a href="#" class="hover:text-green-200">Membership</a>
-        </div>
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex gap-5 text-sm">
+        <a href="#" class="hover:text-green-200">All Product</a>
+        <a href="#" class="hover:text-green-200">Membership</a>
       </div>
+    </div>
 
-      <!-- Search -->
-
-
-      <!-- Right Icons -->
-      <div class="flex items-center gap-3 sm:gap-4 text-sm shrink-0">
-              <div class="hidden sm:flex items-center bg-green-600/40 border border-green-400/50 rounded-full px-4 py-2 md:px-5 md:py-3 w-40 sm:w-48 md:w-64 lg:w-80 backdrop-blur-sm">
+    <!-- Right Icons -->
+    <div class="flex items-center gap-3 sm:gap-4 text-sm shrink-0">
+      
+      <!-- Search - Desktop এ দেখাবে, Mobile এ লুকাবে -->
+      <div class="hidden sm:flex items-center bg-green-600/40 border border-green-400/50 rounded-full px-4 py-2 md:px-5 md:py-3 w-40 sm:w-48 md:w-64 lg:w-80 backdrop-blur-sm">
         <i class="fa-solid fa-magnifying-glass text-white/80 mr-2 md:mr-3 text-sm"></i>
         <input type="text" placeholder="Search templates..." class="bg-transparent outline-none text-white placeholder-white/70 w-full text-sm min-w-0" />
       </div>
-        <!-- Mobile-only search trigger -->
-        <button class="sm:hidden" aria-label="Search"><i class="fa fa-magnifying-glass"></i></button>
+      
+      <!-- Mobile এ Account দেখাবে, Desktop এ লুকাবে -->
+             <!-- Cart -->
+      <button class="relative" aria-label="Cart">
+        <i class="fa fa-shopping-cart"></i>
+        <span class="absolute -top-2 -right-2 bg-orange-500 text-xs w-4 h-4 rounded-full flex items-center justify-center">0</span>
+      </button>
+      
+      <button class="sm:hidden flex items-center gap-1 text-white hover:text-green-200 transition">
+        <i class="fa fa-user text-sm"></i>
+        <span class="text-xs">Account</span>
+      </button>
 
-        <button class="relative" aria-label="Cart">
-          <i class="fa fa-shopping-cart"></i>
-          <span class="absolute -top-2 -right-2 bg-orange-500 text-xs w-4 h-4 rounded-full flex items-center justify-center">0</span>
-        </button>
-        <button class="hidden sm:block"><i class="fa fa-user"></i> Account</button>
 
-        <!-- Mobile Menu Button -->
-        <button id="menuBtn" class="md:hidden text-xl" aria-label="Menu">
-          <i class="fa fa-bars"></i>
-        </button>
-      </div>
+      
+      <!-- Account - Desktop এ দেখাবে, Mobile এ লুকাবে -->
+      <button class="hidden sm:block hover:text-green-200 transition">
+        <i class="fa fa-user"></i> Account
+      </button>
+
+      <!-- Mobile Menu Button -->
+      <button id="menuBtn" class="md:hidden text-xl" aria-label="Menu">
+        <i class="fa fa-bars"></i>
+      </button>
     </div>
+  </div>
+</nav>
 
-    <!-- Mobile Menu -->
-    <div id="mobileMenu" class="hidden md:hidden bg-green-700 px-4 py-3 space-y-3 text-sm">
-      <!-- Search inside mobile menu -->
-      <div class="flex sm:hidden items-center bg-green-600/40 border border-green-400/50 rounded-full px-4 py-2 mb-1">
+  <!-- ===== Overlay ===== -->
+  <div id="mobileOverlay" class="mobile-menu-overlay"></div>
+
+  <!-- ===== Off-Canvas Sidebar ===== -->
+  <div id="mobileSidebar" class="mobile-menu-sidebar">
+    <span id="closeSidebar" class="close-btn">&times;</span>
+    <div class="mt-8">
+      <div class="flex items-center bg-green-600/40 border border-green-400/50 rounded-full px-4 py-2 mb-4">
         <i class="fa-solid fa-magnifying-glass text-white/80 mr-2 text-sm"></i>
         <input type="text" placeholder="Search templates..." class="bg-transparent outline-none text-white placeholder-white/70 w-full text-sm" />
       </div>
-      <a href="#" class="block hover:text-green-200">All Product</a>
-      <a href="#" class="block hover:text-green-200">Membership</a>
-      <a href="#" class="block hover:text-green-200">My Account</a>
+      <a href="#">All Product</a>
+      <a href="#">Membership</a>
+
     </div>
-  </nav>
+  </div>
 
   <!-- ===== Hero Banner ===== -->
-  <section class="container mx-auto px-4">
-    <img src="image and icon/hero.webp" alt="" class="w-full h-auto rounded-lg">
-  </section>
+<!-- ===== Hero Banner ===== -->
+<section class="container mx-auto px-4">
+  <img src="image and icon/hero.webp" alt="Hero Banner" class="w-full h-auto lg:h-[600px] object-cover rounded-lg" />
+</section>
 
   <!-- ===== Category Slider ===== -->
-  <section class="container mx-auto px-4 mb-3 mt-4">
-    <div class="relative rounded-2xl bg-white px-3 sm:px-6 md:px-8 py-4 sm:py-5">
+  <section class="container mx-auto px-4 mb-3 mt-4 sm:mt-[10px]">
+    <div class="relative rounded-2xl bg-white px-3 sm:px-6 md:px-8 ">
       <div class="category-slider">
 
         <!-- Category 1 -->
@@ -193,7 +272,7 @@
   </section>
 
   <!-- ===== All Template Section ===== -->
-  <section class="container mx-auto px-4 py-6">
+  <section class="container mx-auto px-4 md:py-6 ">
     <div class="flex items-center justify-between mb-4">
       <h2 class="text-green-600 font-bold text-lg sm:text-xl border-b-2 border-green-600 pb-1">All Template</h2>
       <a href="#" class="bg-green-600 text-white text-xs px-4 py-1.5 rounded hover:bg-green-700 transition">View More</a>
@@ -209,9 +288,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+          
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -230,9 +309,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+       
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+       
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -251,9 +330,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+      
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+   
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -272,9 +351,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -293,9 +372,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -314,9 +393,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+      
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -335,9 +414,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+            
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+   
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -356,9 +435,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+       
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -377,9 +456,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+          
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+  
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -398,9 +477,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+         
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+       
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -419,9 +498,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+      
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -438,9 +517,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+            
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+      
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -457,9 +536,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+       
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+       
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -476,9 +555,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+       
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+        
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -495,9 +574,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+    
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+ 
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -514,9 +593,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+         
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+      
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -533,9 +612,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+      
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+ 
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -552,9 +631,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+   
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+     
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -571,9 +650,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+     
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+        
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -590,9 +669,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+  
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+   
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -611,7 +690,7 @@
   </section>
 
   <!-- all plugins start -->
-  <section class="container mx-auto px-4 py-6 mt-5">
+<section class="container mx-auto px-4 py-6 mt-0 md:mt-5 lg:mt-5">
     <div class="flex items-center justify-between mb-4">
       <h2 class="text-green-600 font-bold text-lg sm:text-xl border-b-2 border-green-600 pb-1">All Plugins</h2>
       <a href="#" class="bg-green-600 text-white text-xs px-4 py-1.5 rounded hover:bg-green-700 transition">View More</a>
@@ -627,9 +706,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+   
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -648,9 +727,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+       
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+   
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -669,9 +748,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+    
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -690,9 +769,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -711,9 +790,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+      
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -732,9 +811,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+    
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+           
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -753,9 +832,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+       
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -774,9 +853,9 @@
         <div class="card-body">
           <div class="card-info">
             <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+  
             <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+   
           </div>
           <div class="card-footer">
             <div class="flex gap-1">
@@ -796,7 +875,7 @@
   <!-- all plugins end -->
 
   <!-- ===== Plugin Section (Slick Slider) ===== -->
-  <section class="container mx-auto px-4 py-8">
+  <section class="container mx-auto px-4 py-0 md:py-8 lg:py-8 mt-0 md:mt-5 lg:mt-5">
     <div class="flex items-center justify-between mb-4">
       <h2 class="text-green-600 font-bold text-xl border-b-2 border-green-600 pb-1"></h2>
       <a href="#" class="bg-green-600 text-white text-xs px-4 py-1.5 rounded hover:bg-green-700 transition">View More</a>
@@ -814,9 +893,9 @@
             <div class="card-body">
               <div class="card-info">
                 <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-                <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+          
                 <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-                <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+      
               </div>
               <div class="card-footer">
                 <div class="flex gap-1">
@@ -837,9 +916,9 @@
             <div class="card-body">
               <div class="card-info">
                 <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-                <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+
                 <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-                <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+            
               </div>
               <div class="card-footer">
                 <div class="flex gap-1">
@@ -860,9 +939,9 @@
             <div class="card-body">
               <div class="card-info">
                 <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-                <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+       
                 <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-                <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+          
               </div>
               <div class="card-footer">
                 <div class="flex gap-1">
@@ -883,9 +962,9 @@
             <div class="card-body">
               <div class="card-info">
                 <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-                <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+        
                 <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-                <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+        
               </div>
               <div class="card-footer">
                 <div class="flex gap-1">
@@ -906,9 +985,9 @@
             <div class="card-body">
               <div class="card-info">
                 <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-                <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+     
                 <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-                <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+     
               </div>
               <div class="card-footer">
                 <div class="flex gap-1">
@@ -929,9 +1008,9 @@
             <div class="card-body">
               <div class="card-info">
                 <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-                <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+           
                 <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-                <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+        
               </div>
               <div class="card-footer">
                 <div class="flex gap-1">
@@ -952,9 +1031,9 @@
             <div class="card-body">
               <div class="card-info">
                 <p class="text-xs font-semibold leading-tight mb-1">NexXoom – Premium Daraz Website Template</p>
-                <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+       
                 <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-                <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+           
               </div>
               <div class="card-footer">
                 <div class="flex gap-1">
@@ -975,9 +1054,9 @@
             <div class="card-body">
               <div class="card-info">
                 <p class="text-xs font-semibold leading-tight mb-1">NexXoom – Premium Daraz Website Template</p>
-                <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+     
                 <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-                <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+      
               </div>
               <div class="card-footer">
                 <div class="flex gap-1">
@@ -998,9 +1077,9 @@
             <div class="card-body">
               <div class="card-info">
                 <p class="text-xs font-semibold leading-tight mb-1">NexXoom – Premium Daraz Website Template</p>
-                <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+           
                 <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-                <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+          
               </div>
               <div class="card-footer">
                 <div class="flex gap-1">
@@ -1021,9 +1100,9 @@
             <div class="card-body">
               <div class="card-info">
                 <p class="text-xs font-semibold leading-tight mb-1">NexXoom – Premium Daraz Website Template</p>
-                <div class="text-yellow-400 text-xs mb-1">★★★★★</div>
+       
                 <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-                <p class="text-gray-400 text-xs flex items-center gap-1"><i class="fa fa-eye text-gray-400"></i> 0.7k</p>
+        
               </div>
               <div class="card-footer">
                 <div class="flex gap-1">
@@ -1043,146 +1122,408 @@
     </div>
   </section>
 
-  <!-- ===== What Creators Say ===== -->
-  <section class="max-w-6xl mx-auto px-4 py-8 text-center">
-    <span class="inline-block border border-gray-300 text-gray-500 text-xs px-4 py-1 rounded-full mb-3" style="color: #16a34a; font-weight:bolder; font-size: 16px;">Trusted Video Reviews</span>
-    <h1 class="font-bold mb-1" style="font-size: 42px;">What Creators Say</h1>
-    <p class="text-gray-500 text-sm mb-6">Creators দের NexXoom নিয়ে published YouTube videos এর আলামাত দেখুন।</p>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-      <div class="border rounded-lg overflow-hidden shadow-sm">
-        <div class="relative bg-gray-800 aspect-video">
-          <img src="https://placehold.co/320x180/1e293b/white?text=Review+1" alt="Review 1" class="w-full h-full object-cover opacity-70" />
-          <div class="absolute inset-0 flex items-center justify-center">
-            <span class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center text-white"><i class="fa fa-play text-sm ml-0.5"></i></span>
-          </div>
-        </div>
-        <div class="p-3 text-left">
-          <p class="font-semibold text-sm">NexXoom Template Review</p>
-          <p class="text-gray-500 text-xs">Creator review and practical walkthrough.</p>
-        </div>
-      </div>
-      <div class="border rounded-lg overflow-hidden shadow-sm">
-        <div class="relative bg-gray-800 aspect-video">
-          <img src="https://placehold.co/320x180/1e293b/white?text=Tutorial" alt="Tutorial" class="w-full h-full object-cover opacity-70" />
-          <div class="absolute inset-0 flex items-center justify-center">
-            <span class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center text-white"><i class="fa fa-play text-sm ml-0.5"></i></span>
-          </div>
-        </div>
-        <div class="p-3 text-left">
-          <p class="font-semibold text-sm">NexXoom Website Tutorial</p>
-          <p class="text-gray-500 text-xs">Step-by-step setup and usage experience.</p>
-        </div>
-      </div>
-      <div class="border rounded-lg overflow-hidden shadow-sm">
-        <div class="relative bg-gray-800 aspect-video">
-          <img src="https://placehold.co/320x180/1e293b/white?text=Setup+Guide" alt="Setup" class="w-full h-full object-cover opacity-70" />
-          <div class="absolute inset-0 flex items-center justify-center">
-            <span class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center text-white"><i class="fa fa-play text-sm ml-0.5"></i></span>
-          </div>
-        </div>
-        <div class="p-3 text-left">
-          <p class="font-semibold text-sm">NexXoom Setup Guide</p>
-          <p class="text-gray-500 text-xs">Template import and customization guide.</p>
-        </div>
-      </div>
-      <div class="border rounded-lg overflow-hidden shadow-sm">
-        <div class="relative bg-gray-800 aspect-video">
-          <img src="https://placehold.co/320x180/1e293b/white?text=Creator+Opinion" alt="Opinion" class="w-full h-full object-cover opacity-70" />
-          <div class="absolute inset-0 flex items-center justify-center">
-            <span class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center text-white"><i class="fa fa-play text-sm ml-0.5"></i></span>
-          </div>
-        </div>
-        <div class="p-3 text-left">
-          <p class="font-semibold text-sm">NexXoom Creator Review</p>
-          <p class="text-gray-500 text-xs">Real creator opinion about NexXoom.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ===== Hostinger CTA ===== -->
-  <section class="max-w-6xl mx-auto px-4 py-6">
-    <div class="bg-green-600 rounded-2xl text-white text-center py-10 px-4 sm:px-6">
-      <h2 class="text-xl sm:text-2xl font-bold mb-2" style="font-size: 34px;">We Recommend Hostinger</h2>
-      <p class="text-green-100 text-sm mb-5 max-w-md mx-auto">আপনি যদি নিচের লিংক থেকে হোস্টিং কিনুন তাহলে Extra ২০% ডিসকাউন্ট পাবেন।</p>
-      <a href="#" class="inline-block border-2 border-white text-white font-semibold px-8 py-2 rounded-full hover:bg-white hover:text-green-600 transition mb-6">Get Extra 20% Discount</a>
-      <div class="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm text-green-100">
-        <span class="rounded-full  border-2 border-white p-2 "><i class="fa fa-check mr-1  "></i>Free Domain</span>
-        <span class="rounded-full  border-2 border-white p-2 "><i class="fa fa-check mr-1  "></i>Free SSL</span>
-        <span class="rounded-full  border-2 border-white p-2 "><i class="fa fa-check mr-1  "></i>99.9% Uptime</span>
-        <span class="rounded-full  border-2 border-white p-2 "><i class="fa fa-check mr-1  "></i>LiteSpeed</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Footer ===== -->
-  <footer class="bg-gray-900 text-gray-300 mt-8">
-    <div class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div>
-        <h3 class="text-green-400 font-bold text-lg mb-3">NexXoom</h3>
-        <p class="text-sm text-gray-400 mb-4">প্রিমিয়াম WordPress টেমপ্লেট নিয়ে কাজ করা একটি প্রতিষ্ঠান। আমাদের সকল ডিজাইন Elementor দিয়ে তৈরি।</p>
-        <div class="flex gap-3">
-          <a href="#" class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-700 transition"><i class="fab fa-facebook-f text-sm"></i></a>
-          <a href="#" class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition"><i class="fab fa-youtube text-sm"></i></a>
-          <a href="#" class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-700 transition"><i class="fab fa-whatsapp text-sm"></i></a>
+<!-- ===== What Creators Say ===== -->
+<section class="max-w-6xl mx-auto px-4 py-8 text-center">
+  <span class="inline-block border border-gray-300 text-gray-500 text-xs px-4 py-1 rounded-full mb-3" style="color: #16a34a; font-weight:bolder; font-size: 16px;">Trusted Video Reviews</span>
+  <h1 class="font-bold mb-1 whitespace-nowrap text-[24px] sm:text-[42px]">What Creators Say</h1>
+  <p class="text-gray-500 text-sm mb-6">Creators দের NexXoom নিয়ে published YouTube videos এর আলামাত দেখুন।</p>
+  
+  <!-- Grid Layout: sm-এ 2টি, md-এ 2টি, lg-এ 4টি -->
+  <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+    
+    <!-- Card 1 -->
+    <div class="border rounded-lg overflow-hidden shadow-sm">
+      <div class="relative bg-gray-800 aspect-video">
+        <img src="https://placehold.co/320x180/1e293b/white?text=Review+1" alt="Review 1" class="w-full h-full object-cover opacity-70" />
+        <div class="absolute inset-0 flex items-center justify-center">
+          <span class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center text-white"><i class="fa fa-play text-sm ml-0.5"></i></span>
         </div>
       </div>
-      <div>
-        <h4 class="font-semibold text-white mb-3">Our Menu</h4>
-        <ul class="space-y-2 text-sm text-gray-400">
-          <li><a href="#" class="hover:text-white transition">Import Plugin</a></li>
-          <li><a href="#" class="hover:text-white transition">Membership</a></li>
-          <li><a href="#" class="hover:text-white transition">About Us</a></li>
-          <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-semibold text-white mb-3">Information</h4>
-        <ul class="space-y-2 text-sm text-gray-400">
-          <li><a href="#" class="hover:text-white transition">Terms &amp; Condition</a></li>
-          <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
-          <li><a href="#" class="hover:text-white transition">Delivery Policy</a></li>
-          <li><a href="#" class="hover:text-white transition">Refund Policy</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-semibold text-white mb-3">Our Info</h4>
-        <p class="text-sm text-gray-400 mb-2"><span class="font-semibold text-gray-300">Phone:</span><br />01823-552979</p>
-        <p class="text-sm text-gray-400"><span class="font-semibold text-gray-300">Office Address:</span><br />Housebuilding, Uttara, Dhaka, 1230</p>
+      <div class="p-3 text-left">
+        <p class="font-semibold text-sm">NexXoom Template Review</p>
+        <p class="text-gray-500 text-xs">Creator review and practical walkthrough.</p>
       </div>
     </div>
-    <div class="px-4 pb-6">
-      <img src="image and icon/payment.png" alt="" class="max-w-full sm:max-w-2xl mx-auto h-auto">
-    </div>
-  </footer>
 
-  <!-- ===== Bottom Bar ===== -->
-  <footer class="relative w-full bg-gradient-to-r from-[#090d12] via-[#080b12] to-[#08091a] border-t border-gray-800 overflow-hidden">
-    <div class="site-bottom-bar">
-      <!-- WhatsApp Button -->
-      <a href="https://wa.me/8801XXXXXXXXX" target="_blank" class="whatsapp-btn group flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white font-semibold px-5 py-3 rounded-full shadow-[0_0_25px_rgba(37,211,102,0.35)] transition-all duration-300 hover:scale-105">
-        <i class="fa-brands fa-whatsapp text-2xl"></i>
-        <span>WhatsApp</span>
+    <!-- Card 2 -->
+    <div class="border rounded-lg overflow-hidden shadow-sm">
+      <div class="relative bg-gray-800 aspect-video">
+        <img src="https://placehold.co/320x180/1e293b/white?text=Tutorial" alt="Tutorial" class="w-full h-full object-cover opacity-70" />
+        <div class="absolute inset-0 flex items-center justify-center">
+          <span class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center text-white"><i class="fa fa-play text-sm ml-0.5"></i></span>
+        </div>
+      </div>
+      <div class="p-3 text-left">
+        <p class="font-semibold text-sm">NexXoom Website Tutorial</p>
+        <p class="text-gray-500 text-xs">Step-by-step setup and usage experience.</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="border rounded-lg overflow-hidden shadow-sm">
+      <div class="relative bg-gray-800 aspect-video">
+        <img src="https://placehold.co/320x180/1e293b/white?text=Setup+Guide" alt="Setup" class="w-full h-full object-cover opacity-70" />
+        <div class="absolute inset-0 flex items-center justify-center">
+          <span class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center text-white"><i class="fa fa-play text-sm ml-0.5"></i></span>
+        </div>
+      </div>
+      <div class="p-3 text-left">
+        <p class="font-semibold text-sm">NexXoom Setup Guide</p>
+        <p class="text-gray-500 text-xs">Template import and customization guide.</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="border rounded-lg overflow-hidden shadow-sm">
+      <div class="relative bg-gray-800 aspect-video">
+        <img src="https://placehold.co/320x180/1e293b/white?text=Creator+Opinion" alt="Opinion" class="w-full h-full object-cover opacity-70" />
+        <div class="absolute inset-0 flex items-center justify-center">
+          <span class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center text-white"><i class="fa fa-play text-sm ml-0.5"></i></span>
+        </div>
+      </div>
+      <div class="p-3 text-left">
+        <p class="font-semibold text-sm">NexXoom Creator Review</p>
+        <p class="text-gray-500 text-xs">Real creator opinion about NexXoom.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===== Hostinger CTA ===== -->
+<section class="relative z-20 max-w-5xl mx-auto px-4  mt-0 md:mt-5 lg:mt-5">
+  <div class="bg-gradient-to-r from-[#00a63c] via-[#00b341] to-[#08c95a]
+              rounded-2xl text-white text-center
+              py-10 px-4 sm:px-6
+              shadow-[0_15px_45px_rgba(0,166,60,0.35)]">
+
+    <h2 class="text-[19px] sm:text-3xl font-extrabold mb-2 whitespace-nowrap">
+      We Recommend Hostinger
+    </h2>
+
+    <p class="text-white/95 text-sm sm:text-base mb-5 max-w-xl mx-auto">
+      আপনি যদি নিচের লিংক থেকে হোস্টিং কিনুন তাহলে Extra ২০% ডিসকাউন্ট পাবেন।
+      যা আপনারলি প্রয়োজনটি ভিত্তিতে করতে পারেন না।
+    </p>
+
+    <a href="#"
+       class="inline-block bg-white text-[#00a63c]
+              font-bold px-9 py-3 rounded-full whitespace-nowrap
+              hover:bg-gray-100 transition duration-300
+              shadow-md mb-6">
+      Get Extra 20% Discount
+    </a>
+
+    <div class="flex flex-wrap justify-center gap-3 sm:gap-4
+                text-xs sm:text-sm">
+
+      <!-- Free Domain -->
+      <span class="rounded-full border border-white/40
+                   bg-white/10 px-4 py-2
+                   backdrop-blur-sm">
+
+        <i class="fa-solid fa-globe mr-1"
+           style="color:#38bdf8;"></i>
+
+        Free Domain
+      </span>
+
+
+      <!-- Free SSL -->
+      <span class="rounded-full border border-white/40
+                   bg-white/10 px-4 py-2
+                   backdrop-blur-sm">
+
+        <i class="fa-solid fa-shield-halved mr-1"
+           style="color:#facc15;"></i>
+
+        Free SSL
+      </span>
+
+
+      <!-- Uptime -->
+      <span class="rounded-full border border-white/40
+                   bg-white/10 px-4 py-2
+                   backdrop-blur-sm">
+
+        <i class="fa-solid fa-bolt mr-1"
+           style="color:#fbbf24;"></i>
+
+        99.9% Uptime
+      </span>
+
+
+      <!-- LiteSpeed -->
+      <span class="rounded-full border border-white/40
+                   bg-white/10 px-4 py-2
+                   backdrop-blur-sm">
+
+        <i class="fa-solid fa-server mr-1"
+           style="color:#fb923c;"></i>
+
+        LiteSpeed
+      </span>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===== Footer ===== -->
+<footer class="relative z-10
+               bg-gradient-to-r
+               from-[#0b172d] via-[#090d16] to-[#130d20]
+               text-gray-300
+               -mt-14 pt-24">
+
+  <div class="max-w-6xl mx-auto px-4 py-10
+              grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+    <!-- About -->
+    <div>
+
+      <h3 class="text-blue-400 font-bold text-xl mb-2">
+        NexXoom
+      </h3>
+
+      <p class="text-sm text-gray-400 leading-6 mb-4">
+        প্রিমিয়াম WordPress টেমপ্লেট নিয়ে কাজ করা একটি প্রতিষ্ঠান।
+        আমাদের সকল ডিজাইন Elementor দিয়ে তৈরি।
+      </p>
+
+      <div class="flex gap-3">
+
+        <!-- Facebook -->
+        <a href="#"
+           class="w-9 h-9 bg-[#1877F2] rounded-full
+                  flex items-center justify-center
+                  hover:scale-110 transition">
+
+          <i class="fab fa-facebook-f text-white"></i>
+
+        </a>
+
+        <!-- YouTube -->
+        <a href="#"
+           class="w-9 h-9 bg-[#FF0000] rounded-full
+                  flex items-center justify-center
+                  hover:scale-110 transition">
+
+          <i class="fab fa-youtube text-white"></i>
+
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="#"
+           class="w-9 h-9 bg-[#25D366] rounded-full
+                  flex items-center justify-center
+                  hover:scale-110 transition">
+
+          <i class="fab fa-whatsapp text-white"></i>
+
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- Our Menu -->
+    <div>
+
+      <h4 class="font-semibold text-blue-400 text-lg mb-4">
+        Our Menu
+      </h4>
+
+      <ul class="space-y-3 text-sm text-gray-400">
+
+        <li>
+          <a href="#" class="hover:text-white transition">
+            Import Plugin
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="hover:text-white transition">
+            Membership
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="hover:text-white transition">
+            About Us
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="hover:text-white transition">
+            Contact Us
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+    <!-- Information -->
+    <div>
+
+      <h4 class="font-semibold text-purple-400 text-lg mb-4">
+        Information
+      </h4>
+
+      <ul class="space-y-3 text-sm text-gray-400">
+
+        <li>
+          <a href="#" class="hover:text-white transition">
+            Terms &amp; Condition
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="hover:text-white transition">
+            Privacy Policy
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="hover:text-white transition">
+            Delivery Policy
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="hover:text-white transition">
+            Refund Policy
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+    <!-- Our Info -->
+    <div>
+
+      <h4 class="font-semibold text-orange-400 text-lg mb-4">
+        Our Info
+      </h4>
+
+      <p class="text-sm text-gray-400 mb-3">
+
+        <span class="font-semibold text-white">
+          Phone:
+        </span>
+
+        <br>
+
+        01823-552979
+
+      </p>
+
+      <p class="text-sm text-gray-400">
+
+        <span class="font-semibold text-white">
+          Office Address:
+        </span>
+
+        <br>
+
+        Housebuilding, Uttara, Dhaka, 1230
+
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- Payment -->
+  <div class="border-t border-white/10 px-4 py-4">
+
+    <img src="image and icon/payment.png"
+         alt="Payment Methods"
+         class="max-w-full sm:max-w-3xl mx-auto h-auto opacity-90">
+
+  </div>
+
+</footer>
+
+
+<!-- ===== Bottom Bar ===== -->
+<footer class="relative w-full
+               bg-gradient-to-r
+               from-[#070b12] via-[#090b13] to-[#100b1a]
+               border-t border-white/10">
+
+  <div class="max-w-6xl mx-auto px-4 py-5">
+
+    <!-- Mobile Copyright -->
+    <p class="block md:hidden
+              text-gray-400 text-sm text-center mb-4">
+
+      Copyright © 2026
+
+      <span class="text-gray-300 font-medium">
+        NexXoom
+      </span>
+
+    </p>
+
+
+    <div class="flex flex-col md:flex-row
+                items-center justify-between
+                gap-4">
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/8801XXXXXXXXX"
+         target="_blank"
+         class="flex items-center gap-2
+                bg-[#25D366] text-white font-semibold
+                px-5 py-2.5 rounded-full
+                shadow-[0_0_20px_rgba(37,211,102,0.3)]
+                hover:scale-105 transition">
+
+        <i class="fa-brands fa-whatsapp text-xl"></i>
+
+        <span>
+          WhatsApp
+        </span>
+
       </a>
 
-      <!-- Hashtag -->
-      <div class="flex items-center gap-1 bg-[#159447] hover:bg-[#18a34f] text-white font-semibold px-4 py-2 rounded-full shadow-[0_0_20px_rgba(21,148,71,0.45)] transition duration-300">
-        <span>#StandWithPalestine</span>
-        <span class="text-lg">🇵🇸</span>
-      </div>
 
-      <!-- Copyright -->
-      <p class="text-gray-400 text-sm md:text-base text-center">
+      <!-- Palestine -->
+
+
+
+      <!-- Desktop Copyright -->
+      <p class="hidden md:block
+                text-gray-400 text-sm text-center">
+
         Copyright © 2026
-        <span class="text-gray-300 font-medium">NexXoom</span>
-      </p>
-    </div>
-  </footer>
 
+        <span class="text-gray-300 font-medium">
+          NexXoom
+        </span>
+
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer">
   </script>
+
   <script src="./script.js">
   </script>
 
