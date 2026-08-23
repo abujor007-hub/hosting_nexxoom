@@ -56,14 +56,15 @@
           breakpoint: 640,  
           settings: { 
             slidesToShow: 3,
-            arrows: false  // arrow বন্ধ থাকবে
+            arrows: false  
           } 
         },
         { 
           breakpoint: 400,  
           settings: { 
-            slidesToShow: 3,
-            arrows: false  // arrow বন্ধ থাকবে
+            slidesToShow: 3.5,
+            arrows: false , 
+         
           } 
         }
       ]
@@ -73,7 +74,7 @@
     $('.plugin-slider').slick({
       slidesToShow: 5,
       slidesToScroll: 1,
-      arrows: true,  // arrow বন্ধ থাকবে সব স্ক্রিনে
+      arrows: true,  
       dots: true,
       infinite: true,
       autoplay: true,
