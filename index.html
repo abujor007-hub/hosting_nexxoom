@@ -10,1342 +10,1091 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./style.css">
-
-
 </head>
 <body class="bg-white font-sans text-gray-800">
 
-  <!-- ===== Announcement bar ===== -->
-<div class="bg-orange-500 text-white text-center text-xs py-1 px-2 flex items-center justify-center gap-2 flex-wrap">
+<!-- ========================================================= -->
+<!-- TOP NAV -->
+<!-- ========================================================= -->
+<div class="bg-xoom text-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="min-h-[50px] flex items-center justify-between gap-3">
+      <!-- LEFT : PHONE + EMAIL -->
+      <div class="flex flex-col sm:flex-row sm:items-center gap-0.5 sm:gap-5 text-[11px] sm:text-sm min-w-0 text-nex">
+        <a href="tel:+8801823552979" class="flex items-center gap-1 hover:text-nex-light transition whitespace-nowrap">
+          <i class="fa-solid fa-phone text-[9px] sm:text-[11px]"></i>
+          <span>01823-552979</span>
+        </a>
+        <a href="mailto:info@example.com" class="flex items-center gap-1 hover:text-nex-light text-nex transition min-w-0">
+          <i class="fa-solid fa-envelope text-[9px] sm:text-[11px] shrink-0"></i>
+          <span class="truncate max-w-[150px] sm:max-w-none " >nexxoom999@gmail.com</span>
+        </a>
+      </div>
 
-  <!-- First Part: Phone + Mail -->
-  <div class="flex items-center gap-3 flex-wrap">
+      <!-- CENTER : SOCIAL ICONS (DESKTOP ONLY) -->
+      <div class="hidden sm:flex items-center justify-center gap-2">
+        <a href="#" aria-label="WhatsApp" class="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center text-[#25D366] hover:bg-white hover:scale-110 transition-all duration-200"><i class="fa-brands fa-whatsapp text-xs"></i></a>
+        <a href="#" aria-label="Facebook" class="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center text-[#1877F2] hover:bg-white hover:scale-110 transition-all duration-200"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+        <a href="#" aria-label="YouTube" class="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center text-[#FF0000] hover:bg-white hover:scale-110 transition-all duration-200"><i class="fa-brands fa-youtube text-xs"></i></a>
+        <a href="#" aria-label="LinkedIn" class="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center text-[#0A66C2] hover:bg-white hover:scale-110 transition-all duration-200"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+        <a href="#" aria-label="Twitter" class="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center text-[#1DA1F2] hover:bg-white hover:scale-110 transition-all duration-200"><i class="fa-brands fa-twitter text-xs"></i></a>
+        <a href="#" aria-label="GitHub" class="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center text-[#181717] hover:bg-white hover:scale-110 transition-all duration-200"><i class="fa-brands fa-github text-xs"></i></a>
+      </div>
 
-    <a href="tel:+8801823552979"
-       class="flex items-center gap-1 hover:text-white">
-      <i class="fa-solid fa-phone"></i>
-      <span>01823-552979</span>
-    </a>
+      <!-- RIGHT SIDE -->
+      <div class="flex items-center justify-end gap-1.5">
+        <!-- DESKTOP SEARCH -->
+        <div class="hidden sm:flex items-center bg-nex/40 border border-nex rounded-full px-3 py-1.5 md:px-3.5 md:py-2 w-32 sm:w-40 md:w-48 backdrop-blur-sm">
+          <i class="fa-solid fa-magnifying-glass text-nex mr-2 text-xs"></i>
+          <input type="text" placeholder="Search..." class="bg-transparent outline-none text-nex placeholder-white/70 w-full text-xs min-w-0" />
+        </div>
 
-    <a href="mailto:info@example.com"
-       class="flex items-center gap-1 hover:text-white">
-      <i class="fa-solid fa-envelope"></i>
-      <span>info@example.com</span>
-    </a>
+        <!-- DESKTOP CART -->
+        <button type="button" class="hidden sm:flex relative w-7 h-7 items-center justify-center hover:text-nex-light transition text-nex" aria-label="Cart">
+          <i class="fa-solid fa-cart-shopping text-sm"></i>
+          <span class="absolute -top-1 -right-1 bg-orange-500 text-white text-[8px] w-4 h-4 rounded-full flex items-center justify-center">0</span>
+        </button>
 
-  </div>
+        <!-- DESKTOP USER -->
+        <button type="button" class="hidden sm:flex w-7 h-7 items-center justify-center hover:text-nex-light transition text-nex" aria-label="Account">
+          <i class="fa-solid fa-user text-sm"></i>
+        </button>
 
-
-  <!-- Second Part: Social Icons -->
-<div class="flex items-center gap-2">
-
-  <!-- Facebook -->
-  <a href="#"
-     class="w-7 h-7 rounded-full bg-[#1877F2]
-            flex items-center justify-center
-            hover:scale-110 transition">
-    <i class="fa-brands fa-facebook-f text-white text-xs"></i>
-  </a>
-
-  <!-- YouTube -->
-  <a href="#"
-     class="w-7 h-7 rounded-full bg-[#FF0000]
-            flex items-center justify-center
-            hover:scale-110 transition">
-    <i class="fa-brands fa-youtube text-white text-xs"></i>
-  </a>
-
-  <!-- LinkedIn -->
-  <a href="#"
-     class="w-7 h-7 rounded-full bg-[#0A66C2]
-            flex items-center justify-center
-            hover:scale-110 transition">
-    <i class="fa-brands fa-linkedin-in text-white text-xs"></i>
-  </a>
-
-  <!-- Twitter / X -->
-  <a href="#"
-     class="w-7 h-7 rounded-full bg-black
-            flex items-center justify-center
-            hover:scale-110 transition">
-    <i class="fa-brands fa-x-twitter text-white text-xs"></i>
-  </a>
-
-  <!-- GitHub -->
-  <a href="#"
-     class="w-7 h-7 rounded-full bg-[#181717]
-            flex items-center justify-center
-            hover:scale-110 transition">
-    <i class="fa-brands fa-github text-white text-xs"></i>
-  </a>
-
-</div>
-
-  <!-- তোমার আগের সব code এখানে আগের মতোই থাকবে -->
-
-</div>
-  <!-- ===== Navbar ===== -->
-<!-- ===== Navbar ===== -->
-<nav class="bg-green-600 text-white sticky top-0 z-50 shadow-md">
-  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
-
-    <!-- Logo + Desktop Menu -->
-    <div class="flex items-center gap-6">
-      <a href="#" class="flex items-center gap-2 font-bold text-lg shrink-0">
-        <img src="image and icon/logo.jpg" style="width: 200px; height: 30px;">
-     
-      </a>
-
-      <!-- Desktop Menu -->
-      <div class="hidden md:flex gap-5 text-sm">
-        <a href="#" class="hover:text-green-200">All Product</a>
-        <a href="#" class="hover:text-green-200">Membership</a>
+        <!-- MOBILE SOCIAL ICONS -->
+        <div class="flex sm:hidden items-center gap-1">
+          <a href="#" aria-label="WhatsApp" class="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center text-[#25D366] hover:bg-white hover:scale-110 transition-all duration-200"><i class="fa-brands fa-whatsapp text-[11px]"></i></a>
+          <a href="#" aria-label="Facebook" class="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center text-[#1877F2] hover:bg-white hover:scale-110 transition-all duration-200"><i class="fa-brands fa-facebook-f text-[11px]"></i></a>
+          <a href="#" aria-label="YouTube" class="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center text-[#FF0000] hover:bg-white hover:scale-110 transition-all duration-200"><i class="fa-brands fa-youtube text-[11px]"></i></a>
+          <a href="#" aria-label="LinkedIn" class="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center text-[#0A66C2] hover:bg-white hover:scale-110 transition-all duration-200"><i class="fa-brands fa-linkedin-in text-[11px]"></i></a>
+          <a href="#" aria-label="Twitter" class="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center text-[#1DA1F2] hover:bg-white hover:scale-110 transition-all duration-200"><i class="fa-brands fa-twitter text-[11px]"></i></a>
+          <a href="#" aria-label="GitHub" class="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center text-[#181717] hover:bg-white hover:scale-110 transition-all duration-200"><i class="fa-brands fa-github text-[11px]"></i></a>
+        </div>
       </div>
     </div>
+  </div>
+</div>
 
-    <!-- Right Icons -->
-    <div class="flex items-center gap-3 sm:gap-4 text-sm shrink-0">
-      
-      <!-- Search - Desktop এ দেখাবে, Mobile এ লুকাবে -->
-      <div class="hidden sm:flex items-center bg-green-600/40 border border-green-400/50 rounded-full px-4 py-2 md:px-5 md:py-3 w-40 sm:w-48 md:w-64 lg:w-80 backdrop-blur-sm">
-        <i class="fa-solid fa-magnifying-glass text-white/80 mr-2 md:mr-3 text-sm"></i>
-        <input type="text" placeholder="Search templates..." class="bg-transparent outline-none text-white placeholder-white/70 w-full text-sm min-w-0" />
+<!-- ========================================================= -->
+<!-- MAIN NAV -->
+<!-- ========================================================= -->
+<nav class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="h-[65px] flex items-center justify-between">
+      <a href="#" class="flex items-center shrink-0">
+        <img src="image and icon/logo.jpg" class="w-[150px] sm:w-[180px] md:w-[200px] h-[30px] object-contain" alt="Logo">
+      </a>
+      <div class="hidden md:flex items-center gap-7">
+        <a href="#" class="text-gray-700 font-medium text-sm hover:text-nex transition">All Product</a>
+        <a href="#" class="text-gray-700 font-medium text-sm hover:text-nex transition">Membership</a>
       </div>
-      
-      <!-- Mobile এ Account দেখাবে, Desktop এ লুকাবে -->
-             <!-- Cart -->
-      <button class="relative" aria-label="Cart">
-        <i class="fa fa-shopping-cart"></i>
-        <span class="absolute -top-2 -right-2 bg-orange-500 text-xs w-4 h-4 rounded-full flex items-center justify-center">0</span>
-      </button>
-      
-      <button class="sm:hidden flex items-center gap-1 text-white hover:text-green-200 transition">
-        <i class="fa fa-user text-sm"></i>
-        <span class="text-xs">Account</span>
-      </button>
-
-
-      
-      <!-- Account - Desktop এ দেখাবে, Mobile এ লুকাবে -->
-      <button class="hidden sm:block hover:text-green-200 transition">
-        <i class="fa fa-user"></i> Account
-      </button>
-
-      <!-- Mobile Menu Button -->
-      <button id="menuBtn" class="md:hidden text-xl" aria-label="Menu">
-        <i class="fa fa-bars"></i>
+      <button id="menuBtn" type="button" class="md:hidden w-9 h-9 rounded-lg bg-nex-light text-nex flex items-center justify-center hover:bg-nex-light/50 transition" aria-label="Open Menu">
+        <i class="fa-solid fa-bars text-lg"></i>
       </button>
     </div>
   </div>
 </nav>
 
-  <!-- ===== Overlay ===== -->
-  <div id="mobileOverlay" class="mobile-menu-overlay"></div>
+<!-- ========================================================= -->
+<!-- MOBILE OVERLAY -->
+<!-- ========================================================= -->
+<div id="mobileOverlay" class="fixed inset-0 bg-black/50 opacity-0 invisible transition-all duration-300 z-[998]"></div>
 
-  <!-- ===== Off-Canvas Sidebar ===== -->
-  <div id="mobileSidebar" class="mobile-menu-sidebar">
-    <span id="closeSidebar" class="close-btn">&times;</span>
-    <div class="mt-8">
-      <div class="flex items-center bg-green-600/40 border border-green-400/50 rounded-full px-4 py-2 mb-4">
-        <i class="fa-solid fa-magnifying-glass text-white/80 mr-2 text-sm"></i>
-        <input type="text" placeholder="Search templates..." class="bg-transparent outline-none text-white placeholder-white/70 w-full text-sm" />
-      </div>
-      <a href="#">All Product</a>
-      <a href="#">Membership</a>
+<!-- ========================================================= -->
+<!-- MOBILE LEFT SIDEBAR -->
+<!-- ========================================================= -->
+<div id="mobileMenu" class="fixed top-0 left-0 h-full w-[280px] sm:w-[320px] bg-white shadow-2xl -translate-x-full transition-transform duration-300 ease-in-out z-[999] overflow-y-auto">
+  <div class="h-[65px] px-4 flex items-center justify-between border-b border-gray-200">
+    <a href="#" class="flex items-center">
+      <img src="image and icon/logo.jpg" alt="Logo" class="w-[160px] h-[30px] object-contain">
+    </a>
+    <button id="closeMenu" type="button" class="w-9 h-9 rounded-full bg-gray-100 text-gray-600 flex items-center justify-center hover:bg-red-100 hover:text-red-500 transition " aria-label="Close Menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
 
+  <div class="px-5 pt-4">
+    <div class="flex items-center bg-gray-50 border border-nex rounded-full px-3 py-2 w-full focus-within:border-nex transition">
+      <i class="fa-solid fa-magnifying-glass text-gray-400 mr-2 text-xs text-nex"></i>
+      <input type="text" placeholder="Search..." class="bg-transparent outline-none text-nex placeholder-gray-400 w-full text-xs">
     </div>
   </div>
 
-  <!-- ===== Hero Banner ===== -->
+  <div class="p-5">
+    <a href="#" class="flex items-center gap-3 py-3 border-b border-gray-100 text-gray-700 hover:text-nex transition">
+      <i class="fa-solid fa-box w-5 text-nex"></i>
+      <span>All Product</span>
+    </a>
+    <a href="#" class="flex items-center gap-3 py-3 border-b border-gray-100 text-gray-700 hover:text-nex transition">
+      <i class="fa-solid fa-crown w-5 text-nex"></i>
+      <span>Membership</span>
+    </a>
+    <a href="#" class="flex items-center gap-3 py-3 border-b border-gray-100 text-gray-700 hover:text-nex transition">
+      <i class="fa-solid fa-puzzle-piece w-5 text-nex"></i>
+      <span>Import Plugin</span>
+    </a>
+    <a href="#" class="flex items-center gap-3 py-3 border-b border-gray-100 text-gray-700 hover:text-nex transition">
+      <i class="fa-solid fa-circle-info w-5 text-nex"></i>
+      <span>About Us</span>
+    </a>
+
+    <div class="mt-7 pt-5 border-t border-gray-200">
+      <a href="#" class="flex items-center justify-between py-3 text-gray-700 hover:text-nex transition">
+        <div class="flex items-center gap-3">
+          <i class="fa-solid fa-cart-shopping w-5 text-nex"></i>
+          <span>Cart</span>
+        </div>
+        <span class="bg-orange-500 text-white text-[10px] w-5 h-5 rounded-full flex items-center justify-center">0</span>
+      </a>
+      <a href="#" class="flex items-center gap-3 py-3 text-gray-700 hover:text-nex transition">
+        <i class="fa-solid fa-user w-5 text-nex"></i>
+        <span>Account</span>
+      </a>
+    </div>
+  </div>
+</div>
+
 <!-- ===== Hero Banner ===== -->
-<section class="container mx-auto px-4">
-  <img src="image and icon/hero.webp" alt="Hero Banner" class="w-full h-auto lg:h-[600px] object-cover rounded-lg" />
-</section>
+<!-- ===== Hero Section ===== -->
 
-  <!-- ===== Category Slider ===== -->
+    <!-- Main Banner Section -->
+    <section class="w-full px-4 sm:px-6 lg:px-8 py-3">
+
+        <div class="max-w-[1500px] mx-auto">
+
+            <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-5">
+
+                <!-- ========================= -->
+                <!-- LEFT SIDE SLICK SLIDER -->
+                <!-- ========================= -->
+                <div class="relative overflow-hidden rounded-lg h-[250px] sm:h-[320px] lg:h-[395px]">
+
+                    <div class="main-slider h-full">
+
+                        <!-- Slide 1 -->
+                        <div class="h-full">
+                            <img
+                                src="image and icon/web-dev-1.jpg"
+                                alt="Banner 1"
+                                class="w-full h-full object-cover"
+                            >
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="h-full">
+                            <img
+                                src="image and icon/web-dev-2.jpg"
+                                alt="Banner 2"
+                                class="w-full h-full object-cover"
+                            >
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="h-full">
+                            <img
+                                src="image and icon/web-dev-3.jpg"
+                                alt="Banner 3"
+                                class="w-full h-full object-cover"
+                            >
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ========================= -->
+                <!-- RIGHT SIDE IMAGE -->
+                <!-- ========================= -->
+             <div class="hidden sm:block h-[250px] sm:h-[320px] lg:h-[395px] overflow-hidden rounded-lg">
+
+                    <img
+                        src="image and icon/adds-1.jpg"
+                        alt="Right Banner"
+                        class="w-full h-full object-cover hover:scale-105 transition duration-500"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- ===== Category Slider ===== -->
 <section class="container mx-auto px-2 sm:px-4 mb-3 mt-4 sm:mt-[10px]">
-
   <div class="relative rounded-2xl bg-white px-0">
-
     <div class="category-slider">
-
-
       <!-- Category 1 -->
       <div class="px-1">
-
-        <div class="h-[80px] sm:h-[100px] md:h-[120px]
-                    border border-gray-200 rounded-xl
-                    flex flex-col items-center justify-center
-                    bg-white
-                    transition-all duration-300
-                    hover:shadow-md hover:border-blue-200">
-
-          <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14
-                      bg-blue-600 rounded-full
-                      flex items-center justify-center
-                      shadow-md shadow-blue-200 mb-1.5">
-
-            <i class="fa-solid fa-glasses
-                      text-white text-base sm:text-lg md:text-xl"></i>
-
+        <div class="h-[80px] sm:h-[100px] md:h-[120px] border border-gray-200 rounded-xl flex flex-col items-center justify-center bg-white transition-all duration-300 hover:shadow-md hover:border-nex-light">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-nex rounded-full flex items-center justify-center shadow-md shadow-nex-light/50 mb-1.5">
+            <i class="fa-solid fa-glasses text-white text-base sm:text-lg md:text-xl"></i>
           </div>
-
-          <p class="text-[9px] sm:text-xs md:text-sm
-                    font-medium text-gray-800
-                    text-center whitespace-nowrap">
-            Accessories
-          </p>
-
+          <p class="text-[9px] sm:text-xs md:text-sm font-medium text-gray-800 text-center whitespace-nowrap">Accessories</p>
         </div>
-
       </div>
-
-
       <!-- Category 2 -->
       <div class="px-1">
-
-        <div class="h-[80px] sm:h-[100px] md:h-[120px]
-                    border border-gray-200 rounded-xl
-                    flex flex-col items-center justify-center
-                    bg-white
-                    transition-all duration-300
-                    hover:shadow-md hover:border-blue-200">
-
-          <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14
-                      bg-blue-600 rounded-full
-                      flex items-center justify-center
-                      shadow-md shadow-blue-200 mb-1.5">
-
-            <i class="fa-solid fa-shirt
-                      text-white text-base sm:text-lg md:text-xl"></i>
-
+        <div class="h-[80px] sm:h-[100px] md:h-[120px] border border-gray-200 rounded-xl flex flex-col items-center justify-center bg-white transition-all duration-300 hover:shadow-md hover:border-nex-light">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-nex rounded-full flex items-center justify-center shadow-md shadow-nex-light/50 mb-1.5">
+            <i class="fa-solid fa-shirt text-white text-base sm:text-lg md:text-xl"></i>
           </div>
-
-          <p class="text-[9px] sm:text-xs md:text-sm
-                    font-medium text-gray-800
-                    text-center whitespace-nowrap">
-            Fashion
-          </p>
-
+          <p class="text-[9px] sm:text-xs md:text-sm font-medium text-gray-800 text-center whitespace-nowrap">Fashion</p>
         </div>
-
       </div>
-
-
       <!-- Category 3 -->
       <div class="px-1">
-
-        <div class="h-[80px] sm:h-[100px] md:h-[120px]
-                    border border-gray-200 rounded-xl
-                    flex flex-col items-center justify-center
-                    bg-white
-                    transition-all duration-300
-                    hover:shadow-md hover:border-blue-200">
-
-          <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14
-                      bg-blue-600 rounded-full
-                      flex items-center justify-center
-                      shadow-md shadow-blue-200 mb-1.5">
-
-            <i class="fa-solid fa-mobile-screen-button
-                      text-white text-base sm:text-lg md:text-xl"></i>
-
+        <div class="h-[80px] sm:h-[100px] md:h-[120px] border border-gray-200 rounded-xl flex flex-col items-center justify-center bg-white transition-all duration-300 hover:shadow-md hover:border-nex-light">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-nex rounded-full flex items-center justify-center shadow-md shadow-nex-light/50 mb-1.5">
+            <i class="fa-solid fa-mobile-screen-button text-white text-base sm:text-lg md:text-xl"></i>
           </div>
-
-          <p class="text-[9px] sm:text-xs md:text-sm
-                    font-medium text-gray-800
-                    text-center whitespace-nowrap">
-            Gadgets
-          </p>
-
+          <p class="text-[9px] sm:text-xs md:text-sm font-medium text-gray-800 text-center whitespace-nowrap">Gadgets</p>
         </div>
-
       </div>
-
-
       <!-- Category 4 -->
       <div class="px-1">
-
-        <div class="h-[80px] sm:h-[100px] md:h-[120px]
-                    border border-gray-200 rounded-xl
-                    flex flex-col items-center justify-center
-                    bg-white
-                    transition-all duration-300
-                    hover:shadow-md hover:border-blue-200">
-
-          <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14
-                      bg-blue-600 rounded-full
-                      flex items-center justify-center
-                      shadow-md shadow-blue-200 mb-1.5">
-
-            <i class="fa-solid fa-basket-shopping
-                      text-white text-base sm:text-lg md:text-xl"></i>
-
+        <div class="h-[80px] sm:h-[100px] md:h-[120px] border border-gray-200 rounded-xl flex flex-col items-center justify-center bg-white transition-all duration-300 hover:shadow-md hover:border-nex-light">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-nex rounded-full flex items-center justify-center shadow-md shadow-nex-light/50 mb-1.5">
+            <i class="fa-solid fa-basket-shopping text-white text-base sm:text-lg md:text-xl"></i>
           </div>
-
-          <p class="text-[9px] sm:text-xs md:text-sm
-                    font-medium text-gray-800
-                    text-center whitespace-nowrap">
-            Grocery
-          </p>
-
+          <p class="text-[9px] sm:text-xs md:text-sm font-medium text-gray-800 text-center whitespace-nowrap">Grocery</p>
         </div>
-
       </div>
-
-
       <!-- Category 5 -->
       <div class="px-1">
-
-        <div class="h-[80px] sm:h-[100px] md:h-[120px]
-                    border border-gray-200 rounded-xl
-                    flex flex-col items-center justify-center
-                    bg-white
-                    transition-all duration-300
-                    hover:shadow-md hover:border-blue-200">
-
-          <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14
-                      bg-blue-600 rounded-full
-                      flex items-center justify-center
-                      shadow-md shadow-blue-200 mb-1.5">
-
-            <i class="fa-solid fa-wheat-awn
-                      text-white text-base sm:text-lg md:text-xl"></i>
-
+        <div class="h-[80px] sm:h-[100px] md:h-[120px] border border-gray-200 rounded-xl flex flex-col items-center justify-center bg-white transition-all duration-300 hover:shadow-md hover:border-nex-light">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-nex rounded-full flex items-center justify-center shadow-md shadow-nex-light/50 mb-1.5">
+            <i class="fa-solid fa-wheat-awn text-white text-base sm:text-lg md:text-xl"></i>
           </div>
-
-          <p class="text-[9px] sm:text-xs md:text-sm
-                    font-medium text-gray-800
-                    text-center whitespace-nowrap">
-            Agriculture
-          </p>
-
+          <p class="text-[9px] sm:text-xs md:text-sm font-medium text-gray-800 text-center whitespace-nowrap">Agriculture</p>
         </div>
-
       </div>
-
-
       <!-- Category 6 -->
       <div class="px-1">
-
-        <div class="h-[80px] sm:h-[100px] md:h-[120px]
-                    border border-gray-200 rounded-xl
-                    flex flex-col items-center justify-center
-                    bg-white
-                    transition-all duration-300
-                    hover:shadow-md hover:border-blue-200">
-
-          <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14
-                      bg-blue-600 rounded-full
-                      flex items-center justify-center
-                      shadow-md shadow-blue-200 mb-1.5">
-
-            <i class="fa-solid fa-leaf
-                      text-white text-base sm:text-lg md:text-xl"></i>
-
+        <div class="h-[80px] sm:h-[100px] md:h-[120px] border border-gray-200 rounded-xl flex flex-col items-center justify-center bg-white transition-all duration-300 hover:shadow-md hover:border-nex-light">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-nex rounded-full flex items-center justify-center shadow-md shadow-nex-light/50 mb-1.5">
+            <i class="fa-solid fa-leaf text-white text-base sm:text-lg md:text-xl"></i>
           </div>
-
-          <p class="text-[9px] sm:text-xs md:text-sm
-                    font-medium text-gray-800
-                    text-center whitespace-nowrap">
-            Beauty
-          </p>
-
+          <p class="text-[9px] sm:text-xs md:text-sm font-medium text-gray-800 text-center whitespace-nowrap">Beauty</p>
         </div>
-
       </div>
-
-
       <!-- Category 7 -->
       <div class="px-1">
-
-        <div class="h-[80px] sm:h-[100px] md:h-[120px]
-                    border border-gray-200 rounded-xl
-                    flex flex-col items-center justify-center
-                    bg-white
-                    transition-all duration-300
-                    hover:shadow-md hover:border-blue-200">
-
-          <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14
-                      bg-blue-600 rounded-full
-                      flex items-center justify-center
-                      shadow-md shadow-blue-200 mb-1.5">
-
-            <i class="fa-solid fa-laptop
-                      text-white text-base sm:text-lg md:text-xl"></i>
-
+        <div class="h-[80px] sm:h-[100px] md:h-[120px] border border-gray-200 rounded-xl flex flex-col items-center justify-center bg-white transition-all duration-300 hover:shadow-md hover:border-nex-light">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-nex rounded-full flex items-center justify-center shadow-md shadow-nex-light/50 mb-1.5">
+            <i class="fa-solid fa-laptop text-white text-base sm:text-lg md:text-xl"></i>
           </div>
-
-          <p class="text-[9px] sm:text-xs md:text-sm
-                    font-medium text-gray-800
-                    text-center whitespace-nowrap">
-            Digital Product
-          </p>
-
+          <p class="text-[9px] sm:text-xs md:text-sm font-medium text-gray-800 text-center whitespace-nowrap">Digital Product</p>
         </div>
-
       </div>
-
-
       <!-- Category 8 -->
       <div class="px-1">
-
-        <div class="h-[80px] sm:h-[100px] md:h-[120px]
-                    border border-gray-200 rounded-xl
-                    flex flex-col items-center justify-center
-                    bg-white
-                    transition-all duration-300
-                    hover:shadow-md hover:border-blue-200">
-
-          <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14
-                      bg-blue-600 rounded-full
-                      flex items-center justify-center
-                      shadow-md shadow-blue-200 mb-1.5">
-
-            <i class="fa-solid fa-heart-pulse
-                      text-white text-base sm:text-lg md:text-xl"></i>
-
+        <div class="h-[80px] sm:h-[100px] md:h-[120px] border border-gray-200 rounded-xl flex flex-col items-center justify-center bg-white transition-all duration-300 hover:shadow-md hover:border-nex-light">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-nex rounded-full flex items-center justify-center shadow-md shadow-nex-light/50 mb-1.5">
+            <i class="fa-solid fa-heart-pulse text-white text-base sm:text-lg md:text-xl"></i>
           </div>
-
-          <p class="text-[9px] sm:text-xs md:text-sm
-                    font-medium text-gray-800
-                    text-center whitespace-nowrap">
-            Health
-          </p>
-
+          <p class="text-[9px] sm:text-xs md:text-sm font-medium text-gray-800 text-center whitespace-nowrap">Health</p>
         </div>
-
       </div>
-
-
       <!-- Category 9 -->
       <div class="px-1">
-
-        <div class="h-[80px] sm:h-[100px] md:h-[120px]
-                    border border-gray-200 rounded-xl
-                    flex flex-col items-center justify-center
-                    bg-white
-                    transition-all duration-300
-                    hover:shadow-md hover:border-blue-200">
-
-          <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14
-                      bg-blue-600 rounded-full
-                      flex items-center justify-center
-                      shadow-md shadow-blue-200 mb-1.5">
-
-            <i class="fa-solid fa-puzzle-piece
-                      text-white text-base sm:text-lg md:text-xl"></i>
-
+        <div class="h-[80px] sm:h-[100px] md:h-[120px] border border-gray-200 rounded-xl flex flex-col items-center justify-center bg-white transition-all duration-300 hover:shadow-md hover:border-nex-light">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-nex rounded-full flex items-center justify-center shadow-md shadow-nex-light/50 mb-1.5">
+            <i class="fa-solid fa-puzzle-piece text-white text-base sm:text-lg md:text-xl"></i>
           </div>
-
-          <p class="text-[9px] sm:text-xs md:text-sm
-                    font-medium text-gray-800
-                    text-center whitespace-nowrap">
-            Plugin
-          </p>
-
+          <p class="text-[9px] sm:text-xs md:text-sm font-medium text-gray-800 text-center whitespace-nowrap">Plugin</p>
         </div>
-
       </div>
-
-
       <!-- Category 10 -->
       <div class="px-1">
-
-        <div class="h-[80px] sm:h-[100px] md:h-[120px]
-                    border border-gray-200 rounded-xl
-                    flex flex-col items-center justify-center
-                    bg-white
-                    transition-all duration-300
-                    hover:shadow-md hover:border-blue-200">
-
-          <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14
-                      bg-blue-600 rounded-full
-                      flex items-center justify-center
-                      shadow-md shadow-blue-200 mb-1.5">
-
-            <i class="fa-solid fa-file-lines
-                      text-white text-base sm:text-lg md:text-xl"></i>
-
+        <div class="h-[80px] sm:h-[100px] md:h-[120px] border border-gray-200 rounded-xl flex flex-col items-center justify-center bg-white transition-all duration-300 hover:shadow-md hover:border-nex-light">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-nex rounded-full flex items-center justify-center shadow-md shadow-nex-light/50 mb-1.5">
+            <i class="fa-solid fa-file-lines text-white text-base sm:text-lg md:text-xl"></i>
           </div>
-
-          <p class="text-[9px] sm:text-xs md:text-sm
-                    font-medium text-gray-800
-                    text-center whitespace-nowrap">
-            Landing Page
-          </p>
-
+          <p class="text-[9px] sm:text-xs md:text-sm font-medium text-gray-800 text-center whitespace-nowrap">Landing Page</p>
         </div>
-
       </div>
-
-
     </div>
+  </div>
+</section>
 
+<!-- ===== All Template Section ===== -->
+<section class="container mx-auto px-4 md:py-6">
+  <div class="flex items-center justify-between mb-4">
+    <h2 class="text-nex font-bold text-lg sm:text-xl border-b-2 border-nex pb-1">All Template</h2>
+    <a href="#" class="bg-nex text-white text-xs px-4 py-1.5 rounded hover:bg-nex-hover transition">View More</a>
   </div>
 
-</section>
-  <!-- ===== All Template Section ===== -->
-  <section class="container mx-auto px-4 md:py-6 ">
-    <div class="flex items-center justify-between mb-4">
-      <h2 class="text-green-600 font-bold text-lg sm:text-xl border-b-2 border-green-600 pb-1">All Template</h2>
-      <a href="#" class="bg-green-600 text-white text-xs px-4 py-1.5 rounded hover:bg-green-700 transition">View More</a>
+  <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
+    <!-- Card 1 -->
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/tamplate-card-1.webp" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
-
-      <!-- Card 1 -->
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/tamplate-card-1.webp" alt="ShopMart" />
+    <!-- Card 2 -->
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/tamplete-card-2.webp" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
         </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-          
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
           </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/tamplete-card-3.webp" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/tamplete-card-4.webp" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/tamplete-card-5.png" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/tamplete-card-6.png" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/tamplete-card-7.png" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/tamplete-card-8.webp" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/tamplete-card-9.webp" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 10 -->
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/tamplete-card-10.webp" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- extra cards -->
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/tamplate-card-1.webp" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/tamplete-card-2.webp" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/tamplete-card-3.webp" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/tamplete-card-4.webp" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/tamplete-card-5.png" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/tamplete-card-6.png" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/tamplete-card-7.png" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/tamplete-card-8.webp" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/tamplete-card-10.webp" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/tamplete-card-10.webp" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex justify-center mt-6">
+    <button class="border border-nex text-nex px-8 py-2 rounded hover:bg-nex hover:text-white transition text-sm font-medium">Load More</button>
+  </div>
+</section>
+
+<!-- all plugins start -->
+<section class="container mx-auto px-4 py-6 mt-0 md:mt-5 lg:mt-5">
+  <div class="flex items-center justify-between mb-4">
+    <h2 class="text-nex font-bold text-lg sm:text-xl border-b-2 border-nex pb-1">All Plugins</h2>
+    <a href="#" class="bg-nex text-white text-xs px-4 py-1.5 rounded hover:bg-nex-hover transition">View More</a>
+  </div>
+
+  <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
+    <!-- Card 1 -->
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/plagin-1.png" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/plagin-2.png" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/plagin-3.webp" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/plagin-4.webp" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/plagin-5.webp" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/plagin-1.png" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/plagin-2.png" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="product-card">
+      <div class="card-thumb">
+        <img src="image and icon/plagin-3.webp" alt="ShopMart" />
+      </div>
+      <div class="card-body">
+        <div class="card-info">
+          <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+          <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+        </div>
+        <div class="card-footer">
+          <div class="flex gap-1">
+            <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+            <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex justify-center mt-6">
+    <button class="border border-nex text-nex px-8 py-2 rounded hover:bg-nex hover:text-white transition text-sm font-medium">Load More</button>
+  </div>
+</section>
+<!-- all plugins end -->
+
+<!-- ===== Plugin Section (Slick Slider) ===== -->
+<section class="container mx-auto px-4 py-0 md:py-8 lg:py-8 mt-0 md:mt-5 lg:mt-5">
+  <div class="flex items-center justify-between mb-4">
+    <h2 class="text-nex font-bold text-xl border-b-2 border-nex pb-1"></h2>
+    <a href="#" class="bg-nex text-white text-xs px-4 py-1.5 rounded hover:bg-nex-hover transition">View More</a>
+  </div>
+
+  <div class="gap-4">
+    <div class="plugin-slider">
+      <!-- Card 1 -->
+      <div class="flex" style="width: 270px; height: 379px;">
+        <div class="product-card w-full">
+          <div style="width: 268px; height: 268px;">
+            <img src="image and icon/tamplate-card-1.webp" alt="ShopMart" />
+          </div>
+          <div class="card-body">
+            <div class="card-info">
+              <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+              <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+            </div>
+            <div class="card-footer">
+              <div class="flex gap-1">
+                <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+                <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Card 2 -->
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/tamplete-card-2.webp" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-       
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-       
+      <div class="flex" style="width: 270px; height: 379px;">
+        <div class="product-card w-full">
+          <div style="width: 268px; height: 268px;">
+            <img src="image and icon/tamplete-card-2.webp" alt="ShopMart" />
           </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          <div class="card-body">
+            <div class="card-info">
+              <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+              <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+            </div>
+            <div class="card-footer">
+              <div class="flex gap-1">
+                <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+                <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Card 3 -->
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/tamplete-card-3.webp" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-      
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-   
+      <div class="flex" style="width: 270px; height: 379px;">
+        <div class="product-card w-full">
+          <div style="width: 268px; height: 268px;">
+            <img src="image and icon/tamplete-card-3.webp" alt="ShopMart" />
           </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          <div class="card-body">
+            <div class="card-info">
+              <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+              <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+            </div>
+            <div class="card-footer">
+              <div class="flex gap-1">
+                <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+                <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Card 4 -->
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/tamplete-card-4.webp" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-
+      <div class="flex" style="width: 270px; height: 379px;">
+        <div class="product-card w-full">
+          <div style="width: 268px; height: 268px;">
+            <img src="image and icon/tamplete-card-4.webp" alt="ShopMart" />
           </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          <div class="card-body">
+            <div class="card-info">
+              <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+              <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+            </div>
+            <div class="card-footer">
+              <div class="flex gap-1">
+                <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+                <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Card 5 -->
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/tamplete-card-5.png" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-
+      <div class="flex" style="width: 270px; height: 379px;">
+        <div class="product-card w-full">
+          <div style="width: 268px; height: 268px;">
+            <img src="image and icon/tamplete-card-5.png" alt="ShopMart" />
           </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          <div class="card-body">
+            <div class="card-info">
+              <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+              <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+            </div>
+            <div class="card-footer">
+              <div class="flex gap-1">
+                <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+                <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Card 6 -->
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/tamplete-card-6.png" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-      
+      <div class="flex" style="width: 270px; height: 379px;">
+        <div class="product-card w-full">
+          <div style="width: 268px; height: 268px;">
+            <img src="image and icon/tamplete-card-6.png" alt="ShopMart" />
           </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          <div class="card-body">
+            <div class="card-info">
+              <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
+              <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+            </div>
+            <div class="card-footer">
+              <div class="flex gap-1">
+                <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+                <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Card 7 -->
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/tamplete-card-7.png" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-   
+      <div class="flex" style="width: 270px; height: 379px;">
+        <div class="product-card w-full">
+          <div style="width: 268px; height: 268px;">
+            <img src="image and icon/tamplete-card-7.png" alt="ShopMart" />
           </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          <div class="card-body">
+            <div class="card-info">
+              <p class="text-xs font-semibold leading-tight mb-1">NexXoom – Premium Daraz Website Template</p>
+              <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+            </div>
+            <div class="card-footer">
+              <div class="flex gap-1">
+                <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+                <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Card 8 -->
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/tamplete-card-8.webp" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-       
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-
+      <div class="flex" style="width: 270px; height: 379px;">
+        <div class="product-card w-full">
+          <div style="width: 268px; height: 268px;">
+            <img src="image and icon/tamplete-card-8.webp" alt="ShopMart" />
           </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          <div class="card-body">
+            <div class="card-info">
+              <p class="text-xs font-semibold leading-tight mb-1">NexXoom – Premium Daraz Website Template</p>
+              <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+            </div>
+            <div class="card-footer">
+              <div class="flex gap-1">
+                <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+                <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Card 9 -->
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/tamplete-card-9.webp" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-          
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-  
+      <div class="flex" style="width: 270px; height: 433px;">
+        <div class="product-card w-full">
+          <div style="width: 268px; height: 268px;">
+            <img src="image and icon/tamplete-card-9.webp" alt="ShopMart" />
           </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          <div class="card-body">
+            <div class="card-info">
+              <p class="text-xs font-semibold leading-tight mb-1">NexXoom – Premium Daraz Website Template</p>
+              <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
+            </div>
+            <div class="card-footer">
+              <div class="flex gap-1">
+                <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+                <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Card 10 -->
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/tamplete-card-10.webp" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-         
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-       
+      <div class="flex" style="width: 270px; height: 433px;">
+        <div class="product-card w-full">
+          <div style="width: 268px; height: 268px;">
+            <img src="image and icon/tamplete-card-10.webp" alt="ShopMart" />
           </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
+          <div class="card-body">
+            <div class="card-info">
+              <p class="text-xs font-semibold leading-tight mb-1">NexXoom – Premium Daraz Website Template</p>
+              <p class="text-nex font-bold text-sm">১,৭৫০৳</p>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- extra cards (shortened for brevity) -->
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/tamplate-card-1.webp" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-      
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-
-          </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/tamplete-card-2.webp" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-            
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-      
-          </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/tamplete-card-3.webp" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-       
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-       
-          </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/tamplete-card-4.webp" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-       
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-        
-          </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/tamplete-card-5.png" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-    
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
- 
-          </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/tamplete-card-6.png" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-         
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-      
-          </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/tamplete-card-7.png" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-      
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
- 
-          </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/tamplete-card-8.webp" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-   
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-     
-          </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/tamplete-card-10.webp" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-     
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-        
-          </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/tamplete-card-10.webp" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-  
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-   
-          </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="flex justify-center mt-6">
-      <button class="border border-green-600 text-green-600 px-8 py-2 rounded hover:bg-green-600 hover:text-white transition text-sm font-medium">Load More</button>
-    </div>
-  </section>
-
-  <!-- all plugins start -->
-<section class="container mx-auto px-4 py-6 mt-0 md:mt-5 lg:mt-5">
-    <div class="flex items-center justify-between mb-4">
-      <h2 class="text-green-600 font-bold text-lg sm:text-xl border-b-2 border-green-600 pb-1">All Plugins</h2>
-      <a href="#" class="bg-green-600 text-white text-xs px-4 py-1.5 rounded hover:bg-green-700 transition">View More</a>
-    </div>
-
-    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
-
-      <!-- Card 1 -->
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/plagin-1.png" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-   
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-
-          </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/plagin-2.png" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-       
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-   
-          </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/plagin-3.webp" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-    
-          </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/plagin-4.webp" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-
-          </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 5 -->
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/plagin-5.webp" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-      
-          </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 6 -->
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/plagin-1.png" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-    
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-           
-          </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 7 -->
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/plagin-2.png" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-       
-          </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 8 -->
-      <div class="product-card">
-        <div class="card-thumb">
-          <img src="image and icon/plagin-3.webp" alt="ShopMart" />
-        </div>
-        <div class="card-body">
-          <div class="card-info">
-            <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-  
-            <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-   
-          </div>
-          <div class="card-footer">
-            <div class="flex gap-1">
-              <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-              <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="flex justify-center mt-6">
-      <button class="border border-green-600 text-green-600 px-8 py-2 rounded hover:bg-green-600 hover:text-white transition text-sm font-medium">Load More</button>
-    </div>
-  </section>
-  <!-- all plugins end -->
-
-  <!-- ===== Plugin Section (Slick Slider) ===== -->
-  <section class="container mx-auto px-4 py-0 md:py-8 lg:py-8 mt-0 md:mt-5 lg:mt-5">
-    <div class="flex items-center justify-between mb-4">
-      <h2 class="text-green-600 font-bold text-xl border-b-2 border-green-600 pb-1"></h2>
-      <a href="#" class="bg-green-600 text-white text-xs px-4 py-1.5 rounded hover:bg-green-700 transition">View More</a>
-    </div>
-
-    <div class="gap-4">
-      <div class="plugin-slider">
-
-        <!-- Card 1 -->
-        <div class="flex" style="width: 270px; height: 433px;">
-          <div class="product-card w-full">
-            <div style="width: 268px; height: 268px;">
-              <img src="image and icon/tamplate-card-1.webp" alt="ShopMart" />
-            </div>
-            <div class="card-body">
-              <div class="card-info">
-                <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-          
-                <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-      
-              </div>
-              <div class="card-footer">
-                <div class="flex gap-1">
-                  <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-                  <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-                </div>
+            <div class="card-footer">
+              <div class="flex gap-1">
+                <button class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-nex-hover transition">Buy Now</button>
+                <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Card 2 -->
-        <div class="flex" style="width: 270px; height: 433px;">
-          <div class="product-card w-full">
-            <div style="width: 268px; height: 268px;">
-              <img src="image and icon/tamplete-card-2.webp" alt="ShopMart" />
-            </div>
-            <div class="card-body">
-              <div class="card-info">
-                <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-
-                <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-            
-              </div>
-              <div class="card-footer">
-                <div class="flex gap-1">
-                  <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-                  <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="flex" style="width: 270px; height: 433px;">
-          <div class="product-card w-full">
-            <div style="width: 268px; height: 268px;">
-              <img src="image and icon/tamplete-card-3.webp" alt="ShopMart" />
-            </div>
-            <div class="card-body">
-              <div class="card-info">
-                <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-       
-                <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-          
-              </div>
-              <div class="card-footer">
-                <div class="flex gap-1">
-                  <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-                  <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="flex" style="width: 270px; height: 433px;">
-          <div class="product-card w-full">
-            <div style="width: 268px; height: 268px;">
-              <img src="image and icon/tamplete-card-4.webp" alt="ShopMart" />
-            </div>
-            <div class="card-body">
-              <div class="card-info">
-                <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-        
-                <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-        
-              </div>
-              <div class="card-footer">
-                <div class="flex gap-1">
-                  <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-                  <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="flex" style="width: 270px; height: 433px;">
-          <div class="product-card w-full">
-            <div style="width: 268px; height: 268px;">
-              <img src="image and icon/tamplete-card-5.png" alt="ShopMart" />
-            </div>
-            <div class="card-body">
-              <div class="card-info">
-                <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-     
-                <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-     
-              </div>
-              <div class="card-footer">
-                <div class="flex gap-1">
-                  <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-                  <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 6 -->
-        <div class="flex" style="width: 270px; height: 433px;">
-          <div class="product-card w-full">
-            <div style="width: 268px; height: 268px;">
-              <img src="image and icon/tamplete-card-6.png" alt="ShopMart" />
-            </div>
-            <div class="card-body">
-              <div class="card-info">
-                <p class="text-xs font-semibold leading-tight mb-1">ShopMart – Premium Daraz Website Template</p>
-           
-                <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-        
-              </div>
-              <div class="card-footer">
-                <div class="flex gap-1">
-                  <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-                  <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 7 -->
-        <div class="flex" style="width: 270px; height: 433px;">
-          <div class="product-card w-full">
-            <div style="width: 268px; height: 268px;">
-              <img src="image and icon/tamplete-card-7.png" alt="ShopMart" />
-            </div>
-            <div class="card-body">
-              <div class="card-info">
-                <p class="text-xs font-semibold leading-tight mb-1">NexXoom – Premium Daraz Website Template</p>
-       
-                <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-           
-              </div>
-              <div class="card-footer">
-                <div class="flex gap-1">
-                  <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-                  <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 8 -->
-        <div class="flex" style="width: 270px; height: 433px;">
-          <div class="product-card w-full">
-            <div style="width: 268px; height: 268px;">
-              <img src="image and icon/tamplete-card-8.webp" alt="ShopMart" />
-            </div>
-            <div class="card-body">
-              <div class="card-info">
-                <p class="text-xs font-semibold leading-tight mb-1">NexXoom – Premium Daraz Website Template</p>
-     
-                <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-      
-              </div>
-              <div class="card-footer">
-                <div class="flex gap-1">
-                  <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-                  <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 9 -->
-        <div class="flex" style="width: 270px; height: 433px;">
-          <div class="product-card w-full">
-            <div style="width: 268px; height: 268px;">
-              <img src="image and icon/tamplete-card-9.webp" alt="ShopMart" />
-            </div>
-            <div class="card-body">
-              <div class="card-info">
-                <p class="text-xs font-semibold leading-tight mb-1">NexXoom – Premium Daraz Website Template</p>
-           
-                <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-          
-              </div>
-              <div class="card-footer">
-                <div class="flex gap-1">
-                  <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-                  <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 10 -->
-        <div class="flex" style="width: 270px; height: 433px;">
-          <div class="product-card w-full">
-            <div style="width: 268px; height: 268px;">
-              <img src="image and icon/tamplete-card-10.webp" alt="ShopMart" />
-            </div>
-            <div class="card-body">
-              <div class="card-info">
-                <p class="text-xs font-semibold leading-tight mb-1">NexXoom – Premium Daraz Website Template</p>
-       
-                <p class="text-green-600 font-bold text-sm">১,৭৫০৳</p>
-        
-              </div>
-              <div class="card-footer">
-                <div class="flex gap-1">
-                  <button class="flex-1 bg-green-600 text-white text-xs py-1.5 rounded hover:bg-green-700 transition">Buy Now</button>
-                  <button class="eye-btn" title="Quick View"><i class="fa fa-eye"></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
+  </div>
 
-    <div class="flex justify-center mt-6">
-      <button class="border border-green-600 text-green-600 px-8 py-2 rounded hover:bg-green-600 hover:text-white transition text-sm font-medium">Load More</button>
-    </div>
-  </section>
-
+  <div class="flex justify-center mt-6">
+    <button class="border border-nex text-nex px-8 py-2 rounded hover:bg-nex hover:text-white transition text-sm font-medium">Load More</button>
+  </div>
+</section>
 
 <!-- ===== What Creators Say ===== -->
 <section class="max-w-6xl mx-auto px-4 py-8 text-center">
-  <span class="inline-block border border-gray-300 text-gray-500 text-xs px-4 py-1 rounded-full mb-3" style="color: #16a34a; font-weight:bolder; font-size: 16px;">Trusted Video Reviews</span>
-  <h1 class="font-bold mb-1 whitespace-nowrap text-[24px] sm:text-[42px]">What Creators Say</h1>
-  <p class="text-gray-500 text-sm mb-6">Creators দের NexXoom নিয়ে published YouTube videos এর আলামাত দেখুন।</p>
+  <span class="inline-block border border-gray-300 text-nex text-xs px-4 py-1 rounded-full mb-3" style="font-weight:bolder; font-size: 16px;">Trusted Video Reviews</span>
+  <h1 class="font-bold text-nex mb-1 whitespace-nowrap text-[24px] sm:text-[42px]">What Creators Say</h1>
+  <p class="text-gray-500 text-sm mb-6 text-nex">Creators দের NexXoom নিয়ে published YouTube videos এর আলামাত দেখুন।</p>
   
-  <!-- Grid Layout: sm-এ 2টি, md-এ 2টি, lg-এ 4টি -->
   <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
-    
     <!-- Card 1 -->
     <div class="border rounded-lg overflow-hidden shadow-sm">
       <div class="relative bg-gray-800 aspect-video">
@@ -1355,8 +1104,8 @@
         </div>
       </div>
       <div class="p-3 text-left">
-        <p class="font-semibold text-sm">NexXoom Template Review</p>
-        <p class="text-gray-500 text-xs">Creator review and practical walkthrough.</p>
+        <p class="font-semibold text-sm text-nex">NexXoom Template Review</p>
+        <p class="text-gray-500 text-xs text-nex">Creator review and practical walkthrough.</p>
       </div>
     </div>
 
@@ -1369,8 +1118,8 @@
         </div>
       </div>
       <div class="p-3 text-left">
-        <p class="font-semibold text-sm">NexXoom Website Tutorial</p>
-        <p class="text-gray-500 text-xs">Step-by-step setup and usage experience.</p>
+        <p class="font-semibold text-sm text-nex">NexXoom Website Tutorial</p>
+        <p class="text-gray-500 text-xs text-nex">Step-by-step setup and usage experience.</p>
       </div>
     </div>
 
@@ -1383,8 +1132,8 @@
         </div>
       </div>
       <div class="p-3 text-left">
-        <p class="font-semibold text-sm">NexXoom Setup Guide</p>
-        <p class="text-gray-500 text-xs">Template import and customization guide.</p>
+        <p class="font-semibold text-sm text-nex">NexXoom Setup Guide</p>
+        <p class="text-gray-500 text-xs text-nex">Template import and customization guide.</p>
       </div>
     </div>
 
@@ -1397,366 +1146,133 @@
         </div>
       </div>
       <div class="p-3 text-left">
-        <p class="font-semibold text-sm">NexXoom Creator Review</p>
-        <p class="text-gray-500 text-xs">Real creator opinion about NexXoom.</p>
+        <p class="font-semibold text-sm text-nex">NexXoom Creator Review</p>
+        <p class="text-gray-500 text-xs text-nex">Real creator opinion about NexXoom.</p>
       </div>
     </div>
-
   </div>
 </section>
-
 
 <!-- ===== Hostinger CTA ===== -->
-<section class="relative z-20 max-w-5xl mx-auto px-4  mt-0 md:mt-5 lg:mt-5">
-  <div class="bg-gradient-to-r from-[#00a63c] via-[#00b341] to-[#08c95a]
-              rounded-2xl text-white text-center
-              py-10 px-4 sm:px-6
-              shadow-[0_15px_45px_rgba(0,166,60,0.35)]">
-
-    <h2 class="text-[19px] sm:text-3xl font-extrabold mb-2 whitespace-nowrap">
-      We Recommend Hostinger
-    </h2>
-
-    <p class="text-white/95 text-sm sm:text-base mb-5 max-w-xl mx-auto">
-      আপনি যদি নিচের লিংক থেকে হোস্টিং কিনুন তাহলে Extra ২০% ডিসকাউন্ট পাবেন।
-      যা আপনারলি প্রয়োজনটি ভিত্তিতে করতে পারেন না।
-    </p>
-
-    <a href="#"
-       class="inline-block bg-white text-[#00a63c]
-              font-bold px-9 py-3 rounded-full whitespace-nowrap
-              hover:bg-gray-100 transition duration-300
-              shadow-md mb-6">
-      Get Extra 20% Discount
-    </a>
-
-    <div class="flex flex-wrap justify-center gap-3 sm:gap-4
-                text-xs sm:text-sm">
-
-      <!-- Free Domain -->
-      <span class="rounded-full border border-white/40
-                   bg-white/10 px-4 py-2
-                   backdrop-blur-sm">
-
-        <i class="fa-solid fa-globe mr-1"
-           style="color:#38bdf8;"></i>
-
-        Free Domain
+<section class="relative z-20 max-w-5xl mx-auto px-4 mt-0 md:mt-5 lg:mt-5">
+  <div class="bg-xoom rounded-2xl text-white text-center py-10 px-4 sm:px-6 shadow-[0_15px_45px_rgba(0,166,60,0.35)]">
+    <h2 class="text-[19px] sm:text-3xl font-extrabold mb-2 whitespace-nowrap text-nex">We Recommend Hostinger</h2>
+    <p class="text-white/95 text-sm sm:text-base mb-5 max-w-xl mx-auto text-nex">আপনি যদি নিচের লিংক থেকে হোস্টিং কিনুন তাহলে Extra ২০% ডিসকাউন্ট পাবেন। যা আপনারলি প্রয়োজনটি ভিত্তিতে করতে পারেন না।</p>
+    <a href="#" class="inline-block bg-white text-[#00a63c] font-bold px-9 py-3 rounded-full whitespace-nowrap hover:bg-gray-100 transition duration-300 shadow-md mb-6 text-nex">Get Extra 20% Discount</a>
+    <div class="flex flex-wrap justify-center gap-3 sm:gap-4 text-xs sm:text-sm">
+      <span class="rounded-full border border-white/40 bg-white/10 px-4 py-2 backdrop-blur-sm">
+        <i class="fa-solid fa-globe mr-1" style="color:#38bdf8;"></i> Free Domain
       </span>
-
-
-      <!-- Free SSL -->
-      <span class="rounded-full border border-white/40
-                   bg-white/10 px-4 py-2
-                   backdrop-blur-sm">
-
-        <i class="fa-solid fa-shield-halved mr-1"
-           style="color:#facc15;"></i>
-
-        Free SSL
+      <span class="rounded-full border border-white/40 bg-white/10 px-4 py-2 backdrop-blur-sm">
+        <i class="fa-solid fa-shield-halved mr-1" style="color:#facc15;"></i> Free SSL
       </span>
-
-
-      <!-- Uptime -->
-      <span class="rounded-full border border-white/40
-                   bg-white/10 px-4 py-2
-                   backdrop-blur-sm">
-
-        <i class="fa-solid fa-bolt mr-1"
-           style="color:#fbbf24;"></i>
-
-        99.9% Uptime
+      <span class="rounded-full border border-white/40 bg-white/10 px-4 py-2 backdrop-blur-sm">
+        <i class="fa-solid fa-bolt mr-1" style="color:#fbbf24;"></i> 99.9% Uptime
       </span>
-
-
-      <!-- LiteSpeed -->
-      <span class="rounded-full border border-white/40
-                   bg-white/10 px-4 py-2
-                   backdrop-blur-sm">
-
-        <i class="fa-solid fa-server mr-1"
-           style="color:#fb923c;"></i>
-
-        LiteSpeed
+      <span class="rounded-full border border-white/40 bg-white/10 px-4 py-2 backdrop-blur-sm">
+        <i class="fa-solid fa-server mr-1" style="color:#fb923c;"></i> LiteSpeed
       </span>
-
     </div>
-
   </div>
 </section>
 
-
 <!-- ===== Footer ===== -->
-<footer class="relative z-10
-               bg-gradient-to-r
-               from-[#0b172d] via-[#090d16] to-[#130d20]
-               text-gray-300
-               -mt-14 pt-24">
-
-  <div class="max-w-6xl mx-auto px-4 py-10
-              grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-
+<footer class="relative z-10 bg-gradient-to-r from-[#0b172d] via-[#090d16] to-[#130d20] text-gray-300 -mt-14 pt-24">
+  <div class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
     <!-- About -->
     <div>
+      <h3 class="text-nex font-bold text-xl mb-2">NexXoom</h3>
+<a href="tel:01823552979" class="text-nex hover:text-white transition text-xs sm:text-sm flex items-center gap-1">
+  <i class="fa fa-phone text-[10px] sm:text-xs"></i>
+  <span>01823-552979</span>
+</a>
 
-      <h3 class="text-blue-400 font-bold text-xl mb-2">
-        NexXoom
-      </h3>
+<a href="
+nexxoom99@gmail.com" class="text-nex hover:text-white transition text-xs sm:text-sm flex items-center gap-1 mt-2">
+  <i class="fa fa-envelope text-[10px] sm:text-xs"></i>
+  <span>
+nexxoom99@gmail.com</span>
+</a>
 
-      <p class="text-sm text-gray-400 leading-6 mb-4">
-        প্রিমিয়াম WordPress টেমপ্লেট নিয়ে কাজ করা একটি প্রতিষ্ঠান।
-        আমাদের সকল ডিজাইন Elementor দিয়ে তৈরি।
-      </p>
-
-      <div class="flex gap-3">
-
-        <!-- Facebook -->
-        <a href="#"
-           class="w-9 h-9 bg-[#1877F2] rounded-full
-                  flex items-center justify-center
-                  hover:scale-110 transition">
-
-          <i class="fab fa-facebook-f text-white"></i>
-
-        </a>
-
-        <!-- YouTube -->
-        <a href="#"
-           class="w-9 h-9 bg-[#FF0000] rounded-full
-                  flex items-center justify-center
-                  hover:scale-110 transition">
-
-          <i class="fab fa-youtube text-white"></i>
-
-        </a>
-
-        <!-- WhatsApp -->
-        <a href="#"
-           class="w-9 h-9 bg-[#25D366] rounded-full
-                  flex items-center justify-center
-                  hover:scale-110 transition">
-
-          <i class="fab fa-whatsapp text-white"></i>
-
-        </a>
-
+<a href="
+nexxoom99@gmail.com" class="text-nex hover:text-white transition text-xs sm:text-sm flex items-center gap-1 mt-2">
+  <i class="fa-solid fa-location-dot text-[10px] sm:text-xs"></i>
+  <span>
+Housebuilding, Uttara, Dhaka, 1230</span>
+</a>
+     
+      <div class="flex gap-3 mt-3">
+        <a href="#" class="w-9 h-9 bg-[#1877F2] rounded-full flex items-center justify-center hover:scale-110 transition"><i class="fab fa-facebook-f text-white"></i></a>
+        <a href="#" class="w-9 h-9 bg-[#FF0000] rounded-full flex items-center justify-center hover:scale-110 transition"><i class="fab fa-youtube text-white"></i></a>
+        <a href="#" class="w-9 h-9 bg-[#25D366] rounded-full flex items-center justify-center hover:scale-110 transition"><i class="fab fa-whatsapp text-white"></i></a>
+         <a href="#" class="w-9 h-9 bg-[#1877F2] rounded-full flex items-center justify-center hover:scale-110 transition"><i class="fab fa-twitter text-white"></i></a>
+           <a href="#" class="w-9 h-9 bg-[#1877F2] rounded-full flex items-center justify-center hover:scale-110 transition"><i class="fab fa-linkedin text-white"></i></a>
+            <a href="#" class="w-9 h-9 bg-[#181717] rounded-full flex items-center justify-center hover:scale-110 transition"><i class="fab fa-github text-white"></i></a>
       </div>
-
     </div>
-
 
     <!-- Our Menu -->
     <div>
-
-      <h4 class="font-semibold text-blue-400 text-lg mb-4">
-        Our Menu
-      </h4>
-
+      <h4 class="font-semibold text-nex text-lg mb-4">Our Menu</h4>
       <ul class="space-y-3 text-sm text-gray-400">
-
-        <li>
-          <a href="#" class="hover:text-white transition">
-            Import Plugin
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="hover:text-white transition">
-            Membership
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="hover:text-white transition">
-            About Us
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="hover:text-white transition">
-            Contact Us
-          </a>
-        </li>
-
+        <li><a href="#" class="hover:text-white text-nex  transition">Import Plugin</a></li>
+        <li><a href="#" class="hover:text-white text-nex transition">Membership</a></li>
+        <li><a href="#" class="hover:text-white text-nex transition">About Us</a></li>
+        <li><a href="#" class="hover:text-white text-nex transition">Contact Us</a></li>
       </ul>
-
     </div>
-
 
     <!-- Information -->
     <div>
-
-      <h4 class="font-semibold text-purple-400 text-lg mb-4">
-        Information
-      </h4>
-
+      <h4 class="font-semibold text-nex text-lg mb-4">Information</h4>
       <ul class="space-y-3 text-sm text-gray-400">
-
-        <li>
-          <a href="#" class="hover:text-white transition">
-            Terms &amp; Condition
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="hover:text-white transition">
-            Privacy Policy
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="hover:text-white transition">
-            Delivery Policy
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="hover:text-white transition">
-            Refund Policy
-          </a>
-        </li>
-
+        <li><a href="#" class="hover:text-white text-nex  transition">Terms &amp; Condition</a></li>
+        <li><a href="#" class="hover:text-white text-nex transition">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-white text-nex transition">Delivery Policy</a></li>
+        <li><a href="#" class="hover:text-white text-nex  transition">Refund Policy</a></li>
       </ul>
-
     </div>
-
 
     <!-- Our Info -->
     <div>
-
-      <h4 class="font-semibold text-orange-400 text-lg mb-4">
-        Our Info
-      </h4>
-
-      <p class="text-sm text-gray-400 mb-3">
-
-        <span class="font-semibold text-white">
-          Phone:
-        </span>
-
-        <br>
-
-        01823-552979
-
-      </p>
-
-      <p class="text-sm text-gray-400">
-
-        <span class="font-semibold text-white">
-          Office Address:
-        </span>
-
-        <br>
-
-        Housebuilding, Uttara, Dhaka, 1230
-
-      </p>
-
+      <h4 class="font-semibold text-nex text-lg mb-4">Service</h4>
+      <ul class="space-y-3 text-sm text-gray-400">
+        <li><a href="#" class="hover:text-white text-nex  transition">Terms &amp; Condition</a></li>
+        <li><a href="#" class="hover:text-white text-nex transition">Web Development</a></li>
+        <li><a href="#" class="hover:text-white text-nex transition">Design</a></li>
+        <li><a href="#" class="hover:text-white text-nex  transition">Custom web development</a></li>
+      </ul>
     </div>
 
   </div>
-
 
   <!-- Payment -->
   <div class="border-t border-white/10 px-4 py-4">
-
-    <img src="image and icon/payment.png"
-         alt="Payment Methods"
-         class="max-w-full sm:max-w-3xl mx-auto h-auto opacity-90">
-
+    <img src="image and icon/payment.png" alt="Payment Methods" class="max-w-full sm:max-w-3xl mx-auto h-auto opacity-90">
   </div>
-
 </footer>
-
 
 <!-- ===== Bottom Bar ===== -->
-<footer class="relative w-full
-               bg-gradient-to-r
-               from-[#070b12] via-[#090b13] to-[#100b1a]
-               border-t border-white/10">
-
-  <div class="max-w-6xl mx-auto px-4 py-5">
-
-    <!-- Mobile Copyright -->
-    <p class="block md:hidden
-              text-gray-400 text-sm text-center mb-4">
-
-      Copyright © 2026
-
-      <span class="text-gray-300 font-medium">
-        NexXoom
-      </span>
-
-    </p>
-
-
-    <div class="flex flex-col md:flex-row
-                items-center justify-between
-                gap-4">
-
-      <!-- WhatsApp -->
-      <a href="https://wa.me/8801XXXXXXXXX"
-         target="_blank"
-         class="flex items-center gap-2
-                bg-[#25D366] text-white font-semibold
-                px-5 py-2.5 rounded-full
-                shadow-[0_0_20px_rgba(37,211,102,0.3)]
-                hover:scale-105 transition">
-
-        <i class="fa-brands fa-whatsapp text-xl"></i>
-
-        <span>
-          WhatsApp
-        </span>
-
-      </a>
-
-
-      <!-- Palestine -->
-
-
-
-      <!-- Desktop Copyright -->
-      <p class="hidden md:block
-                text-gray-400 text-sm text-center">
-
-        Copyright © 2026
-
-        <span class="text-gray-300 font-medium">
-          NexXoom
-        </span>
-
+<footer class="relative w-full bg-gradient-to-r from-[#070b12] via-[#090b13] to-[#100b1a] border-t border-white/10 p-5">
+      <p class=" text-gray-400 text-sm text-center">
+        Copyright © 2026 <span class="text-gray-300 font-medium">NexXoom</span>
       </p>
-
-    </div>
-
-  </div>
-
 </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./script.js"></script>
 
-  <script src="./script.js">
-  </script>
 <!-- ================= MOBILE BOTTOM NAV ================= -->
 <div class="mobile-bottom-nav">
-
-  <!-- Home -->
   <a href="#" class="mobile-nav-item active">
     <i class="fa-solid fa-house"></i>
     <span>Home</span>
   </a>
-
-  <!-- Browse -->
   <a href="#" class="mobile-nav-item">
     <i class="fa-solid fa-border-all"></i>
     <span>Browse</span>
   </a>
-
-  <!-- Cart -->
   <a href="#" class="mobile-nav-item mobile-cart">
     <div class="cart-icon-wrapper">
       <i class="fa-solid fa-cart-shopping"></i>
@@ -1764,27 +1280,17 @@
     </div>
     <span>Cart</span>
   </a>
-
-  <!-- Account -->
   <a href="#" class="mobile-nav-item">
     <i class="fa-regular fa-user"></i>
     <span>Account</span>
   </a>
-
 </div>
 
-
 <!-- ================= WHATSAPP BUTTON ================= -->
-<a href="https://wa.me/8801823552979"
-   class="mobile-whatsapp"
-   target="_blank"
-   aria-label="WhatsApp">
-
+<a href="https://wa.me/8801823552979" class="mobile-whatsapp" target="_blank" aria-label="WhatsApp">
   <i class="fa-brands fa-whatsapp"></i>
   <span>WhatsApp</span>
-
 </a>
-
 
 <!-- ================= ASK AI BUTTON ================= -->
 <button class="mobile-ask-ai">
@@ -1793,264 +1299,5 @@
 </button>
 
 
-<style>
-
-/* =========================================
-   MOBILE BOTTOM NAV
-========================================= */
-
-.mobile-bottom-nav {
-  display: none;
-}
-
-.mobile-whatsapp,
-.mobile-ask-ai {
-  display: none;
-}
-
-
-/* =========================================
-   MOBILE ONLY
-========================================= */
-
-@media (max-width: 767px) {
-
-  /* Bottom Navigation */
-  .mobile-bottom-nav {
-    position: fixed;
-    display: flex;
-
-    left: 6px;
-    right: 6px;
-    bottom: 5px;
-
-    height: 58px;
-
-    background: #ffffff;
-
-    border-radius: 16px;
-
-    box-shadow:
-      0 4px 20px rgba(0, 0, 0, 0.15);
-
-    border: 1px solid #eeeeee;
-
-    z-index: 99999;
-
-    align-items: center;
-    justify-content: space-around;
-
-    padding: 4px 8px;
-  }
-
-
-  /* Navigation Item */
-  .mobile-nav-item {
-    position: relative;
-
-    width: 25%;
-
-    height: 52px;
-
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 3px;
-
-    text-decoration: none;
-
-    color: #64748b;
-
-    font-size: 10px;
-
-    transition: all 0.2s ease;
-  }
-
-
-  /* Icon */
-  .mobile-nav-item i {
-    font-size: 16px;
-  }
-
-
-  /* Active Home */
-  .mobile-nav-item.active {
-    color: #2563eb;
-  }
-
-
-  .mobile-nav-item.active i {
-    font-size: 17px;
-  }
-
-
-  /* Hover */
-  .mobile-nav-item:hover {
-    color: #2563eb;
-  }
-
-
-  /* Cart Wrapper */
-  .cart-icon-wrapper {
-    position: relative;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-  }
-
-
-  /* Cart Badge */
-  .mobile-cart-badge {
-    position: absolute;
-
-    top: -9px;
-    right: -10px;
-
-    min-width: 15px;
-    height: 15px;
-
-    padding: 0 3px;
-
-    background: #ef4444;
-
-    color: #ffffff;
-
-    border-radius: 50%;
-
-    font-size: 8px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-weight: 700;
-
-    border: 1px solid #ffffff;
-  }
-
-
-  /* =========================================
-     WHATSAPP FLOATING BUTTON
-  ========================================= */
-
-  .mobile-whatsapp {
-    position: fixed;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 5px;
-
-    left: 8px;
-    bottom: 66px;
-
-    height: 34px;
-
-    padding: 0 12px;
-
-    background: #22c55e;
-
-    color: #ffffff;
-
-    border-radius: 20px;
-
-    text-decoration: none;
-
-    font-size: 11px;
-
-    font-weight: 600;
-
-    box-shadow:
-      0 3px 12px rgba(0, 0, 0, 0.18);
-
-    z-index: 99998;
-  }
-
-
-  .mobile-whatsapp i {
-    font-size: 18px;
-  }
-
-
-  /* =========================================
-     ASK AI FLOATING BUTTON
-  ========================================= */
-
-  .mobile-ask-ai {
-    position: fixed;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 5px;
-
-    right: 8px;
-    bottom: 66px;
-
-    height: 34px;
-
-    padding: 0 12px;
-
-    background: #ffffff;
-
-    color: #111827;
-
-    border: 1px solid #d1d5db;
-
-    border-radius: 20px;
-
-    font-size: 11px;
-
-    font-weight: 600;
-
-    box-shadow:
-      0 3px 12px rgba(0, 0, 0, 0.18);
-
-    z-index: 99998;
-
-    cursor: pointer;
-  }
-
-
-  .mobile-ask-ai i {
-    color: #111827;
-
-    font-size: 13px;
-  }
-
-
-  /* Extra bottom space
-     যাতে content bottom nav-এর নিচে না যায় */
-  body {
-    padding-bottom: 68px;
-  }
-
-}
-
-
-/* =========================================
-   DESKTOP HIDE
-========================================= */
-
-@media (min-width: 768px) {
-
-  .mobile-bottom-nav,
-  .mobile-whatsapp,
-  .mobile-ask-ai {
-    display: none !important;
-  }
-
-}
-
-</style>
 </body>
 </html>

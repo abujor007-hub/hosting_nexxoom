@@ -75,7 +75,7 @@
       slidesToShow: 5,
       slidesToScroll: 1,
       arrows: true,  
-      dots: true,
+      dots: false,
       infinite: true,
       autoplay: true,
       autoplaySpeed: 3000,
@@ -98,7 +98,7 @@
         { 
           breakpoint: 480,  
           settings: { 
-            slidesToShow: 1,
+            slidesToShow: 2,
             arrows: false 
           } 
         }
@@ -106,29 +106,77 @@
     });
   });
 
-    // Off-canvas mobile menu toggle
+  
     const menuBtn = document.getElementById('menuBtn');
-    const closeBtn = document.getElementById('closeSidebar');
-    const sidebar = document.getElementById('mobileSidebar');
-    const overlay = document.getElementById('mobileOverlay');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+    const closeMenu = document.getElementById('closeMenu');
 
-    function openSidebar() {
-      sidebar.classList.add('open');
-      overlay.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }
 
-    function closeSidebarFn() {
-      sidebar.classList.remove('open');
-      overlay.classList.remove('active');
-      document.body.style.overflow = '';
-    }
+    // ================= OPEN MENU =================
 
-    menuBtn.addEventListener('click', openSidebar);
-    closeBtn.addEventListener('click', closeSidebarFn);
-    overlay.addEventListener('click', closeSidebarFn);
+    menuBtn.addEventListener('click', function () {
 
-    // Close sidebar on escape key
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') closeSidebarFn();
+        mobileMenu.classList.remove('-translate-x-full');
+
+        mobileOverlay.classList.remove('opacity-0');
+        mobileOverlay.classList.remove('invisible');
+
     });
+
+
+    // ================= CLOSE MENU =================
+
+    function closeMobileMenu() {
+
+        mobileMenu.classList.add('-translate-x-full');
+
+        mobileOverlay.classList.add('opacity-0');
+        mobileOverlay.classList.add('invisible');
+
+    }
+
+
+    closeMenu.addEventListener('click', closeMobileMenu);
+
+
+    // ================= OVERLAY CLICK =================
+
+    mobileOverlay.addEventListener('click', closeMobileMenu);
+
+
+    // ================= ESC KEY =================
+
+    document.addEventListener('keydown', function (event) {
+
+        if (event.key === 'Escape') {
+
+            closeMobileMenu();
+
+        }
+
+    });
+
+
+     $(document).ready(function () {
+
+            $('.main-slider').slick({
+
+                slidesToShow: 1,
+                slidesToScroll: 1,
+
+                autoplay: true,
+                autoplaySpeed: 3000,
+
+                speed: 600,
+
+                arrows: true,
+                dots: true,
+
+                infinite: true,
+
+                adaptiveHeight: false
+
+            });
+
+        });
