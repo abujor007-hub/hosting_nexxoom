@@ -243,4 +243,157 @@ $(document).ready(function () {
 
 
 
+   function showTab(tab) {
 
+            const webContent = document.getElementById('webContent');
+            const vpsContent = document.getElementById('vpsContent');
+
+            const webTab = document.getElementById('webTab');
+            const vpsTab = document.getElementById('vpsTab');
+
+
+            /* =========================================
+               ACTIVE TAB CLASSES
+            ========================================= */
+
+            const activeClasses = [
+                'bg-nex',
+                'text-white'
+            ];
+
+
+            /* =========================================
+               INACTIVE TAB CLASSES
+            ========================================= */
+
+            const inactiveClasses = [
+                'text-gray-900',
+                'hover:bg-gray-100'
+            ];
+
+
+            /* =========================================
+               WEB HOSTING
+            ========================================= */
+
+            if (tab === 'web') {
+
+                // Show Web
+                webContent.classList.remove('hidden');
+
+                // Hide VPS
+                vpsContent.classList.add('hidden');
+
+
+                // Web = Active
+                webTab.classList.add(...activeClasses);
+
+                webTab.classList.remove(...inactiveClasses);
+
+
+                // VPS = Inactive
+                vpsTab.classList.remove(...activeClasses);
+
+                vpsTab.classList.add(...inactiveClasses);
+
+            }
+
+
+ 
+
+            else if (tab === 'vps') {
+
+                // Hide Web
+                webContent.classList.add('hidden');
+
+                // Show VPS
+                vpsContent.classList.remove('hidden');
+
+
+                // VPS = Active
+                vpsTab.classList.add(...activeClasses);
+
+                vpsTab.classList.remove(...inactiveClasses);
+
+
+                // Web = Inactive
+                webTab.classList.remove(...activeClasses);
+
+                webTab.classList.add(...inactiveClasses);
+
+            }
+
+        }
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+    const cards = document.querySelectorAll(".nex-tpl-card");
+
+    cards.forEach(function (card) {
+
+        const thumb = card.querySelector(".nex-tpl-thumb");
+        const img = card.querySelector(".nex-tpl-thumb img");
+
+        if (!thumb || !img) return;
+
+
+        function setScrollDistance() {
+
+            /*
+             * Image-এর actual rendered height
+             */
+            const imageHeight = img.getBoundingClientRect().height;
+
+
+            /*
+             * Image area-এর actual height
+             */
+            const thumbHeight = thumb.getBoundingClientRect().height;
+
+
+            /*
+             * যতটুকু image 450px area-এর বাইরে আছে
+             * ঠিক ততটুকুই scroll হবে
+             */
+            const distance = Math.max(
+                0,
+                imageHeight - thumbHeight
+            );
+
+
+            /*
+             * Automatically CSS variable
+             */
+            card.style.setProperty(
+                "--scroll-distance",
+                distance + "px"
+            );
+        }
+
+
+        /*
+         * Image load হওয়ার পরে calculate
+         */
+        if (img.complete) {
+            setScrollDistance();
+        } else {
+            img.addEventListener(
+                "load",
+                setScrollDistance
+            );
+        }
+
+
+        /*
+         * Resize হলে আবার calculate
+         */
+        window.addEventListener(
+            "resize",
+            setScrollDistance
+        );
+
+    });
+
+});

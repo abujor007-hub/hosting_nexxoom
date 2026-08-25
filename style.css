@@ -144,6 +144,7 @@
 .product-card:hover {
   box-shadow: 0 4px 16px rgba(0,0,0,.1);
   transform: translateY(-2px);
+  border: 1px solid  var(--nex-color);
 }
 .product-card .card-body {
   display: flex;
@@ -174,7 +175,7 @@
   transition: background .15s, color .15s;
 }
 .eye-btn:hover {
-  background: var(--nex-color);
+  background: var(--xoom-color);
   color: #fff;
 }
 
@@ -223,6 +224,12 @@
 }
 .category-slider .slick-slide {
   padding: 0 8px;
+}
+
+.bye-now-btn:hover{
+  background-color: var(--nex-bg);
+  color: white;
+
 }
 
 /* ========================================
@@ -572,7 +579,7 @@ body { overflow-x: hidden; }
             content: "";
             width: 9px;
             height: 9px;
-            background: white;
+            background: var(--nex-bg);
             border-radius: 50%;
             opacity: 1;
         }
@@ -767,41 +774,90 @@ body { overflow-x: hidden; }
 
 
 
- /* card hover start scrool */
+    .nex-tpl-card {
+        height: 450px;
+        background: #fff;
+        border: 1px solid #eee;
+        border-radius: 10px;
+        overflow: hidden;
 
-  .nex-tpl-card {
-    background: #fff;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: box-shadow .3s ease, transform .3s ease;
-  }
-  .nex-tpl-card:hover {
-    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-    transform: translateY(-3px);
-  }
+        display: flex;
+        flex-direction: column;
 
-  .nex-tpl-thumb {
-    height: 180px;
-    overflow: hidden;
-    position: relative;
-    background: #f5f5f5;
-  }
+        transition:
+            box-shadow 0.3s ease,
+            transform 0.3s ease;
+    }
 
-  .nex-tpl-thumb img {
-    width: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: transform 3.5s ease-in-out;
-  }
+    .nex-tpl-card:hover {
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        transform: translateY(-3px);
+    }
 
-  .nex-tpl-card:hover .nex-tpl-thumb img {
-    transform: translateY(calc(-1 * var(--nex-tpl-scroll-distance, 250px)));
-  }
 
-  .nex-tpl-body {
-    padding: 8px 10px;
-  }
- /* card hover end scrool */
+    /* =========================================
+       IMAGE AREA
+       CARD-এর বেশিরভাগ জায়গা
+    ========================================= */
+
+    .nex-tpl-thumb {
+        flex: 1;
+        min-height: 0;
+
+        position: relative;
+        overflow: hidden;
+
+        background: #f5f5f5;
+    }
+
+
+    /* =========================================
+       IMAGE
+    ========================================= */
+
+    .nex-tpl-thumb img {
+        width: 100%;
+        height: auto;
+
+        display: block;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        transition: transform 3.5s ease-in-out;
+    }
+
+
+    /* =========================================
+       HOVER করলে IMAGE SCROLL
+    ========================================= */
+
+    .nex-tpl-card:hover .nex-tpl-thumb img {
+        transform: translateY(
+            calc(-1 * var(--scroll-distance, 0px))
+        );
+    }
+
+
+    /* =========================================
+       BODY
+    ========================================= */
+
+    .nex-tpl-body {
+        flex-shrink: 0;
+
+        padding: 8px 10px;
+
+        background: #fff;
+    }
+
+
+    /* =========================================
+       BUTTON
+    ========================================= */
+
+
+
+ 
+
