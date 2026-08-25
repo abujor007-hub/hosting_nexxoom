@@ -578,7 +578,7 @@ body { overflow-x: hidden; }
         }
 
         .main-slider .slick-dots li.slick-active button:before {
-            background: #f97316;
+            background:var(--nex-color);
             opacity: 1;
         }
 
@@ -618,6 +618,7 @@ body { overflow-x: hidden; }
 
 .main-slider .slick-prev:before {
     content: "‹";
+    
 
 }
 
