@@ -183,62 +183,107 @@ $(document).ready(function () {
 
 
 
+
+
+
 $(document).ready(function () {
 
-  $('.logo-slider').slick({
-    slidesToShow: 6,
-    slidesToScroll: 1,
+    $('.logo-slider').slick({
 
-    autoplay: true,
-    autoplaySpeed: 0,
+        slidesToShow: 6,
+        slidesToScroll: 1,
 
-    speed: 5000,
+        autoplay: true,
+        autoplaySpeed: 0,
 
-    cssEase: 'linear',
+        speed: 5000,
+        cssEase: 'linear',
 
-    infinite: true,
+        infinite: true,
 
-    arrows: false,
-    dots: false,
+        arrows: false,
+        dots: false,
 
-    pauseOnHover: false,
-    pauseOnFocus: false,
+        pauseOnHover: false,
+        pauseOnFocus: false,
 
-    responsive: [
+        responsive: [
 
-      {
-        breakpoint: 1280,
-        settings: {
-          slidesToShow: 5
-        }
-      },
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 5
+                }
+            },
 
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 4
-        }
-      },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
 
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3
-        }
-      },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
 
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 2
-        }
-      }
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
 
-    ]
-  });
+        ]
+
+    });
+
+
+
+
+    $('.logo-slider').on('mouseenter', function () {
+
+        let slider = $(this);
+        let track = slider.find('.slick-track');
+
+   
+        slider.slick('slickPause');
+
+   
+        let currentTransform = window.getComputedStyle(
+            track[0]
+        ).transform;
+
+  
+        track.css({
+            'transition': 'none',
+            'transform': currentTransform
+        });
+
+    });
+
+
+
+
+    $('.logo-slider').on('mouseleave', function () {
+
+        let slider = $(this);
+        let track = slider.find('.slick-track');
+
+        
+        track.css({
+            'transition': ''
+        });
+
+        
+        slider.slick('slickPlay');
+
+    });
 
 });
-
 
 
 
