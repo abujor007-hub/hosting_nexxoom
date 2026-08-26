@@ -27,25 +27,42 @@
       <div class="flex items-center justify-between gap-3 px-8">
         <!-- LEFT : PHONE + EMAIL -->
         <div
-          class="flex flex-col sm:flex-row sm:items-center gap-0.5 sm:gap-5 text-[11px] sm:text-sm min-w-0 text-white">
+          class="flex flex-col sm:flex-row sm:items-center gap-0.5 sm:gap-5 text-[11px] sm:text-sm min-w-0 text-white font-medium">
           <a href="tel:+8801823552979"
             class="flex items-center gap-1 hover:text-nex-light transition whitespace-nowrap">
             <i class="fa-solid fa-phone text-[9px] sm:text-[11px]"></i>
             <span>01823-552979</span>
           </a>
           <a href="mailto:info@example.com"
-            class="flex items-center gap-1 hover:text-nex-light text-white transition min-w-0">
-            <i class="fa-solid fa-envelope text-[9px] sm:text-[11px] shrink-0"></i>
-            <span class="truncate max-w-[150px] sm:max-w-none">nexxoom999@gmail.com</span>
+            class="flex items-center gap-1.5 text-white hover:text-nex-light transition leading-none font-medium">
+
+            <i class="fa-solid fa-envelope text-[10px] sm:text-[11px] shrink-0 leading-none"></i>
+
+            <span class="truncate max-w-[150px] sm:max-w-none leading-none">
+              nexxoom999@gmail.com
+            </span>
+
           </a>
         </div>
 
         <!-- CENTER : SOCIAL ICONS (DESKTOP ONLY) -->
-        <div
-          class="hidden sm:flex items-center bg-white border border-white rounded-full px-2.5 py-1 md:px-3 md:py-1.5 w-28 sm:w-32 md:w-40 backdrop-blur-sm h-[25px] w-[250px]">
-          <i class="fa-solid fa-magnifying-glass text-nex mr-1.5 text-[10px]"></i>
+        <div class="hidden sm:flex items-center bg-white border border-white rounded-full px-2 py-1 w-[350px] h-[25px]">
+
+          <!-- Left Search Icon -->
+          <i class="fa-solid fa-magnifying-glass text-nex text-[10px] shrink-0 mr-1.5"></i>
+
+          <!-- Input -->
           <input type="text" placeholder="Search..."
-            class="bg-transparent outline-none text-nex placeholder-nex w-full text-[10px] sm:text-xs min-w-0" />
+            class="bg-transparent outline-none text-nex placeholder-nex flex-1 min-w-0 text-[10px] sm:text-xs" />
+
+          <!-- Right Search Button -->
+          <button type="button"
+            class="bg-nex text-white w-[21px] h-[21px] rounded-full flex items-center justify-center shrink-0 hover:bg-xoom transition ">
+
+            <i class="fa-solid fa-magnifying-glass text-[9px]"></i>
+
+          </button>
+
         </div>
 
         <!-- RIGHT SIDE -->
@@ -102,132 +119,132 @@
   <!-- ========================================================= -->
   <!-- MAIN NAV -->
   <!-- ========================================================= -->
- <!-- =========================================================
+  <!-- =========================================================
      NAVBAR
 ========================================================= -->
-<nav class="bg-white shadow-sm sticky top-0 z-50 h-[45px]">
-  
+<nav class="bg-white shadow-sm sticky top-0 z-50 h-[45px] border-b border-nex">
+
 
     <!-- CONTAINER -->
     <div class="container mx-auto px-3 sm:px-4 lg:px-6">
 
-        <!-- NAV INNER -->
-        <div class="h-[45px] flex items-center justify-between">
+      <!-- NAV INNER -->
+      <div class="h-[45px] flex items-center justify-between">
 
-            <!-- =================================================
+        <!-- =================================================
                  LOGO
             ================================================== -->
-            <a href="#" class="flex items-center shrink-0">
-                <img
-                    src="image and icon/logo.png"
-                    class="w-[150px] sm:w-[180px] md:w-[200px] h-[30px] object-contain"
-                    alt="Logo"
-                >
-            </a>
+            <div class="logo" style="width: 150px; height: 30px">
+          <img src="image and icon/logo.png" alt="logo NexXoom" style="width: 100%; width: 100%" />
+        </div>
 
-
-            <!-- =================================================
+        <!-- =================================================
                  DESKTOP MENU
             ================================================== -->
-            <div class="hidden md:flex items-center gap-7">
+<div class="hidden md:flex items-center gap-7">
 
-              <a href="#" aria-label="Facebook"
-              class="w-6 h-6  text-nex "><i
-                class="fas fa-home font-medium"></i></a>
+  <ul class="flex items-center gap-7">
 
-
-
-                <!-- ALL PRODUCT -->
-                <a
-                    href="#"
-                    class="text-nex font-medium text-medium  
-                           hover:text-xoom transition duration-200"
-                >
-                    All Product
-                </a>
-
-
-                <!-- MEMBERSHIP -->
-                <a
-                    href="#"
-                    class="text-nex font-medium text-sm
-                           hover:text-xoom transition duration-200"
-                >
-                    Membership
-                </a>
+    <!-- FACEBOOK -->
+    <li>
+      <a
+        href="#"
+        aria-label=""
+        class="w-6 h-6 flex items-center justify-center text-nex font-medium
+               hover:text-xoom transition duration-200 text-xoom"
+      >
+        Home
+      </a>
+    </li>
 
 
-                <!-- =================================================
-                     CART
-                ================================================== -->
-                <button
-                    type="button"
-                    class="relative w-7 h-7 flex items-center justify-center
-                           text-nex hover:text-nex-light
-                           transition duration-200"
-                    aria-label="Cart"
-                >
-
-                    <i class="fa-solid fa-cart-shopping text-sm"></i>
-
-                    <!-- CART COUNT -->
-                    <span
-                        class="absolute -top-1 -right-1
-                               bg-xoom text-white
-                               text-[8px] font-semibold
-                               w-4 h-4 rounded-full
-                               flex items-center justify-center"
-                    >
-                        0
-                    </span>
-
-                </button>
+    <!-- ALL PRODUCT -->
+    <li>
+      <a
+        href="#"
+        class="text-nex font-medium hover:text-xoom transition duration-200"
+      >
+        All Product
+      </a>
+    </li>
 
 
-                <!-- =================================================
-                     USER / ACCOUNT
-                ================================================== -->
-                <button
-                    type="button"
-                    class="w-7 h-7 flex items-center justify-center
-                           text-nex hover:text-nex-light
-                           transition duration-200"
-                    aria-label="Account"
-                >
-
-                    <i class="fa-solid fa-user text-sm"></i>
-
-                </button>
-
-            </div>
+    <!-- MEMBERSHIP -->
+    <li>
+      <a
+        href="#"
+        class="text-nex font-medium text-sm hover:text-xoom transition duration-200"
+      >
+        Membership
+      </a>
+    </li>
 
 
-            <!-- =================================================
+    <!-- CART -->
+    <li>
+      <button
+        type="button"
+        aria-label="Cart"
+        class="relative w-7 h-7 flex items-center justify-center
+               text-nex hover:text-nex-light
+               transition duration-200"
+      >
+
+        <i class="fa-solid fa-cart-shopping text-sm"></i>
+
+        <!-- CART COUNT -->
+        <span
+          class="absolute -top-1 -right-1
+                 bg-xoom text-white
+                 text-[8px] font-medium
+                 w-4 h-4 rounded-full
+                 flex items-center justify-center"
+        >
+          0
+        </span>
+
+      </button>
+    </li>
+
+
+    <!-- USER / ACCOUNT -->
+    <li>
+      <button
+        type="button"
+        aria-label="Account"
+        class="w-7 h-7 flex items-center justify-center
+               text-nex hover:text-nex-light
+               transition duration-200"
+      >
+        <i class="fa-solid fa-user text-sm"></i>
+      </button>
+    </li>
+
+  </ul>
+
+</div>
+
+        <!-- =================================================
                  MOBILE MENU BUTTON
             ================================================== -->
-            <button
-                id="menuBtn"
-                type="button"
-                class="md:hidden
+        <button id="menuBtn" type="button" class="md:hidden
                        w-9 h-9
                        rounded-lg
                        bg-nex-light
                        text-nex
                        flex items-center justify-center
                        hover:bg-nex-light/50
-                       transition duration-200"
-                aria-label="Open Menu"
-            >
+                       transition duration-200" aria-label="Open Menu">
 
-                <i class="fa-solid fa-bars text-lg"></i>
+          <i class="fa-solid fa-bars text-lg"></i>
 
-            </button>
+        </button>
 
-        </div>
+      </div>
 
     </div>
 
-</nav>
+  </nav>
 
   <!-- ========================================================= -->
   <!-- MOBILE OVERLAY -->
@@ -238,63 +255,132 @@
   <!-- ========================================================= -->
   <!-- MOBILE LEFT SIDEBAR -->
   <!-- ========================================================= -->
-  <div id="mobileMenu"
-    class="fixed top-0 left-0 h-full w-[280px] sm:w-[320px] bg-white shadow-2xl -translate-x-full transition-transform duration-300 ease-in-out z-[999] overflow-y-auto">
-    <div class="h-[65px] px-4 flex items-center justify-between border-b border-gray-200">
-      <a href="#" class="flex items-center">
-        <img src="image and icon/logo.png" alt="Logo" class="w-[160px] h-[30px] object-contain" />
+  <!-- =========================================================
+     MOBILE MENU
+========================================================= -->
+  <div id="mobileMenu" class="fixed top-0 left-0 h-full w-[280px] sm:w-[320px] bg-white shadow-2xl
+         -translate-x-full transition-transform duration-300 ease-in-out
+         z-[999] overflow-y-auto">
+
+    <!-- HEADER -->
+    <div class="h-[60px] sm:h-[65px] px-4 flex items-center justify-between
+           border-b border-gray-200 shrink-0">
+
+      <!-- LOGO -->
+      <a href="#" class="flex items-center min-w-0">
+        <img src="image and icon/logo.png" alt="Logo"
+          class="w-[145px] sm:w-[160px] h-[28px] sm:h-[30px] object-contain" />
       </a>
-      <button id="closeMenu" type="button"
-        class="w-9 h-9 rounded-full bg-gray-100 text-gray-600 flex items-center justify-center hover:bg-red-100 hover:text-red-500 transition"
-        aria-label="Close Menu">
-        <i class="fa-solid fa-xmark"></i>
+
+      <!-- CLOSE BUTTON -->
+      <button id="closeMenu" type="button" class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-gray-100
+             text-gray-600 flex items-center justify-center
+             hover:bg-red-100 hover:text-red-500 transition shrink-0" aria-label="Close Menu">
+        <i class="fa-solid fa-xmark text-sm"></i>
       </button>
+
     </div>
 
-    <div class="px-5 pt-4">
-      <div
-        class="flex items-center bg-gray-50 border border-nex rounded-full px-3 py-2 w-full focus-within:border-nex transition">
-        <i class="fa-solid fa-magnifying-glass text-gray-400 mr-2 text-xs text-nex"></i>
-        <input type="text" placeholder="Search..."
-          class="bg-transparent outline-none text-nex placeholder-gray-400 w-full text-xs" />
+
+    <!-- SEARCH -->
+    <div class="px-4 sm:px-5 pt-4">
+
+      <div class="flex items-center bg-white border border-nex rounded-full
+             px-2 py-1 w-full h-[30px]">
+
+        <!-- LEFT SEARCH ICON -->
+        <i class="fa-solid fa-magnifying-glass text-nex
+               text-[10px] shrink-0 mr-1.5"></i>
+
+        <!-- INPUT -->
+        <input type="text" placeholder="Search..." class="bg-transparent outline-none text-nex
+               placeholder-nex flex-1 min-w-0
+               text-[10px] sm:text-xs" />
+
+        <!-- SEARCH BUTTON -->
+        <button type="button" class="bg-nex text-white w-[22px] h-[22px]
+               rounded-full flex items-center justify-center
+               shrink-0 hover:bg-nex-light transition" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass text-[9px]"></i>
+        </button>
+
       </div>
+
     </div>
 
-    <div class="p-5">
-      <a href="#" class="flex items-center gap-3 py-3 border-b border-gray-100 text-gray-700 hover:text-nex transition">
-        <i class="fa-solid fa-box w-5 text-nex"></i>
-        <span>All Product</span>
-      </a>
-      <a href="#" class="flex items-center gap-3 py-3 border-b border-gray-100 text-gray-700 hover:text-nex transition">
-        <i class="fa-solid fa-crown w-5 text-nex"></i>
-        <span>Membership</span>
-      </a>
-      <a href="#" class="flex items-center gap-3 py-3 border-b border-gray-100 text-gray-700 hover:text-nex transition">
-        <i class="fa-solid fa-puzzle-piece w-5 text-nex"></i>
-        <span>Import Plugin</span>
-      </a>
-      <a href="#" class="flex items-center gap-3 py-3 border-b border-gray-100 text-gray-700 hover:text-nex transition">
-        <i class="fa-solid fa-circle-info w-5 text-nex"></i>
-        <span>About Us</span>
+
+    <!-- MENU ITEMS -->
+    <div class="px-4 sm:px-5 pt-3 pb-5">
+
+      <!-- ALL PRODUCT -->
+      <a href="#" class="flex items-center gap-3 py-3
+             border-b border-gray-100
+             text-gray-700 hover:text-nex transition">
+        <i class="fa-solid fa-box w-5 text-nex shrink-0"></i>
+        <span class="text-sm">All Product</span>
       </a>
 
-      <div class="mt-7 pt-5 border-t border-gray-200">
-        <a href="#" class="flex items-center justify-between py-3 text-gray-700 hover:text-nex transition">
+
+      <!-- MEMBERSHIP -->
+      <a href="#" class="flex items-center gap-3 py-3
+             border-b border-gray-100
+             text-gray-700 hover:text-nex transition">
+        <i class="fa-solid fa-crown w-5 text-nex shrink-0"></i>
+        <span class="text-sm">Membership</span>
+      </a>
+
+
+      <!-- IMPORT PLUGIN -->
+      <a href="#" class="flex items-center gap-3 py-3
+             border-b border-gray-100
+             text-gray-700 hover:text-nex transition">
+        <i class="fa-solid fa-puzzle-piece w-5 text-nex shrink-0"></i>
+        <span class="text-sm">Import Plugin</span>
+      </a>
+
+
+      <!-- ABOUT US -->
+      <a href="#" class="flex items-center gap-3 py-3
+             border-b border-gray-100
+             text-gray-700 hover:text-nex transition">
+        <i class="fa-solid fa-circle-info w-5 text-nex shrink-0"></i>
+        <span class="text-sm">About Us</span>
+      </a>
+
+
+      <!-- CART + ACCOUNT -->
+      <div class="mt-5 pt-4 border-t border-gray-200">
+
+        <!-- CART -->
+        <a href="#" class="flex items-center justify-between py-3
+               text-gray-700 hover:text-nex transition">
+
           <div class="flex items-center gap-3">
-            <i class="fa-solid fa-cart-shopping w-5 text-nex"></i>
-            <span>Cart</span>
+            <i class="fa-solid fa-cart-shopping w-5 text-nex shrink-0"></i>
+            <span class="text-sm">Cart</span>
           </div>
-          <span
-            class="bg-orange-500 text-white text-[10px] w-5 h-5 rounded-full flex items-center justify-center">0</span>
-        </a>
-        <a href="#" class="flex items-center gap-3 py-3 text-gray-700 hover:text-nex transition">
-          <i class="fa-solid fa-user w-5 text-nex"></i>
-          <span>Account</span>
-        </a>
-      </div>
-    </div>
-  </div>
 
+          <span class="bg-orange-500 text-white text-[10px]
+                 w-5 h-5 rounded-full
+                 flex items-center justify-center shrink-0">
+            0
+          </span>
+
+        </a>
+
+
+        <!-- ACCOUNT -->
+        <a href="#" class="flex items-center gap-3 py-3
+               text-gray-700 hover:text-nex transition">
+          <i class="fa-solid fa-user w-5 text-nex shrink-0"></i>
+          <span class="text-sm">Account</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
   <!-- ===== Hero Banner ===== -->
   <!-- ===== Hero Section ===== -->
 
@@ -327,113 +413,153 @@
         <!-- ========================= -->
         <!-- RIGHT SIDE IMAGE -->
         <!-- ========================= -->
-          <section class="container mx-auto bg-white py-5 px-2 sm:px-6 lg:px-8">
-    <div class="max-w-full">
-      <!-- Heading -->
-      <h4 class="text-center text-nex text-3xl sm:text-4xl md:text-[30px] font-bold leading-tight mb-10">
-        Register Domain Name here!
-      </h4>
+       <section class="container mx-auto bg-white py-5 px-2 sm:px-6 lg:px-8">
 
-      <!-- Search Box -->
+  <div class="max-w-full">
+
+    <!-- Heading -->
+    <h4
+      class="text-center text-nex text-3xl sm:text-4xl md:text-[30px]
+             font-bold leading-tight mb-10"
+    >
+      Register Domain Name here!
+    </h4>
+
+    <!-- Search Box -->
     <div class="w-full flex flex-col gap-2">
 
-    <!-- INPUT CONTAINER -->
-    <div
-        class="w-full bg-white rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.10)] p-2">
+      <!-- INPUT CONTAINER -->
+      <div
+        class="w-full bg-white rounded-2xl
+                p-2"
+      >
+        <div class="flex items-center w-full h-[25px] px-3 sm:px-5">
 
-        <div class="flex items-center w-full h-[25px] px-4 sm:px-5">
+          <!-- Search Icon -->
+          <i
+            class="fa-solid fa-magnifying-glass
+                   text-nex text-[16px] sm:text-[18px] mr-3 shrink-0"
+          ></i>
 
-            <!-- Search Icon -->
-            <i class="fa-solid fa-magnifying-glass text-nex text-[20px] mr-4"></i>
+          <!-- Input -->
+          <input
+            type="text"
+            placeholder="Find your new domain name"
+            class="w-full h-full outline-none border-none bg-transparent
+                   text-[14px] sm:text-[16px] text-gray-700
+                   placeholder:text-nex placeholder:font-normal"
+          />
 
-            <!-- Input -->
-            <input
-                type="text"
-                placeholder="Find your new domain name"
-                class="w-full h-full outline-none border-none bg-transparent text-[18px] text-gray-700 placeholder:text-nex placeholder:font-normal"
-            />
-
-        </div>
-    </div>
-
-
- 
-    <div class="w-full flex justify-center mt-2">
-
-        <button
-            class="w-[150px] h-[34px] rounded-lg bg-nex hover:bg-xoom text-white text-[18px] font-bold transition duration-200">
-            Search
-        </button>
-
-    </div>
-
-</div>
-
-      <!-- Domain Prices -->
-      <div class="mt-10 flex flex-wrap justify-between items-center gap-y-7 gap-x-8">
-        <!-- .com -->
-        <div class="flex items-center gap-2">
-          <span class="text-nex text-[22px] font-bold"> .com </span>
-
-          <span class="text-xoom text-[22px]"> ৳1199 </span>
-        </div>
-
-        <!-- .net -->
-        <div class="flex items-center gap-2">
-          <span class="text-nex text-[22px] font-bold"> .net </span>
-
-          <span class="text-xoom text-[22px]"> ৳1399 </span>
-        </div>
-
-        <!-- .org -->
-        <div class="flex items-center gap-2">
-          <span class="text-nex text-[22px] font-bold"> .org </span>
-
-          <span class="text-xoom text-[22px]"> ৳999 </span>
-        </div>
-
-        <!-- .info -->
-        <div class="flex items-center gap-2">
-          <span class="text-nex text-[22px] font-bold"> .info </span>
-
-          <span class="text-xoom text-[22px]"> ৳499 </span>
-        </div>
-
-        <!-- .xyz -->
-        <div class="flex items-center gap-2">
-          <span class="text-nex text-[22px] font-bold"> .xyz </span>
-
-          <span class="text-xoom text-[22px]"> ৳299 </span>
         </div>
       </div>
+
+      <!-- Search Button -->
+      <div class="w-full flex justify-center mt-2">
+
+        <button
+          class="w-[150px] h-[34px] rounded-lg bg-nex hover:bg-xoom
+                 text-white text-[16px] font-bold
+                 transition duration-200"
+        >
+          Search
+        </button>
+
+      </div>
+
     </div>
-  </section>
+
+
+    <!-- Domain Prices -->
+    <div
+      class="mt-8 flex items-center justify-between
+             gap-3 overflow-hidden"
+    >
+
+      <!-- .com -->
+      <div class="flex items-center gap-1 whitespace-nowrap">
+        <span class="text-nex text-[18px] sm:text-[20px] font-bold">
+          .com
+        </span>
+        <span class="text-xoom text-[13px] sm:text-[15px]">
+          ৳1199
+        </span>
+      </div>
+
+      <!-- .net -->
+      <div class="flex items-center gap-1 whitespace-nowrap">
+        <span class="text-nex text-[18px] sm:text-[20px] font-bold">
+          .net
+        </span>
+        <span class="text-xoom text-[13px] sm:text-[15px]">
+          ৳1399
+        </span>
+      </div>
+
+      <!-- .org -->
+      <div class="flex items-center gap-1 whitespace-nowrap">
+        <span class="text-nex text-[18px] sm:text-[20px] font-bold">
+          .org
+        </span>
+        <span class="text-xoom text-[13px] sm:text-[15px]">
+          ৳999
+        </span>
+      </div>
+
+      <!-- .info -->
+      <div class="flex items-center gap-1 whitespace-nowrap">
+        <span class="text-nex text-[18px] sm:text-[20px] font-bold">
+          .info
+        </span>
+        <span class="text-xoom text-[13px] sm:text-[15px]">
+          ৳499
+        </span>
+      </div>
+
+      <!-- .xyz -->
+      <div class="flex items-center gap-1 whitespace-nowrap">
+        <span class="text-nex text-[18px] sm:text-[20px] font-bold">
+          .xyz
+        </span>
+        <span class="text-xoom text-[13px] sm:text-[15px]">
+          ৳299
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+ <div class="flex justify-center   mt-[50px]">
+
+      <button type="button"
+        class="border px-8 py-2 rounded bg-nex text-white hover:bg-xoom transition text-sm font-medium">
+        Load More
+      </button>
+
+    </div>
+</section>
       </div>
     </div>
   </section>
 
   <!-- domain search start -->
 
- 
+
   <!-- domain search end -->
 
   <!-- all custom talmplet start  -->
 
-<section class="container mx-auto px-4 md:py-6">
+  <section class="container mx-auto px-4 md:py-6">
 
     <!-- HEADER -->
 
     <div class="flex items-center justify-between mb-4">
 
-        <h2 class="text-nex font-bold text-[20px] sm:text-[32px] border-b-2 border-nex pb-1">
-    All Custom Template
-</h2>
-        <a
-            href="#"
-            class="bg-nex text-white text-xs px-4 py-1.5 rounded hover:bg-xoom transition"
-        >
-            View More
-        </a>
+      <h2 class="text-nex font-bold md:text-2xl text-sm border-b-2 border-nex pb-1 font-medium">
+        All Custom Template
+      </h2>
+      <a href="#" class="bg-nex text-white text-xs px-4 py-1.5 rounded hover:bg-xoom transition">
+        View More
+      </a>
 
     </div>
 
@@ -442,278 +568,206 @@
          GRID
     ====================================================== -->
 
-    <div
-        class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4"
-    >
+    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
 
 
-        <!-- =================================================
+      <!-- =================================================
              CARD 1
         ================================================== -->
 
-        <div class="nex-tpl-card">
+      <div class="nex-tpl-card">
 
-            <div class="nex-tpl-thumb">
+        <div class="nex-tpl-thumb">
 
-                <img
-                    src="image and icon/custom-1.png"
-                    alt="ShopMart"
-                >
-
-            </div>
-
-            <div class="nex-tpl-body">
-
-                <p class="text-xs font-semibold leading-tight mb-2">
-                    ShopMart – Premium Daraz Website Template
-                </p>
-
-                <div class="flex gap-1">
-
-                    <button
-                        type="button"
-                        class="eye-btn"
-                        title="Quick View"
-                    >
-                        <i class="fa fa-info-circle"></i>
-                    </button>
-
-                    <button
-                        type="button"
-                        class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-xoom transition"
-                    >
-                        Buy Now
-                    </button>
-
-                    <button
-                        type="button"
-                        class="eye-btn"
-                        title="Preview"
-                    >
-                        <i class="fa fa-eye"></i>
-                    </button>
-
-                </div>
-
-            </div>
+          <img src="image and icon/custom-1.png" alt="ShopMart">
 
         </div>
 
+        <div class="nex-tpl-body">
+
+          <p class="text-xs font-semibold leading-tight mb-2">
+            ShopMart – Premium Daraz Website Template
+          </p>
+
+          <div class="flex gap-1">
+
+            <button type="button" class="eye-btn" title="Quick View">
+              <i class="fa fa-info-circle"></i>
+            </button>
+
+            <button type="button" class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-xoom transition">
+              Buy Now
+            </button>
+
+            <button type="button" class="eye-btn" title="Preview">
+              <i class="fa fa-eye"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
 
 
-        <!-- =================================================
+
+      <!-- =================================================
              CARD 2
         ================================================== -->
 
-        <div class="nex-tpl-card">
+      <div class="nex-tpl-card">
 
-            <div class="nex-tpl-thumb">
+        <div class="nex-tpl-thumb">
 
-                <img
-                    src="image and icon/custom-2.png"
-                    alt="ShopMart"
-                >
-
-            </div>
-
-            <div class="nex-tpl-body">
-
-                <p class="text-xs font-semibold leading-tight mb-2">
-                    ShopMart – Premium Daraz Website Template
-                </p>
-
-                <div class="flex gap-1">
-
-                    <button
-                        type="button"
-                        class="eye-btn"
-                        title="Quick View"
-                    >
-                        <i class="fa fa-info-circle"></i>
-                    </button>
-
-                    <button
-                        type="button"
-                        class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-xoom transition"
-                    >
-                        Buy Now
-                    </button>
-
-                    <button
-                        type="button"
-                        class="eye-btn"
-                        title="Preview"
-                    >
-                        <i class="fa fa-eye"></i>
-                    </button>
-
-                </div>
-
-            </div>
+          <img src="image and icon/custom-2.png" alt="ShopMart">
 
         </div>
 
+        <div class="nex-tpl-body">
+
+          <p class="text-xs font-semibold leading-tight mb-2">
+            ShopMart – Premium Daraz Website Template
+          </p>
+
+          <div class="flex gap-1">
+
+            <button type="button" class="eye-btn" title="Quick View">
+              <i class="fa fa-info-circle"></i>
+            </button>
+
+            <button type="button" class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-xoom transition">
+              Buy Now
+            </button>
+
+            <button type="button" class="eye-btn" title="Preview">
+              <i class="fa fa-eye"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
 
 
-        <!-- =================================================
+
+      <!-- =================================================
              CARD 3
         ================================================== -->
 
-        <div class="nex-tpl-card">
+      <div class="nex-tpl-card">
 
-            <div class="nex-tpl-thumb">
+        <div class="nex-tpl-thumb">
 
-                <img
-                    src="image and icon/custom-3.png"
-                    alt="ShopMart"
-                >
-
-            </div>
-
-            <div class="nex-tpl-body">
-
-                <p class="text-xs font-semibold leading-tight mb-2">
-                    ShopMart – Premium Daraz Website Template
-                </p>
-
-                <div class="flex gap-1">
-
-                    <button
-                        type="button"
-                        class="eye-btn"
-                        title="Quick View"
-                    >
-                        <i class="fa fa-info-circle"></i>
-                    </button>
-
-                    <button
-                        type="button"
-                        class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-xoom transition"
-                    >
-                        Buy Now
-                    </button>
-
-                    <button
-                        type="button"
-                        class="eye-btn"
-                        title="Preview"
-                    >
-                        <i class="fa fa-eye"></i>
-                    </button>
-
-                </div>
-
-            </div>
+          <img src="image and icon/custom-3.png" alt="ShopMart">
 
         </div>
 
+        <div class="nex-tpl-body">
+
+          <p class="text-xs font-semibold leading-tight mb-2">
+            ShopMart – Premium Daraz Website Template
+          </p>
+
+          <div class="flex gap-1">
+
+            <button type="button" class="eye-btn" title="Quick View">
+              <i class="fa fa-info-circle"></i>
+            </button>
+
+            <button type="button" class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-xoom transition">
+              Buy Now
+            </button>
+
+            <button type="button" class="eye-btn" title="Preview">
+              <i class="fa fa-eye"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
 
 
-        <!-- =================================================
+
+      <!-- =================================================
              CARD 4
         ================================================== -->
 
-        <div class="nex-tpl-card">
+      <div class="nex-tpl-card">
 
-            <div class="nex-tpl-thumb">
+        <div class="nex-tpl-thumb">
 
-                <img
-                    src="image and icon/custom-4.png"
-                    alt="ShopMart"
-                >
-
-            </div>
-
-            <div class="nex-tpl-body">
-
-                <p class="text-xs font-semibold leading-tight mb-2">
-                    ShopMart – Premium Daraz Website Template
-                </p>
-
-                <div class="flex gap-1">
-
-                    <button
-                        type="button"
-                        class="eye-btn"
-                        title="Quick View"
-                    >
-                        <i class="fa fa-info-circle"></i>
-                    </button>
-
-                    <button
-                        type="button"
-                        class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-xoom transition"
-                    >
-                        Buy Now
-                    </button>
-
-                    <button
-                        type="button"
-                        class="eye-btn"
-                        title="Preview"
-                    >
-                        <i class="fa fa-eye"></i>
-                    </button>
-
-                </div>
-
-            </div>
+          <img src="image and icon/custom-4.png" alt="ShopMart">
 
         </div>
 
+        <div class="nex-tpl-body">
+
+          <p class="text-xs font-semibold leading-tight mb-2">
+            ShopMart – Premium Daraz Website Template
+          </p>
+
+          <div class="flex gap-1">
+
+            <button type="button" class="eye-btn" title="Quick View">
+              <i class="fa fa-info-circle"></i>
+            </button>
+
+            <button type="button" class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-xoom transition">
+              Buy Now
+            </button>
+
+            <button type="button" class="eye-btn" title="Preview">
+              <i class="fa fa-eye"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
 
 
-        <!-- =================================================
+
+      <!-- =================================================
              CARD 5
         ================================================== -->
 
-        <div class="nex-tpl-card">
+      <div class="nex-tpl-card">
 
-            <div class="nex-tpl-thumb">
+        <div class="nex-tpl-thumb">
 
-                <img
-                    src="image and icon/custom-5.png"
-                    alt="ShopMart"
-                >
-
-            </div>
-
-            <div class="nex-tpl-body">
-
-                <p class="text-xs font-semibold leading-tight mb-2">
-                    ShopMart – Premium Daraz Website Template
-                </p>
-
-                <div class="flex gap-1">
-
-                    <button
-                        type="button"
-                        class="eye-btn"
-                        title="Quick View"
-                    >
-                        <i class="fa fa-info-circle"></i>
-                    </button>
-
-                    <button
-                        type="button"
-                        class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-xoom transition"
-                    >
-                        Buy Now
-                    </button>
-
-                    <button
-                        type="button"
-                        class="eye-btn"
-                        title="Preview"
-                    >
-                        <i class="fa fa-eye"></i>
-                    </button>
-
-                </div>
-
-            </div>
+          <img src="image and icon/custom-5.png" alt="ShopMart">
 
         </div>
+
+        <div class="nex-tpl-body">
+
+          <p class="text-xs font-semibold leading-tight mb-2">
+            ShopMart – Premium Daraz Website Template
+          </p>
+
+          <div class="flex gap-1">
+
+            <button type="button" class="eye-btn" title="Quick View">
+              <i class="fa fa-info-circle"></i>
+            </button>
+
+            <button type="button" class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-xoom transition">
+              Buy Now
+            </button>
+
+            <button type="button" class="eye-btn" title="Preview">
+              <i class="fa fa-eye"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
 
     </div>
 
@@ -722,27 +776,25 @@
 
     <div class="flex justify-center   mt-2">
 
-        <button
-            type="button"
-            class="border px-8 py-2 rounded bg-nex text-white hover:bg-xoom transition text-sm font-medium"
-        >
-            Load More
-        </button>
+      <button type="button"
+        class="border px-8 py-2 rounded bg-nex text-white hover:bg-xoom transition text-sm font-medium">
+        Load More
+      </button>
 
     </div>
 
-</section>
+  </section>
 
 
   <!-- all custom talmplet end -->
 
   <!-- ===== All Template Section ===== -->
-<section class="container mx-auto  sm:py-6 md:py-2 lg:py-2">
-    <div class="flex items-center justify-between mb-4">
-      <h2 class="text-nex font-bold text-[20px] sm:text-[32px] border-b-2 border-nex pb-1">
-    AllTemplate
-</h2>
-      <a href="#" class="bg-nex text-white text-xs px-4 py-1.5 rounded hover:bg-xoom transition">View More</a>
+  <section class="container mx-auto  sm:py-6 md:py-2 lg:py-2">
+  <div class="flex items-center justify-between mb-4 px-2 sm:px-0">
+      <h2 class="text-nex font-bold md:text-2xl text-sm border-b-2 border-nex pb-1 font-medium">
+        All Template
+      </h2>
+      <a href="#" class="bg-nex text-white text-xs px-4 py-1.5 rounded hover:bg-xoom transition font-medium ">View More</a>
     </div>
 
     <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
@@ -1027,19 +1079,18 @@
       </div>
 
       <!-- extra cards -->
-      
-    
-      
-      
-     
-     
-      
-    
+
+
+
+
+
+
+
+
     </div>
 
     <div class="flex justify-center mt-6">
-      <button
-        class="border   px-8 py-2 rounded bg-nex text-white hover:bg-xoom transition text-sm font-medium">
+      <button class="border   px-8 py-2 rounded bg-nex text-white hover:bg-xoom transition text-sm font-medium">
         Load More
       </button>
     </div>
@@ -1051,9 +1102,11 @@
 
   <!-- ===== Plugin Section (Slick Slider) ===== -->
   <section class="container mx-auto  ">
-    <div class="flex items-center justify-between mb-4">
-      <h2 class="text-nex font-bold text-xl border-b-2 border-nex pb-1"></h2>
-      <a href="#" class="bg-nex text-white text-xs px-4 py-1.5 rounded hover:bg-xoom transition">View More</a>
+   <div class="flex items-center justify-between mb-4 px-2 sm:px-0">
+      <h2 class="text-nex font-bold md:text-2xl text-sm border-b-2 border-nex pb-1 font-medium">
+       Populter All Template
+      </h2>
+      <a href="#" class="bg-nex text-white text-xs px-4 py-1.5 rounded hover:bg-xoom transition font-medium ">View More</a>
     </div>
 
     <div class="gap-4">
@@ -1313,82 +1366,88 @@
 
 
 
-    <!-- =====================================================
+  <!-- =====================================================
          VIDEO CARDS
     ====================================================== -->
 
 
 
 
-<section class="container mx-auto  px-4 py-1 mt-5">
-  <h1 class="font-bold text-nex  mb-1 whitespace-nowrap text-[32px]  text-center">
-        Our video
-    </h1>
-            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  <section class="container mx-auto  px-4 py-1 mt-5">
+    <div class="flex items-center justify-between mb-4 px-2 sm:px-0">
+      <h2 class="text-nex font-bold md:text-2xl text-sm border-b-2 border-nex pb-1 font-medium">
+        Our Video
+      </h2>
+      <a href="https://www.youtube.com/@NexXoom" target="_blank" class="bg-nex text-white text-xs px-4 py-1.5 rounded hover:bg-xoom transition font-medium ">View More</a>
+    </div>
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
 
-                <!-- Video 1 (Your Main Video) -->
-                <div>
-                    <a href="https://www.youtube.com/watch?v=IELsdUIAocs"
-                        class="video-lightbox group relative block overflow-hidden rounded-xl bg-white shadow-sm">
-                        <img src="https://img.youtube.com/vi/IELsdUIAocs/hqdefault.jpg" alt="Video 1"
-                            class="aspect-video w-full object-cover transition duration-500 group-hover:scale-105">
-                        <span
-                            class="absolute inset-0 flex items-center justify-center bg-black/25 transition duration-300 group-hover:bg-black/40">
-                            <span
-                                class="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-xl transition duration-300 group-hover:scale-110">
-                                <svg class="ml-1 h-7 w-7 text-black" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M8 5v14l11-7z" />
-                                </svg>
-                            </span>
-                        </span>
-                    </a>
-                </div>
+      <!-- Video 1 (Your Main Video) -->
+      <div>
+        <a href="https://www.youtube.com/watch?v=IELsdUIAocs"
+          class="video-lightbox group relative block overflow-hidden rounded-xl bg-white shadow-sm">
+          <img src="https://img.youtube.com/vi/IELsdUIAocs/hqdefault.jpg" alt="Video 1"
+            class="aspect-video w-full object-cover transition duration-500 group-hover:scale-105">
+          <span
+            class="absolute inset-0 flex items-center justify-center bg-black/25 transition duration-300 group-hover:bg-black/40">
+            <span
+              class="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-xl transition duration-300 group-hover:scale-110">
+              <svg class="ml-1 h-7 w-7 text-black" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </span>
+          </span>
+        </a>
+      </div>
 
-                <!-- Video 2 (Your Main Video) -->
-                <div>
-                    <a href="https://www.youtube.com/watch?v=PmFekfGaiNU"
-                        class="video-lightbox group relative block overflow-hidden rounded-xl bg-white shadow-sm">
-                        <img src="https://img.youtube.com/vi/PmFekfGaiNU/hqdefault.jpg" alt="Video 2"
-                            class="aspect-video w-full object-cover transition duration-500 group-hover:scale-105">
-                        <span
-                            class="absolute inset-0 flex items-center justify-center bg-black/25 transition duration-300 group-hover:bg-black/40">
-                            <span
-                                class="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-xl transition duration-300 group-hover:scale-110">
-                                <svg class="ml-1 h-7 w-7 text-black" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M8 5v14l11-7z" />
-                                </svg>
-                            </span>
-                        </span>
-                    </a>
-                </div>
+      <!-- Video 2 (Your Main Video) -->
+      <div>
+        <a href="https://www.youtube.com/watch?v=PmFekfGaiNU"
+          class="video-lightbox group relative block overflow-hidden rounded-xl bg-white shadow-sm">
+          <img src="https://img.youtube.com/vi/PmFekfGaiNU/hqdefault.jpg" alt="Video 2"
+            class="aspect-video w-full object-cover transition duration-500 group-hover:scale-105">
+          <span
+            class="absolute inset-0 flex items-center justify-center bg-black/25 transition duration-300 group-hover:bg-black/40">
+            <span
+              class="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-xl transition duration-300 group-hover:scale-110">
+              <svg class="ml-1 h-7 w-7 text-black" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </span>
+          </span>
+        </a>
+      </div>
 
 
-                 <div>
-                    <a href="https://www.youtube.com/watch?v=m-awNfzSjzs"
-                        class="video-lightbox group relative block overflow-hidden rounded-xl bg-white shadow-sm">
-                        <img src="https://img.youtube.com/vi/m-awNfzSjzs/hqdefault.jpg" alt="Video 2"
-                            class="aspect-video w-full object-cover transition duration-500 group-hover:scale-105">
-                        <span
-                            class="absolute inset-0 flex items-center justify-center bg-black/25 transition duration-300 group-hover:bg-black/40">
-                            <span
-                                class="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-xl transition duration-300 group-hover:scale-110">
-                                <svg class="ml-1 h-7 w-7 text-black" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M8 5v14l11-7z" />
-                                </svg>
-                            </span>
-                        </span>
-                    </a>
-                </div>
+      <div>
+        <a href="https://www.youtube.com/watch?v=m-awNfzSjzs"
+          class="video-lightbox group relative block overflow-hidden rounded-xl bg-white shadow-sm">
+          <img src="https://img.youtube.com/vi/m-awNfzSjzs/hqdefault.jpg" alt="Video 2"
+            class="aspect-video w-full object-cover transition duration-500 group-hover:scale-105">
+          <span
+            class="absolute inset-0 flex items-center justify-center bg-black/25 transition duration-300 group-hover:bg-black/40">
+            <span
+              class="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-xl transition duration-300 group-hover:scale-110">
+              <svg class="ml-1 h-7 w-7 text-black" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </span>
+          </span>
+        </a>
+      </div>
 
-            </div>
-        </section>
+    </div>
+  </section>
 
   <!-- ===== Category Slider ===== -->
 
-  <section class="container mx-auto overflow-hidden ">
-    <h1 class="text-[32px] mb-5 mt-4 text-center font-bold text-nex">
-      Our Trust Clients
-    </h1>
+  <section class="container mx-auto overflow-hidden mt-5">
+    <div class="flex items-center justify-center mb-4 px-2 sm:px-0">
+      <h2 class="text-nex font-bold md:text-2xl text-sm border-b-2 border-nex pb-1 font-medium">
+        Our Clients
+      </h2>
+     
+    </div>
 
     <div class="logo-slider">
       <!-- 01 -->
@@ -1457,7 +1516,7 @@
         </div>
       </div>
     </div>
-     <div class="flex justify-center mt-4">
+    <div class="flex justify-center mt-4">
       <button
         class=" hover:border-xoom text-white bg-nex px-8 py-2 rounded hover:bg-xoom hover:text-white transition text-sm font-medium">
         Load More
@@ -1472,9 +1531,12 @@
   <section class="container mx-auto bg-nex mb-3 via-blue-900 to-indigo-950 py-10 lg:py-14 mt-5">
     <div class=" px-4 sm:px-6 lg:px-8">
       <!-- Heading -->
-      <h1 class="font-bold text-white  mb-4 whitespace-nowrap text-[32px]  text-center">
-        Industry Serve
-    </h1>
+     <div class="flex items-center justify-center mb-5 px-2 sm:px-0">
+      <h2 class="text-white font-bold md:text-2xl text-sm border-b-2 border-xoom pb-1 font-medium">
+        All Template
+      </h2>
+    
+    </div>
 
       <!-- Industry Grid -->
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 sm:gap-7 lg:gap-8">
@@ -1579,937 +1641,922 @@
     </div>
   </section>
 
- <section class="container mx-auto mt-[50px] ">
+  <section class="container mx-auto mt-[50px] ">
 
-        <div class=" px-4 sm:px-6 lg:px-8">
+    <div class=" px-4 sm:px-6 lg:px-8">
 
 
-            <!-- =================================================
+      <!-- =================================================
                  TABS
             ================================================== -->
 
-            <div class="flex justify-center mb-12">
+      <div class="flex justify-center mb-12">
 
-                <div
-                    class="inline-flex items-center rounded-full border border-gray-200 bg-white p-1 shadow-sm">
+        <div class="inline-flex items-center rounded-full border border-gray-200 bg-white p-1 shadow-sm border border-nex">
 
-                    <!-- ================= WEB HOSTING ================= -->
+          <!-- ================= WEB HOSTING ================= -->
 
-                    <button id="webTab"
-                        onclick="showTab('web')"
-                        class="tab-btn rounded-full bg-nex px-6 sm:px-8 py-2.5 text-sm sm:text-base font-semibold text-white transition-all duration-300">
+          <button id="webTab" onclick="showTab('web')"
+            class="tab-btn rounded-full bg-nex px-6 sm:px-8 py-2.5 text-sm sm:text-base font-semibold text-white transition-all duration-300">
 
-                        Web Hosting
+            Web Hosting
 
-                    </button>
+          </button>
 
 
-                    <!-- ================= VPS HOSTING ================= -->
+          <!-- ================= VPS HOSTING ================= -->
 
-                    <button id="vpsTab"
-                        onclick="showTab('vps')"
-                        class="tab-btn rounded-full px-6 sm:px-8 py-2.5 text-sm sm:text-base font-semibold text-gray-900 hover:bg-gray-100 transition-all duration-300">
+          <button id="vpsTab" onclick="showTab('vps')"
+            class="tab-btn rounded-full px-6 sm:px-8 py-2.5 text-sm sm:text-base font-semibold text-gray-900 hover:bg-gray-100 transition-all duration-300">
 
-                        VPS Hosting
+            VPS Hosting
 
-                    </button>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =================================================
-                 WEB HOSTING
-            ================================================== -->
-
-            <div id="webContent">
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
-
-
-                    <!-- =================================================
-                         STARTER
-                    ================================================== -->
-
-                    <div
-                        class="relative flex flex-col rounded-lg bg-white shadow-[0_5px_25px_rgba(0,0,0,0.08)] p-5 sm:p-6 hover:-translate-y-1 transition-all duration-300">
-
-
-                        <!-- Icon -->
-
-                        <div class="flex justify-center mb-5">
-
-                            <div class="relative">
-
-                                <i class="fa-solid fa-cloud text-6xl text-nex"></i>
-
-                                <i
-                                    class="fa-solid fa-user absolute -left-2 bottom-0 text-2xl text-xoom"></i>
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- Title -->
-
-                        <h3 class="text-center text-xl font-semibold text-gray-900">
-                            Starter
-                        </h3>
-
-
-                        <!-- Description -->
-
-                        <p class="text-center text-sm text-gray-500 mt-1">
-                            5 GB NVMe for single website
-                        </p>
-
-
-                        <!-- Price -->
-
-                        <div class="text-center mt-4">
-
-                            <span class="text-3xl sm:text-4xl font-bold text-xoom">
-                                ৳1200
-                            </span>
-
-                            <span class="text-sm font-semibold text-xoom">
-                                /Yr
-                            </span>
-
-                        </div>
-
-
-                        <!-- Divider -->
-
-                        <div class="w-9 h-1 bg-xoom mx-auto my-5 rounded-full">
-                        </div>
-
-
-                        <!-- Features -->
-
-                        <ul class="space-y-2.5 text-sm flex-1">
-
-                            <li>
-                                <i class="fa-solid fa-hard-drive text-gray-400 w-5"></i>
-                                <strong>5 GB NVMe</strong> Storage
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-box text-gray-400 w-5"></i>
-                                <strong>Unlimited</strong> Bandwidth
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-envelope text-gray-400 w-5"></i>
-                                <strong>Unlimited</strong> E-Mail ID
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-user text-gray-400 w-5"></i>
-                                <strong>Single</strong> Website Allow
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-lock text-gray-400 w-5"></i>
-                                <strong>FREE</strong> & Auto SSL
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-user text-gray-400 w-5"></i>
-                                <strong>FREE</strong> cPanel
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-arrow-right-arrow-left text-gray-400 w-5"></i>
-                                <strong>99.9%</strong> Uptime
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-gauge-high text-gray-400 w-5"></i>
-                                <strong>FREE</strong> LiteSpeed
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-circle-check text-gray-400 w-5"></i>
-                                <strong>CloudLinux</strong> Operating
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-circle-check text-gray-400 w-5"></i>
-                                <strong>WordPress</strong> installation
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-circle-check text-gray-400 w-5"></i>
-                                <strong>NO</strong> FREE Domain
-                            </li>
-
-                        </ul>
-
-
-                        <!-- Button -->
-
-                        <button
-                            class="w-full mt-6 rounded-sm bg-nex py-3 text-white font-semibold hover:bg-xoom transition">
-
-                            Order Now
-
-                        </button>
-
-                    </div>
-
-
-
-                    <!-- =================================================
-                         LITE STARTER
-                    ================================================== -->
-
-                    <div
-                        class="relative flex flex-col rounded-lg bg-white shadow-[0_5px_25px_rgba(0,0,0,0.08)] p-5 sm:p-6 hover:-translate-y-1 transition-all duration-300">
-
-
-                        <div class="flex justify-center mb-5">
-
-                            <div class="relative">
-
-                                <i class="fa-solid fa-cloud text-6xl text-nex"></i>
-
-                                <i
-                                    class="fa-solid fa-user-group absolute -left-2 bottom-0 text-2xl text-xoom"></i>
-
-                            </div>
-
-                        </div>
-
-
-                        <h3 class="text-center text-xl font-semibold text-gray-900">
-                            Lite Starter
-                        </h3>
-
-
-                        <p class="text-center text-sm text-gray-500 mt-1">
-                            10 GB NVMe for 3 websites
-                        </p>
-
-
-                        <div class="text-center mt-4">
-
-                            <span class="text-3xl sm:text-4xl font-bold text-xoom">
-                                ৳1999
-                            </span>
-
-                            <span class="text-sm font-semibold text-xoom">
-                                /Yr
-                            </span>
-
-                        </div>
-
-
-                        <div class="w-9 h-1 bg-xoom mx-auto my-5 rounded-full">
-                        </div>
-
-
-                        <ul class="space-y-2.5 text-sm flex-1">
-
-                            <li>
-                                <i class="fa-solid fa-hard-drive text-gray-400 w-5"></i>
-                                <strong>10 GB NVMe</strong> Storage
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-box text-gray-400 w-5"></i>
-                                <strong>Unlimited</strong> Bandwidth
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-envelope text-gray-400 w-5"></i>
-                                <strong>Unlimited</strong> E-Mail ID
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-user text-gray-400 w-5"></i>
-                                <strong>THREE</strong> Website Allow
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-lock text-gray-400 w-5"></i>
-                                <strong>FREE</strong> & Auto SSL
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-user text-gray-400 w-5"></i>
-                                <strong>FREE</strong> cPanel
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-arrow-right-arrow-left text-gray-400 w-5"></i>
-                                <strong>99.9%</strong> Uptime
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-gauge-high text-gray-400 w-5"></i>
-                                <strong>FREE</strong> LiteSpeed
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-circle-check text-gray-400 w-5"></i>
-                                <strong>CloudLinux</strong> Operating
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-circle-check text-gray-400 w-5"></i>
-                                <strong>WordPress</strong> installation
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-circle-check text-gray-400 w-5"></i>
-                                <strong>FREE</strong> .COM Domain
-                            </li>
-
-                        </ul>
-
-
-                        <button
-                            class="w-full mt-6 rounded-sm bg-nex py-3 text-white font-semibold hover:bg-xoom transition">
-
-                            Order Now
-
-                        </button>
-
-                    </div>
-
-
-
-                    <!-- =================================================
-                         SWIFT BUSINESS
-                    ================================================== -->
-
-                    <div
-                        class="relative flex flex-col rounded-lg bg-white shadow-[0_5px_25px_rgba(0,0,0,0.08)] p-5 sm:p-6 hover:-translate-y-1 transition-all duration-300">
-
-
-                        <!-- HOT DEAL -->
-
-                        <div
-                            class="absolute -top-4 left-1/2 -translate-x-1/2 w-36 text-center rounded-sm bg-xoom py-1.5 text-white text-sm font-bold">
-
-                            HOT DEAL
-
-                        </div>
-
-
-                        <div class="flex justify-center mb-5 mt-2">
-
-                            <div class="relative">
-
-                                <i class="fa-solid fa-cloud text-6xl text-nex"></i>
-
-                                <i
-                                    class="fa-solid fa-users absolute -left-3 bottom-0 text-2xl text-xoom"></i>
-
-                            </div>
-
-                        </div>
-
-
-                        <h3 class="text-center text-xl font-semibold text-xoom">
-                            Swift Business
-                        </h3>
-
-
-                        <p class="text-center text-sm text-gray-500 mt-1">
-                            20 GB NVMe for HOT DEAL
-                        </p>
-
-
-                        <div class="text-center mt-4">
-
-                            <span class="text-3xl sm:text-4xl font-bold text-xoom">
-                                ৳2400
-                            </span>
-
-                            <span class="text-sm font-semibold text-xoom">
-                                /Yr
-                            </span>
-
-                        </div>
-
-
-                        <div class="w-9 h-1 bg-xoom mx-auto my-5 rounded-full">
-                        </div>
-
-
-                        <ul class="space-y-2.5 text-sm flex-1">
-
-                            <li>
-                                <i class="fa-solid fa-hard-drive text-gray-400 w-5"></i>
-                                <strong>20 GB NVMe</strong> Storage
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-box text-gray-400 w-5"></i>
-                                <strong>Unlimited</strong> Bandwidth
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-envelope text-gray-400 w-5"></i>
-                                <strong>Unlimited</strong> E-Mail ID
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-user text-gray-400 w-5"></i>
-                                <strong>TEN</strong> Website Allow
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-lock text-gray-400 w-5"></i>
-                                <strong>FREE</strong> & Auto SSL
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-user text-gray-400 w-5"></i>
-                                <strong>FREE</strong> cPanel
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-arrow-right-arrow-left text-gray-400 w-5"></i>
-                                <strong>99.9%</strong> Uptime
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-gauge-high text-gray-400 w-5"></i>
-                                <strong>FREE</strong> LiteSpeed
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-circle-check text-gray-400 w-5"></i>
-                                <strong>CloudLinux</strong> Operating
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-circle-check text-gray-400 w-5"></i>
-                                <strong>WordPress</strong> installation
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-circle-check text-gray-400 w-5"></i>
-                                <strong>FREE</strong> .COM Domain
-                            </li>
-
-                        </ul>
-
-
-                        <button
-                            class="w-full mt-6 rounded-sm bg-nex py-3 text-white font-semibold hover:bg-xoom transition">
-
-                            Order Now
-
-                        </button>
-
-                    </div>
-
-
-
-                    <!-- =================================================
-                         ULTRA PRO
-                    ================================================== -->
-
-                    <div
-                        class="relative flex flex-col rounded-lg bg-white shadow-[0_5px_25px_rgba(0,0,0,0.08)] p-5 sm:p-6 hover:-translate-y-1 transition-all duration-300">
-
-
-                        <div class="flex justify-center mb-5">
-
-                            <div class="relative">
-
-                                <i class="fa-solid fa-cloud text-6xl text-nex"></i>
-
-                                <i
-                                    class="fa-solid fa-users absolute -left-3 bottom-0 text-2xl text-xoom"></i>
-
-                            </div>
-
-                        </div>
-
-
-                        <h3 class="text-center text-xl font-semibold text-xoom">
-                            Ultra Pro
-                        </h3>
-
-
-                        <p class="text-center text-sm text-gray-500 mt-1">
-                            Unmetered for Unlimited websites
-                        </p>
-
-
-                        <div class="text-center mt-4">
-
-                            <span class="text-3xl sm:text-4xl font-bold text-xoom">
-                                ৳3299
-                            </span>
-
-                            <span class="text-sm font-semibold text-xoom">
-                                /Yr
-                            </span>
-
-                        </div>
-
-
-                        <div class="w-9 h-1 bg-xoom mx-auto my-5 rounded-full">
-                        </div>
-
-
-                        <ul class="space-y-2.5 text-sm flex-1">
-
-                            <li>
-                                <i class="fa-solid fa-hard-drive text-gray-400 w-5"></i>
-                                <strong>Unmetered</strong> NVMe Storage
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-box text-gray-400 w-5"></i>
-                                <strong>Unlimited</strong> Bandwidth
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-envelope text-gray-400 w-5"></i>
-                                <strong>Unlimited</strong> E-Mail ID
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-globe text-gray-400 w-5"></i>
-                                <strong>Unlimited</strong> Website Allow
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-lock text-gray-400 w-5"></i>
-                                <strong>FREE</strong> & Auto SSL
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-user text-gray-400 w-5"></i>
-                                <strong>FREE</strong> cPanel
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-arrow-right-arrow-left text-gray-400 w-5"></i>
-                                <strong>99.9%</strong> Uptime
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-gauge-high text-gray-400 w-5"></i>
-                                <strong>FREE</strong> LiteSpeed
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-circle-check text-gray-400 w-5"></i>
-                                <strong>CloudLinux</strong> Operating
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-circle-check text-gray-400 w-5"></i>
-                                <strong>WordPress</strong> installation
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-circle-check text-gray-400 w-5"></i>
-                                <strong>FREE</strong> .COM Domain
-                            </li>
-
-                        </ul>
-
-
-                        <button
-                            class="w-full mt-6 rounded-sm bg-nex py-3 text-white font-semibold hover:bg-xoom transition">
-
-                            Order Now
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =================================================
-                 VPS HOSTING
-            ================================================== -->
-
-            <div id="vpsContent" class="hidden">
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
-
-
-                    <!-- =================================================
-                         VPS BASIC
-                    ================================================== -->
-
-                    <div
-                        class="flex flex-col rounded-lg bg-white shadow-[0_5px_25px_rgba(0,0,0,0.08)] p-5 sm:p-6 hover:-translate-y-1 transition-all duration-300">
-
-                        <div class="flex justify-center mb-5">
-
-                            <i class="fa-solid fa-server text-6xl text-nex"></i>
-
-                        </div>
-
-
-                        <h3 class="text-center text-xl font-semibold text-gray-900">
-                            VPS Basic
-                        </h3>
-
-
-                        <p class="text-center text-sm text-gray-500 mt-1">
-                            2 Core VPS Server
-                        </p>
-
-
-                        <div class="text-center mt-4">
-
-                            <span class="text-3xl sm:text-4xl font-bold text-xoom">
-                                ৳3299
-                            </span>
-
-                            <span class="text-sm font-semibold text-xoom">
-                                /Mo
-                            </span>
-
-                        </div>
-
-
-                        <div class="w-9 h-1 bg-blue-600 mx-auto my-5 rounded-full">
-                        </div>
-
-
-                        <ul class="space-y-2.5 text-sm flex-1">
-
-                            <li>
-                                <i class="fa-solid fa-microchip text-gray-400 w-5"></i>
-                                <strong>2 Core</strong> CPU
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-memory text-gray-400 w-5"></i>
-                                <strong>4 GB</strong> RAM
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-hard-drive text-gray-400 w-5"></i>
-                                <strong>80 GB</strong> NVMe
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-gauge-high text-gray-400 w-5"></i>
-                                <strong>1 Gbps</strong> Network
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-globe text-gray-400 w-5"></i>
-                                <strong>1</strong> IPv4
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-shield-halved text-gray-400 w-5"></i>
-                                <strong>DDoS</strong> Protection
-                            </li>
-
-                        </ul>
-
-
-                        <button
-                            class="w-full mt-6 rounded-sm bg-nex py-3 text-white font-semibold hover:bg-xoom transition">
-
-                            Order Now
-
-                        </button>
-
-                    </div>
-
-
-
-                    <!-- =================================================
-                         VPS PRO
-                    ================================================== -->
-
-                    <div
-                        class="flex flex-col rounded-lg bg-white shadow-[0_5px_25px_rgba(0,0,0,0.08)] p-5 sm:p-6 hover:-translate-y-1 transition-all duration-300">
-
-                        <div class="flex justify-center mb-5">
-
-                            <i class="fa-solid fa-server text-6xl text-nex"></i>
-
-                        </div>
-
-
-                        <h3 class="text-center text-xl font-semibold text-gray-900">
-                            VPS Pro
-                        </h3>
-
-
-                        <p class="text-center text-sm text-gray-500 mt-1">
-                            4 Core VPS Server
-                        </p>
-
-
-                        <div class="text-center mt-4">
-
-                            <span class="text-3xl sm:text-4xl font-bold text-xoom">
-                                ৳5299
-                            </span>
-
-                            <span class="text-sm font-semibold text-xoom">
-                                /Mo
-                            </span>
-
-                        </div>
-
-
-                        <div class="w-9 h-1 bg-blue-600 mx-auto my-5 rounded-full">
-                        </div>
-
-
-                        <ul class="space-y-2.5 text-sm flex-1">
-
-                            <li>
-                                <i class="fa-solid fa-microchip text-gray-400 w-5"></i>
-                                <strong>4 Core</strong> CPU
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-memory text-gray-400 w-5"></i>
-                                <strong>8 GB</strong> RAM
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-hard-drive text-gray-400 w-5"></i>
-                                <strong>160 GB</strong> NVMe
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-gauge-high text-gray-400 w-5"></i>
-                                <strong>1 Gbps</strong> Network
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-globe text-gray-400 w-5"></i>
-                                <strong>1</strong> IPv4
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-shield-halved text-gray-400 w-5"></i>
-                                <strong>DDoS</strong> Protection
-                            </li>
-
-                        </ul>
-
-
-                        <button
-                            class="w-full mt-6 rounded-sm bg-nex py-3 text-white font-semibold hover:bg-xoom transition">
-
-                            Order Now
-
-                        </button>
-
-                    </div>
-
-
-
-                    <!-- =================================================
-                         VPS BUSINESS
-                    ================================================== -->
-
-                    <div
-                        class="relative flex flex-col rounded-lg bg-white shadow-[0_5px_25px_rgba(0,0,0,0.08)] p-5 sm:p-6 hover:-translate-y-1 transition-all duration-300">
-
-
-                        <!-- HOT DEAL -->
-
-                        <div
-                            class="absolute -top-4 left-1/2 -translate-x-1/2 w-36 text-center rounded-sm bg-nexx py-1.5 text-white text-sm font-bold">
-
-                            HOT DEAL
-
-                        </div>
-
-
-                        <div class="flex justify-center mb-5 mt-2">
-
-                            <i class="fa-solid fa-server text-6xl text-nex"></i>
-
-                        </div>
-
-
-                        <h3 class="text-center text-xl font-semibold text-gray-900">
-                            VPS Business
-                        </h3>
-
-
-                        <p class="text-center text-sm text-gray-500 mt-1">
-                            6 Core VPS Server
-                        </p>
-
-
-                        <div class="text-center mt-4">
-
-                            <span class="text-3xl sm:text-4xl font-bold text-xoom">
-                                ৳7299
-                            </span>
-
-                            <span class="text-sm font-semibold text-xoom">
-                                /Mo
-                            </span>
-
-                        </div>
-
-
-                        <div class="w-9 h-1 bg-blue-600 mx-auto my-5 rounded-full">
-                        </div>
-
-
-                        <ul class="space-y-2.5 text-sm flex-1">
-
-                            <li>
-                                <i class="fa-solid fa-microchip text-gray-400 w-5"></i>
-                                <strong>6 Core</strong> CPU
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-memory text-gray-400 w-5"></i>
-                                <strong>16 GB</strong> RAM
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-hard-drive text-gray-400 w-5"></i>
-                                <strong>320 GB</strong> NVMe
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-gauge-high text-gray-400 w-5"></i>
-                                <strong>2 Gbps</strong> Network
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-globe text-gray-400 w-5"></i>
-                                <strong>2</strong> IPv4
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-shield-halved text-gray-400 w-5"></i>
-                                <strong>DDoS</strong> Protection
-                            </li>
-
-                        </ul>
-
-
-                        <button
-                            class="w-full mt-6 rounded-sm bg-nex py-3 text-white font-semibold hover:bg-xoom transition">
-
-                            Order Now
-
-                        </button>
-
-                    </div>
-
-
-
-                    <!-- =================================================
-                         VPS ULTRA
-                    ================================================== -->
-
-                    <div
-                        class="flex flex-col rounded-lg bg-white shadow-[0_5px_25px_rgba(0,0,0,0.08)] p-5 sm:p-6 hover:-translate-y-1 transition-all duration-300">
-
-                        <div class="flex justify-center mb-5">
-
-                            <i class="fa-solid fa-server text-6xl text-blue-600"></i>
-
-                        </div>
-
-
-                        <h3 class="text-center text-xl font-semibold text-nex">
-                            VPS Ultra
-                        </h3>
-
-
-                        <p class="text-center text-sm text-gray-500 mt-1">
-                            8 Core VPS Server
-                        </p>
-
-
-                        <div class="text-center mt-4">
-
-                            <span class="text-3xl sm:text-4xl font-bold text-xoom">
-                                ৳1299
-                            </span>
-
-                            <span class="text-sm font-semibold text-xoom">
-                                /Mo
-                            </span>
-
-                        </div>
-
-
-                        <div class="w-9 h-1 bg-blue-600 mx-auto my-5 rounded-full">
-                        </div>
-
-
-                        <ul class="space-y-2.5 text-sm flex-1">
-
-                            <li>
-                                <i class="fa-solid fa-microchip text-gray-400 w-5"></i>
-                                <strong>8 Core</strong> CPU
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-memory text-gray-400 w-5"></i>
-                                <strong>32 GB</strong> RAM
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-hard-drive text-gray-400 w-5"></i>
-                                <strong>500 GB</strong> NVMe
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-gauge-high text-gray-400 w-5"></i>
-                                <strong>2 Gbps</strong> Network
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-globe text-gray-400 w-5"></i>
-                                <strong>2</strong> IPv4
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-shield-halved text-gray-400 w-5"></i>
-                                <strong>DDoS</strong> Protection
-                            </li>
-
-                        </ul>
-
-
-                        <button
-                            class="w-full mt-6 rounded-sm bg-nex py-3 text-white font-semibold hover:bg-xoom transition">
-
-                            Order Now
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
+          </button>
 
         </div>
 
-    </section>
+      </div>
+
+
+
+      <!-- =================================================
+                 WEB HOSTING
+            ================================================== -->
+
+      <div id="webContent">
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
+
+
+          <!-- =================================================
+                         STARTER
+                    ================================================== -->
+
+          <div
+            class="relative flex flex-col rounded-lg bg-white  p-5 sm:p-6 hover:-translate-y-1 transition-all duration-300 border border-nex">
+
+
+            <!-- Icon -->
+
+            <div class="flex justify-center mb-5">
+
+              <div class="relative">
+
+                <i class="fa-solid fa-cloud text-6xl text-nex"></i>
+
+                <i class="fa-solid fa-user absolute -left-2 bottom-0 text-2xl text-xoom"></i>
+
+              </div>
+
+            </div>
+
+
+            <!-- Title -->
+
+            <h3 class="text-center text-xl font-semibold text-gray-900">
+              Starter
+            </h3>
+
+
+            <!-- Description -->
+
+            <p class="text-center text-sm text-gray-500 mt-1">
+              5 GB NVMe for single website
+            </p>
+
+
+            <!-- Price -->
+
+            <div class="text-center mt-4">
+
+              <span class="text-3xl sm:text-4xl font-bold text-xoom">
+                ৳1200
+              </span>
+
+              <span class="text-sm font-semibold text-xoom">
+                /Yr
+              </span>
+
+            </div>
+
+
+            <!-- Divider -->
+
+            <div class="w-9 h-1 bg-xoom mx-auto my-5 rounded-full">
+            </div>
+
+
+            <!-- Features -->
+
+            <ul class="space-y-2.5 text-sm flex-1">
+
+              <li>
+                <i class="fa-solid fa-hard-drive text-gray-400 w-5"></i>
+                <strong>5 GB NVMe</strong> Storage
+              </li>
+
+              <li>
+                <i class="fa-solid fa-box text-gray-400 w-5"></i>
+                <strong>Unlimited</strong> Bandwidth
+              </li>
+
+              <li>
+                <i class="fa-solid fa-envelope text-gray-400 w-5"></i>
+                <strong>Unlimited</strong> E-Mail ID
+              </li>
+
+              <li>
+                <i class="fa-solid fa-user text-gray-400 w-5"></i>
+                <strong>Single</strong> Website Allow
+              </li>
+
+              <li>
+                <i class="fa-solid fa-lock text-gray-400 w-5"></i>
+                <strong>FREE</strong> & Auto SSL
+              </li>
+
+              <li>
+                <i class="fa-solid fa-user text-gray-400 w-5"></i>
+                <strong>FREE</strong> cPanel
+              </li>
+
+              <li>
+                <i class="fa-solid fa-arrow-right-arrow-left text-gray-400 w-5"></i>
+                <strong>99.9%</strong> Uptime
+              </li>
+
+              <li>
+                <i class="fa-solid fa-gauge-high text-gray-400 w-5"></i>
+                <strong>FREE</strong> LiteSpeed
+              </li>
+
+              <li>
+                <i class="fa-solid fa-circle-check text-gray-400 w-5"></i>
+                <strong>CloudLinux</strong> Operating
+              </li>
+
+              <li>
+                <i class="fa-solid fa-circle-check text-gray-400 w-5"></i>
+                <strong>WordPress</strong> installation
+              </li>
+
+              <li>
+                <i class="fa-solid fa-circle-check text-gray-400 w-5"></i>
+                <strong>NO</strong> FREE Domain
+              </li>
+
+            </ul>
+
+
+            <!-- Button -->
+
+            <button class="w-full mt-6 rounded-sm bg-nex py-3 text-white font-semibold hover:bg-xoom transition">
+
+              Order Now
+
+            </button>
+
+          </div>
+
+
+
+          <!-- =================================================
+                         LITE STARTER
+                    ================================================== -->
+
+          <div
+            class="relative flex flex-col rounded-lg bg-white  p-5 sm:p-6 hover:-translate-y-1 transition-all duration-300 border border-nex">
+
+
+            <div class="flex justify-center mb-5">
+
+              <div class="relative">
+
+                <i class="fa-solid fa-cloud text-6xl text-nex"></i>
+
+                <i class="fa-solid fa-user-group absolute -left-2 bottom-0 text-2xl text-xoom"></i>
+
+              </div>
+
+            </div>
+
+
+            <h3 class="text-center text-xl font-semibold text-gray-900">
+              Lite Starter
+            </h3>
+
+
+            <p class="text-center text-sm text-gray-500 mt-1">
+              10 GB NVMe for 3 websites
+            </p>
+
+
+            <div class="text-center mt-4">
+
+              <span class="text-3xl sm:text-4xl font-bold text-xoom">
+                ৳1999
+              </span>
+
+              <span class="text-sm font-semibold text-xoom">
+                /Yr
+              </span>
+
+            </div>
+
+
+            <div class="w-9 h-1 bg-xoom mx-auto my-5 rounded-full">
+            </div>
+
+
+            <ul class="space-y-2.5 text-sm flex-1">
+
+              <li>
+                <i class="fa-solid fa-hard-drive text-gray-400 w-5"></i>
+                <strong>10 GB NVMe</strong> Storage
+              </li>
+
+              <li>
+                <i class="fa-solid fa-box text-gray-400 w-5"></i>
+                <strong>Unlimited</strong> Bandwidth
+              </li>
+
+              <li>
+                <i class="fa-solid fa-envelope text-gray-400 w-5"></i>
+                <strong>Unlimited</strong> E-Mail ID
+              </li>
+
+              <li>
+                <i class="fa-solid fa-user text-gray-400 w-5"></i>
+                <strong>THREE</strong> Website Allow
+              </li>
+
+              <li>
+                <i class="fa-solid fa-lock text-gray-400 w-5"></i>
+                <strong>FREE</strong> & Auto SSL
+              </li>
+
+              <li>
+                <i class="fa-solid fa-user text-gray-400 w-5"></i>
+                <strong>FREE</strong> cPanel
+              </li>
+
+              <li>
+                <i class="fa-solid fa-arrow-right-arrow-left text-gray-400 w-5"></i>
+                <strong>99.9%</strong> Uptime
+              </li>
+
+              <li>
+                <i class="fa-solid fa-gauge-high text-gray-400 w-5"></i>
+                <strong>FREE</strong> LiteSpeed
+              </li>
+
+              <li>
+                <i class="fa-solid fa-circle-check text-gray-400 w-5"></i>
+                <strong>CloudLinux</strong> Operating
+              </li>
+
+              <li>
+                <i class="fa-solid fa-circle-check text-gray-400 w-5"></i>
+                <strong>WordPress</strong> installation
+              </li>
+
+              <li>
+                <i class="fa-solid fa-circle-check text-gray-400 w-5"></i>
+                <strong>FREE</strong> .COM Domain
+              </li>
+
+            </ul>
+
+
+            <button class="w-full mt-6 rounded-sm bg-nex py-3 text-white font-semibold hover:bg-xoom transition">
+
+              Order Now
+
+            </button>
+
+          </div>
+
+
+
+          <!-- =================================================
+                         SWIFT BUSINESS
+                    ================================================== -->
+
+          <div
+            class="relative flex flex-col rounded-lg bg-white p-5 sm:p-6 hover:-translate-y-1 transition-all duration-300 border border-nex">
+
+
+            <!-- HOT DEAL -->
+
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 w-36 text-center rounded-sm bg-xoom py-1.5 text-white text-sm font-bold">
+
+              HOT DEAL
+
+            </div>
+
+
+            <div class="flex justify-center mb-5 mt-2">
+
+              <div class="relative">
+
+                <i class="fa-solid fa-cloud text-6xl text-nex"></i>
+
+                <i class="fa-solid fa-users absolute -left-3 bottom-0 text-2xl text-xoom"></i>
+
+              </div>
+
+            </div>
+
+
+            <h3 class="text-center text-xl font-semibold text-xoom">
+              Swift Business
+            </h3>
+
+
+            <p class="text-center text-sm text-gray-500 mt-1">
+              20 GB NVMe for HOT DEAL
+            </p>
+
+
+            <div class="text-center mt-4">
+
+              <span class="text-3xl sm:text-4xl font-bold text-xoom">
+                ৳2400
+              </span>
+
+              <span class="text-sm font-semibold text-xoom">
+                /Yr
+              </span>
+
+            </div>
+
+
+            <div class="w-9 h-1 bg-xoom mx-auto my-5 rounded-full">
+            </div>
+
+
+            <ul class="space-y-2.5 text-sm flex-1">
+
+              <li>
+                <i class="fa-solid fa-hard-drive text-gray-400 w-5"></i>
+                <strong>20 GB NVMe</strong> Storage
+              </li>
+
+              <li>
+                <i class="fa-solid fa-box text-gray-400 w-5"></i>
+                <strong>Unlimited</strong> Bandwidth
+              </li>
+
+              <li>
+                <i class="fa-solid fa-envelope text-gray-400 w-5"></i>
+                <strong>Unlimited</strong> E-Mail ID
+              </li>
+
+              <li>
+                <i class="fa-solid fa-user text-gray-400 w-5"></i>
+                <strong>TEN</strong> Website Allow
+              </li>
+
+              <li>
+                <i class="fa-solid fa-lock text-gray-400 w-5"></i>
+                <strong>FREE</strong> & Auto SSL
+              </li>
+
+              <li>
+                <i class="fa-solid fa-user text-gray-400 w-5"></i>
+                <strong>FREE</strong> cPanel
+              </li>
+
+              <li>
+                <i class="fa-solid fa-arrow-right-arrow-left text-gray-400 w-5"></i>
+                <strong>99.9%</strong> Uptime
+              </li>
+
+              <li>
+                <i class="fa-solid fa-gauge-high text-gray-400 w-5"></i>
+                <strong>FREE</strong> LiteSpeed
+              </li>
+
+              <li>
+                <i class="fa-solid fa-circle-check text-gray-400 w-5"></i>
+                <strong>CloudLinux</strong> Operating
+              </li>
+
+              <li>
+                <i class="fa-solid fa-circle-check text-gray-400 w-5"></i>
+                <strong>WordPress</strong> installation
+              </li>
+
+              <li>
+                <i class="fa-solid fa-circle-check text-gray-400 w-5"></i>
+                <strong>FREE</strong> .COM Domain
+              </li>
+
+            </ul>
+
+
+            <button class="w-full mt-6 rounded-sm bg-nex py-3 text-white font-semibold hover:bg-xoom transition">
+
+              Order Now
+
+            </button>
+
+          </div>
+
+
+
+          <!-- =================================================
+                         ULTRA PRO
+                    ================================================== -->
+
+          <div
+            class="relative flex flex-col rounded-lg bg-white  p-5 sm:p-6 hover:-translate-y-1 transition-all duration-300 border border-nex">
+
+
+            <div class="flex justify-center mb-5">
+
+              <div class="relative">
+
+                <i class="fa-solid fa-cloud text-6xl text-nex"></i>
+
+                <i class="fa-solid fa-users absolute -left-3 bottom-0 text-2xl text-xoom"></i>
+
+              </div>
+
+            </div>
+
+
+            <h3 class="text-center text-xl font-semibold text-xoom">
+              Ultra Pro
+            </h3>
+
+
+            <p class="text-center text-sm text-gray-500 mt-1">
+              Unmetered for Unlimited websites
+            </p>
+
+
+            <div class="text-center mt-4">
+
+              <span class="text-3xl sm:text-4xl font-bold text-xoom">
+                ৳3299
+              </span>
+
+              <span class="text-sm font-semibold text-xoom">
+                /Yr
+              </span>
+
+            </div>
+
+
+            <div class="w-9 h-1 bg-xoom mx-auto my-5 rounded-full">
+            </div>
+
+
+            <ul class="space-y-2.5 text-sm flex-1">
+
+              <li>
+                <i class="fa-solid fa-hard-drive text-gray-400 w-5"></i>
+                <strong>Unmetered</strong> NVMe Storage
+              </li>
+
+              <li>
+                <i class="fa-solid fa-box text-gray-400 w-5"></i>
+                <strong>Unlimited</strong> Bandwidth
+              </li>
+
+              <li>
+                <i class="fa-solid fa-envelope text-gray-400 w-5"></i>
+                <strong>Unlimited</strong> E-Mail ID
+              </li>
+
+              <li>
+                <i class="fa-solid fa-globe text-gray-400 w-5"></i>
+                <strong>Unlimited</strong> Website Allow
+              </li>
+
+              <li>
+                <i class="fa-solid fa-lock text-gray-400 w-5"></i>
+                <strong>FREE</strong> & Auto SSL
+              </li>
+
+              <li>
+                <i class="fa-solid fa-user text-gray-400 w-5"></i>
+                <strong>FREE</strong> cPanel
+              </li>
+
+              <li>
+                <i class="fa-solid fa-arrow-right-arrow-left text-gray-400 w-5"></i>
+                <strong>99.9%</strong> Uptime
+              </li>
+
+              <li>
+                <i class="fa-solid fa-gauge-high text-gray-400 w-5"></i>
+                <strong>FREE</strong> LiteSpeed
+              </li>
+
+              <li>
+                <i class="fa-solid fa-circle-check text-gray-400 w-5"></i>
+                <strong>CloudLinux</strong> Operating
+              </li>
+
+              <li>
+                <i class="fa-solid fa-circle-check text-gray-400 w-5"></i>
+                <strong>WordPress</strong> installation
+              </li>
+
+              <li>
+                <i class="fa-solid fa-circle-check text-gray-400 w-5"></i>
+                <strong>FREE</strong> .COM Domain
+              </li>
+
+            </ul>
+
+
+            <button class="w-full mt-6 rounded-sm bg-nex py-3 text-white font-semibold hover:bg-xoom transition">
+
+              Order Now
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- =================================================
+                 VPS HOSTING
+            ================================================== -->
+
+      <div id="vpsContent" class="hidden">
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
+
+
+          <!-- =================================================
+                         VPS BASIC
+                    ================================================== -->
+
+          <div
+            class="flex flex-col rounded-lg bg-white  p-5 sm:p-6 hover:-translate-y-1 transition-all duration-300 border border-nex">
+
+            <div class="flex justify-center mb-5">
+
+              <i class="fa-solid fa-server text-6xl text-nex"></i>
+
+            </div>
+
+
+            <h3 class="text-center text-xl font-semibold text-gray-900">
+              VPS Basic
+            </h3>
+
+
+            <p class="text-center text-sm text-gray-500 mt-1">
+              2 Core VPS Server
+            </p>
+
+
+            <div class="text-center mt-4">
+
+              <span class="text-3xl sm:text-4xl font-bold text-xoom">
+                ৳3299
+              </span>
+
+              <span class="text-sm font-semibold text-xoom">
+                /Mo
+              </span>
+
+            </div>
+
+
+            <div class="w-9 h-1 bg-blue-600 mx-auto my-5 rounded-full">
+            </div>
+
+
+            <ul class="space-y-2.5 text-sm flex-1">
+
+              <li>
+                <i class="fa-solid fa-microchip text-gray-400 w-5"></i>
+                <strong>2 Core</strong> CPU
+              </li>
+
+              <li>
+                <i class="fa-solid fa-memory text-gray-400 w-5"></i>
+                <strong>4 GB</strong> RAM
+              </li>
+
+              <li>
+                <i class="fa-solid fa-hard-drive text-gray-400 w-5"></i>
+                <strong>80 GB</strong> NVMe
+              </li>
+
+              <li>
+                <i class="fa-solid fa-gauge-high text-gray-400 w-5"></i>
+                <strong>1 Gbps</strong> Network
+              </li>
+
+              <li>
+                <i class="fa-solid fa-globe text-gray-400 w-5"></i>
+                <strong>1</strong> IPv4
+              </li>
+
+              <li>
+                <i class="fa-solid fa-shield-halved text-gray-400 w-5"></i>
+                <strong>DDoS</strong> Protection
+              </li>
+
+            </ul>
+
+
+            <button class="w-full mt-6 rounded-sm bg-nex py-3 text-white font-semibold hover:bg-xoom transition">
+
+              Order Now
+
+            </button>
+
+          </div>
+
+
+
+          <!-- =================================================
+                         VPS PRO
+                    ================================================== -->
+
+          <div
+            class="flex flex-col rounded-lg bg-white  p-5 sm:p-6 hover:-translate-y-1 transition-all duration-300 border border-nex">
+
+            <div class="flex justify-center mb-5">
+
+              <i class="fa-solid fa-server text-6xl text-nex"></i>
+
+            </div>
+
+
+            <h3 class="text-center text-xl font-semibold text-gray-900">
+              VPS Pro
+            </h3>
+
+
+            <p class="text-center text-sm text-gray-500 mt-1">
+              4 Core VPS Server
+            </p>
+
+
+            <div class="text-center mt-4">
+
+              <span class="text-3xl sm:text-4xl font-bold text-xoom">
+                ৳5299
+              </span>
+
+              <span class="text-sm font-semibold text-xoom">
+                /Mo
+              </span>
+
+            </div>
+
+
+            <div class="w-9 h-1 bg-blue-600 mx-auto my-5 rounded-full">
+            </div>
+
+
+            <ul class="space-y-2.5 text-sm flex-1">
+
+              <li>
+                <i class="fa-solid fa-microchip text-gray-400 w-5"></i>
+                <strong>4 Core</strong> CPU
+              </li>
+
+              <li>
+                <i class="fa-solid fa-memory text-gray-400 w-5"></i>
+                <strong>8 GB</strong> RAM
+              </li>
+
+              <li>
+                <i class="fa-solid fa-hard-drive text-gray-400 w-5"></i>
+                <strong>160 GB</strong> NVMe
+              </li>
+
+              <li>
+                <i class="fa-solid fa-gauge-high text-gray-400 w-5"></i>
+                <strong>1 Gbps</strong> Network
+              </li>
+
+              <li>
+                <i class="fa-solid fa-globe text-gray-400 w-5"></i>
+                <strong>1</strong> IPv4
+              </li>
+
+              <li>
+                <i class="fa-solid fa-shield-halved text-gray-400 w-5"></i>
+                <strong>DDoS</strong> Protection
+              </li>
+
+            </ul>
+
+
+            <button class="w-full mt-6 rounded-sm bg-nex py-3 text-white font-semibold hover:bg-xoom transition">
+
+              Order Now
+
+            </button>
+
+          </div>
+
+
+
+          <!-- =================================================
+                         VPS BUSINESS
+                    ================================================== -->
+
+          <div
+            class="relative flex flex-col rounded-lg bg-white  p-5 sm:p-6 hover:-translate-y-1 transition-all duration-300 border border-nex">
+
+
+            <!-- HOT DEAL -->
+
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 w-36 text-center rounded-sm bg-nexx py-1.5 text-white text-sm font-bold">
+
+              HOT DEAL
+
+            </div>
+
+
+            <div class="flex justify-center mb-5 mt-2">
+
+              <i class="fa-solid fa-server text-6xl text-nex"></i>
+
+            </div>
+
+
+            <h3 class="text-center text-xl font-semibold text-gray-900">
+              VPS Business
+            </h3>
+
+
+            <p class="text-center text-sm text-gray-500 mt-1">
+              6 Core VPS Server
+            </p>
+
+
+            <div class="text-center mt-4">
+
+              <span class="text-3xl sm:text-4xl font-bold text-xoom">
+                ৳7299
+              </span>
+
+              <span class="text-sm font-semibold text-xoom">
+                /Mo
+              </span>
+
+            </div>
+
+
+            <div class="w-9 h-1 bg-blue-600 mx-auto my-5 rounded-full">
+            </div>
+
+
+            <ul class="space-y-2.5 text-sm flex-1">
+
+              <li>
+                <i class="fa-solid fa-microchip text-gray-400 w-5"></i>
+                <strong>6 Core</strong> CPU
+              </li>
+
+              <li>
+                <i class="fa-solid fa-memory text-gray-400 w-5"></i>
+                <strong>16 GB</strong> RAM
+              </li>
+
+              <li>
+                <i class="fa-solid fa-hard-drive text-gray-400 w-5"></i>
+                <strong>320 GB</strong> NVMe
+              </li>
+
+              <li>
+                <i class="fa-solid fa-gauge-high text-gray-400 w-5"></i>
+                <strong>2 Gbps</strong> Network
+              </li>
+
+              <li>
+                <i class="fa-solid fa-globe text-gray-400 w-5"></i>
+                <strong>2</strong> IPv4
+              </li>
+
+              <li>
+                <i class="fa-solid fa-shield-halved text-gray-400 w-5"></i>
+                <strong>DDoS</strong> Protection
+              </li>
+
+            </ul>
+
+
+            <button class="w-full mt-6 rounded-sm bg-nex py-3 text-white font-semibold hover:bg-xoom transition">
+
+              Order Now
+
+            </button>
+
+          </div>
+
+
+
+          <!-- =================================================
+                         VPS ULTRA
+                    ================================================== -->
+
+          <div
+            class="flex flex-col rounded-lg bg-white  p-5 sm:p-6 hover:-translate-y-1 transition-all duration-300 border border-nex">
+
+            <div class="flex justify-center mb-5">
+
+              <i class="fa-solid fa-server text-6xl text-blue-600"></i>
+
+            </div>
+
+
+            <h3 class="text-center text-xl font-semibold text-nex">
+              VPS Ultra
+            </h3>
+
+
+            <p class="text-center text-sm text-gray-500 mt-1">
+              8 Core VPS Server
+            </p>
+
+
+            <div class="text-center mt-4">
+
+              <span class="text-3xl sm:text-4xl font-bold text-xoom">
+                ৳1299
+              </span>
+
+              <span class="text-sm font-semibold text-xoom">
+                /Mo
+              </span>
+
+            </div>
+
+
+            <div class="w-9 h-1 bg-blue-600 mx-auto my-5 rounded-full">
+            </div>
+
+
+            <ul class="space-y-2.5 text-sm flex-1">
+
+              <li>
+                <i class="fa-solid fa-microchip text-gray-400 w-5"></i>
+                <strong>8 Core</strong> CPU
+              </li>
+
+              <li>
+                <i class="fa-solid fa-memory text-gray-400 w-5"></i>
+                <strong>32 GB</strong> RAM
+              </li>
+
+              <li>
+                <i class="fa-solid fa-hard-drive text-gray-400 w-5"></i>
+                <strong>500 GB</strong> NVMe
+              </li>
+
+              <li>
+                <i class="fa-solid fa-gauge-high text-gray-400 w-5"></i>
+                <strong>2 Gbps</strong> Network
+              </li>
+
+              <li>
+                <i class="fa-solid fa-globe text-gray-400 w-5"></i>
+                <strong>2</strong> IPv4
+              </li>
+
+              <li>
+                <i class="fa-solid fa-shield-halved text-gray-400 w-5"></i>
+                <strong>DDoS</strong> Protection
+              </li>
+
+            </ul>
+
+
+            <button class="w-full mt-6 rounded-sm bg-nex py-3 text-white font-semibold hover:bg-xoom transition">
+
+              Order Now
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
 
 
 
@@ -2518,11 +2565,11 @@
     <!-- Heading -->
     <div class="text-center mb-8 sm:mb-10">
 
-        <h2 class="text-2xl sm:text-3xl font-bold text-nex">
-            Meet Our Expert
-        </h2>
+      <h2 class="text-2xl sm:text-3xl font-bold text-nex">
+        Meet Our Expert
+      </h2>
 
-     
+
 
     </div>
 
@@ -2534,88 +2581,77 @@
     <div class="logo-slider px-4 sm:px-8 lg:px-14">
 
 
-       <div class="px-3">
-            <div class="text-center">
+      <div class="px-3">
+        <div class="text-center">
 
-                <div class="mx-auto w-36 h-36 sm:w-40 sm:h-40 rounded-full overflow-hidden">
-                    <img
-                        src="image and icon/user.jpg"
-                        alt="Md Rashidul islam Nexxoom"
-                        class="w-full h-full object-cover"
-                    >
-                </div>
+          <div class="mx-auto w-36 h-36 sm:w-40 sm:h-40 rounded-full overflow-hidden">
+            <img src="image and icon/user.jpg" alt="Md Rashidul islam Nexxoom" class="w-full h-full object-cover">
+          </div>
 
-                <h3 class="mt-5 text-lg sm:text-xl font-bold text-gray-800">
-                    HM Nayeam
-                </h3>
+          <h3 class="mt-5 text-lg sm:text-xl font-bold text-gray-800">
+            HM Nayeam
+          </h3>
 
-                <p class="mt-1 text-sm text-gray-600">
-                    CEO
-                </p>
+          <p class="mt-1 text-sm text-gray-600">
+            CEO
+          </p>
 
-            </div>
         </div>
+      </div>
 
-        <!-- CARD 1 -->
-        <div class="px-3">
-            <div class="text-center">
+      <!-- CARD 1 -->
+      <div class="px-3">
+        <div class="text-center">
 
-                <div class="mx-auto w-36 h-36 sm:w-40 sm:h-40 rounded-full overflow-hidden">
-                    <img
-                        src="image and icon/Md Rashidul Islam.jpg"
-                        alt="Md Rashidul islam Nexxoom"
-                        class="w-full h-full object-cover"
-                    >
-                </div>
+          <div class="mx-auto w-36 h-36 sm:w-40 sm:h-40 rounded-full overflow-hidden">
+            <img src="image and icon/Md Rashidul Islam.jpg" alt="Md Rashidul islam Nexxoom"
+              class="w-full h-full object-cover">
+          </div>
 
-                <h3 class="mt-5 text-lg sm:text-xl font-bold text-gray-800">
-                    Md Rashidul Islam
-                </h3>
+          <h3 class="mt-5 text-lg sm:text-xl font-bold text-gray-800">
+            Md Rashidul Islam
+          </h3>
 
-                <p class="mt-1 text-sm text-gray-600">
-                    Senior Web Developer
-                </p>
+          <p class="mt-1 text-sm text-gray-600">
+            Senior Web Developer
+          </p>
 
-            </div>
         </div>
+      </div>
 
 
-        <!-- CARD 2 -->
-        <div class="px-3">
-            <div class="text-center">
+      <!-- CARD 2 -->
+      <div class="px-3">
+        <div class="text-center">
 
-                <div class="mx-auto w-36 h-36 sm:w-40 sm:h-40 rounded-full overflow-hidden">
-                    <img
-                        src="image and icon/Md Abujor Gifari.jpg"
-                        alt="Md Abujor Gifari"
-                        class="w-full h-full object-cover"
-                    >
-                </div>
+          <div class="mx-auto w-36 h-36 sm:w-40 sm:h-40 rounded-full overflow-hidden">
+            <img src="image and icon/Md Abujor Gifari.jpg" alt="Md Abujor Gifari" class="w-full h-full object-cover">
+          </div>
 
-                <h3 class="mt-5 text-lg sm:text-xl font-bold text-gray-800">
-                    Md Abujor Gifari
-                </h3>
+          <h3 class="mt-5 text-lg sm:text-xl font-bold text-gray-800">
+            Md Abujor Gifari
+          </h3>
 
-                <p class="mt-1 text-sm text-gray-600">
-                    Web Developer
-                </p>
+          <p class="mt-1 text-sm text-gray-600">
+            Web Developer
+          </p>
 
-            </div>
         </div>
+      </div>
 
 
-        <!-- CARD 3 -->
-       
+      <!-- CARD 3 -->
 
 
-        <!-- CARD 4 -->
-      
+
+      <!-- CARD 4 -->
 
 
-        <!-- CARD 5 -->
-       
 
-        <!-- CARD 6 -->
+      <!-- CARD 5 -->
+
+
+      <!-- CARD 6 -->
 
     </div>
 
@@ -2626,109 +2662,103 @@
 
     <div class="flex justify-center mt-7 sm:mt-8">
 
-        <a
-            href="#"
-            class="inline-flex items-center justify-center
+      <a href="#" class="inline-flex items-center justify-center
                    bg-nex hover:bg-xoom
                    text-white text-sm font-semibold
                    px-7 py-3 rounded-md
-                   transition-all duration-300"
-        >
-            See All Team
-        </a>
+                   transition-all duration-300">
+        See All Team
+      </a>
 
     </div>
 
-</section>
+  </section>
   <!-- =========================================================
      BLOG / NEWS CARDS
 ========================================================= -->
 
-<section class="  bg-white py-8 sm:py-10 lg:py-12">
+  <section class="  bg-white py-8 sm:py-10 lg:py-12">
 
-  <div class="text-center mb-8 sm:mb-10">
+    <div class="text-center mb-8 sm:mb-10">
 
-        <h2 class="text-2xl sm:text-3xl font-bold text-nex">
-            Our Blog
-        </h2>
+      <div class="flex items-center justify-center mb-4 px-2 sm:px-0">
+      <h2 class="text-nex font-bold md:text-2xl text-sm border-b-2 border-nex pb-1 font-medium">
+        Our Blog
+      </h2>
+    
+    </div>
 
-     
+
 
     </div>
 
     <div class="container mx-auto px-4 sm:px-6 ">
 
-        <!-- =====================================================
+      <!-- =====================================================
              CARDS GRID
         ====================================================== -->
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-6 xl:gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-6 xl:gap-8">
 
 
-            <!-- =================================================
+        <!-- =================================================
                  CARD 01
             ================================================== -->
 
-            <article class="flex flex-col h-full">
+        <article class="flex flex-col h-full">
 
-                <!-- ================= IMAGE ================= -->
+          <!-- ================= IMAGE ================= -->
 
-                <div class="relative w-full aspect-[16/9] shrink-0">
+          <div class="relative w-full aspect-[16/9] shrink-0">
 
-                    <img
-                        src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=1200&q=80"
-                        alt="Agriculture Business Investment"
-                        class="w-full h-full object-cover rounded-2xl"
-                    >
+            <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=1200&q=80"
+              alt="Agriculture Business Investment" class="w-full h-full object-cover rounded-2xl">
 
-                    <!-- DATE -->
+            <!-- DATE -->
 
-                    <div
-                        class="absolute right-7 -bottom-6
+            <div class="absolute right-7 -bottom-6
                                w-12 h-32
                                bg-xoom
                                flex items-center justify-center
                                rounded-t-sm
                                shadow-sm">
 
-                        <span
-                            class="text-white
+              <span class="text-white
                                    text-[12px] sm:text-[13px]
                                    font-bold
                                    tracking-wide
                                    [writing-mode:vertical-rl]
                                    rotate-180">
 
-                            21 FEB 2026
+                21 FEB 2026
 
-                        </span>
+              </span>
 
-                    </div>
+            </div>
 
-                </div>
-
-
-                <!-- ================= CONTENT ================= -->
-
-                <div class="pt-6 pr-2 flex flex-col flex-1">
+          </div>
 
 
-                    <!-- AUTHOR -->
+          <!-- ================= CONTENT ================= -->
 
-                    <p class="text-[#3c5555] text-[15px] font-semibold mb-3">
-
-                        By
-                        <span class="text-[#17736f]">
-                            Admin
-                        </span>
-
-                    </p>
+          <div class="pt-6 pr-2 flex flex-col flex-1">
 
 
-                    <!-- TITLE -->
+            <!-- AUTHOR -->
 
-                    <h2
-                        class="text-[#182d2d]
+            <p class="text-[#3c5555] text-[15px] font-semibold mb-3">
+
+              By
+              <span class="text-[#17736f]">
+                Admin
+              </span>
+
+            </p>
+
+
+            <!-- TITLE -->
+
+            <h2 class="text-[#182d2d]
                                text-[24px]
                                sm:text-[27px]
                                lg:text-[25px]
@@ -2739,30 +2769,18 @@
                                overflow-hidden
                                mb-3">
 
-                        Agriculture Business Investment
+              Agriculture Business Investment
 
-                    </h2>
-
-
-                    <!-- DESCRIPTION -->
-
-                    <p
-                        class="text-[#536363]
-                               text-[16px]
-                               leading-6
-                               h-12
-                               overflow-hidden
-                               mb-4">
-
-                        This is Short Description
-
-                    </p>
+            </h2>
 
 
-                    <!-- READ MORE -->
+            <!-- DESCRIPTION -->
 
-                    
-                       <a href="" class=" inline-flex
+
+            <!-- READ MORE -->
+
+
+            <a href="" class=" inline-flex
                                items-center
                                gap-3
                                mb-2
@@ -2772,88 +2790,80 @@
                                text-[16px]
                                hover:text-nex
                                transition-colors
-                               duration-200"
-                              > 
-                        
+                               duration-200">
 
-                        Read More</a>
 
-                        <span
-                            class="w-8 h-[1px] bg-xoom">
-                        </span>
+              Read More</a>
 
-                    </a>
+            <span class="w-8 h-[1px] bg-xoom">
+            </span>
 
-                </div>
+            </a>
 
-            </article>
+          </div>
+
+        </article>
 
 
 
-            <!-- =================================================
+        <!-- =================================================
                  CARD 02
             ================================================== -->
 
-            <article class="flex flex-col h-full">
+        <article class="flex flex-col h-full">
 
-                <!-- ================= IMAGE ================= -->
+          <!-- ================= IMAGE ================= -->
 
-                <div class="relative w-full aspect-[16/9] shrink-0">
+          <div class="relative w-full aspect-[16/9] shrink-0">
 
-                    <img
-                        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
-                        alt="Digital Transformation"
-                        class="w-full h-full object-cover rounded-2xl"
-                    >
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
+              alt="Digital Transformation" class="w-full h-full object-cover rounded-2xl">
 
-                    <!-- DATE -->
+            <!-- DATE -->
 
-                    <div
-                        class="absolute right-7 -bottom-6
+            <div class="absolute right-7 -bottom-6
                                w-12 h-32
                                bg-xoom
                                flex items-center justify-center
                                rounded-t-sm
                                shadow-sm">
 
-                        <span
-                            class="text-white
+              <span class="text-white
                                    text-[12px] sm:text-[13px]
                                    font-bold
                                    tracking-wide
                                    [writing-mode:vertical-rl]
                                    rotate-180">
 
-                            21 FEB 2026
+                21 FEB 2026
 
-                        </span>
+              </span>
 
-                    </div>
+            </div>
 
-                </div>
-
-
-                <!-- ================= CONTENT ================= -->
-
-                <div class="pt-6 pr-2 flex flex-col flex-1">
+          </div>
 
 
-                    <!-- AUTHOR -->
+          <!-- ================= CONTENT ================= -->
 
-                    <p class="text-[#3c5555] text-[15px] font-semibold mb-3">
-
-                        By
-                        <span class="text-[#17736f]">
-                            Admin
-                        </span>
-
-                    </p>
+          <div class="pt-6 pr-2 flex flex-col flex-1">
 
 
-                    <!-- TITLE -->
+            <!-- AUTHOR -->
 
-                    <h2
-                        class="text-[#182d2d]
+            <p class="text-[#3c5555] text-[15px] font-semibold mb-3">
+
+              By
+              <span class="text-[#17736f]">
+                Admin
+              </span>
+
+            </p>
+
+
+            <!-- TITLE -->
+
+            <h2 class="text-[#182d2d]
                                text-[24px]
                                sm:text-[27px]
                                lg:text-[25px]
@@ -2864,35 +2874,19 @@
                                overflow-hidden
                                mb-3">
 
-                        Harnessing Digital Transform a Roadmap Businesses.
+              Harnessing Digital Transform a Roadmap Businesses.
 
-                    </h2>
-
-
-                    <!-- DESCRIPTION -->
-
-                    <p
-                        class="text-[#536363]
-                               text-[16px]
-                               leading-6
-                               h-12
-                               overflow-hidden
-                               mb-4">
-
-                        Sed eget felis dolor. Sed ultrices faucibus mattis.
-                        Morbi aliquam nulla nec tortor sagittis laoreet.
-                        Etiam ut ligula dignissim lacus eleifend iaculis.
-                        Donec nec magna lobortis, lacinia tortor a,
-                        imperdiet ipsum.
-
-                    </p>
+            </h2>
 
 
-                    <!-- READ MORE -->
+            <!-- DESCRIPTION -->
 
-                    
-                      <a  href=""
-                        class="
+
+
+            <!-- READ MORE -->
+
+
+            <a href="" class="
                                inline-flex
                                items-center
                                gap-3
@@ -2904,84 +2898,77 @@
                                transition-colors
                                duration-200">
 
-                        Read More </a>
+              Read More </a>
 
-                        <span
-                            class="w-8 h-[1px] bg-xoom">
-                        </span>
+            <span class="w-8 h-[1px] bg-xoom">
+            </span>
 
-                    </a>
+            </a>
 
-                </div>
+          </div>
 
-            </article>
-
+        </article>
 
 
-            <!-- =================================================
+
+        <!-- =================================================
                  CARD 03
             ================================================== -->
 
-            <article class="flex flex-col h-full">
+        <article class="flex flex-col h-full">
 
-                <!-- ================= IMAGE ================= -->
+          <!-- ================= IMAGE ================= -->
 
-                <div class="relative w-full aspect-[16/9] shrink-0">
+          <div class="relative w-full aspect-[16/9] shrink-0">
 
-                    <img
-                        src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80"
-                        alt="Modern Business"
-                        class="w-full h-full object-cover rounded-2xl"
-                    >
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80"
+              alt="Modern Business" class="w-full h-full object-cover rounded-2xl">
 
-                    <!-- DATE -->
+            <!-- DATE -->
 
-                    <div
-                        class="absolute right-7 -bottom-6
+            <div class="absolute right-7 -bottom-6
                                w-12 h-32
                                bg-xoom
                                flex items-center justify-center
                                rounded-t-sm
                                shadow-sm">
 
-                        <span
-                            class="text-white
+              <span class="text-white
                                    text-[12px] sm:text-[13px]
                                    font-bold
                                    tracking-wide
                                    [writing-mode:vertical-rl]
                                    rotate-180">
 
-                            21 FEB 2026
+                21 FEB 2026
 
-                        </span>
+              </span>
 
-                    </div>
+            </div>
 
-                </div>
-
-
-                <!-- ================= CONTENT ================= -->
-
-                <div class="pt-6 pr-2 flex flex-col flex-1">
+          </div>
 
 
-                    <!-- AUTHOR -->
+          <!-- ================= CONTENT ================= -->
 
-                    <p class="text-[#3c5555] text-[15px] font-semibold mb-3">
-
-                        By
-                        <span class="text-[#17736f]">
-                            Admin
-                        </span>
-
-                    </p>
+          <div class="pt-6 pr-2 flex flex-col flex-1">
 
 
-                    <!-- TITLE -->
+            <!-- AUTHOR -->
 
-                    <h2
-                        class="text-[#182d2d]
+            <p class="text-[#3c5555] text-[15px] font-semibold mb-3">
+
+              By
+              <span class="text-[#17736f]">
+                Admin
+              </span>
+
+            </p>
+
+
+            <!-- TITLE -->
+
+            <h2 class="text-[#182d2d]
                                text-[24px]
                                sm:text-[27px]
                                lg:text-[25px]
@@ -2992,33 +2979,20 @@
                                overflow-hidden
                                mb-3">
 
-                        Building A Modern Business Strategy
+              Building A Modern Business Strategy
 
-                    </h2>
-
-
-                    <!-- DESCRIPTION -->
-
-                    <p
-                        class="text-[#536363]
-                               text-[16px]
-                               leading-6
-                               h-12
-                               overflow-hidden
-                               mb-4">
-
-                        Discover innovative strategies and modern
-                        solutions that help businesses grow faster,
-                        smarter and more efficiently.
-
-                    </p>
+            </h2>
 
 
-                    <!-- READ MORE -->
+            <!-- DESCRIPTION -->
 
-                    
-                       <a href="#"
-                        class="
+   
+
+
+            <!-- READ MORE -->
+
+
+            <a href="#" class="
                                inline-flex
                                items-center
                                gap-3
@@ -3030,24 +3004,23 @@
                                transition-colors
                                duration-200">
 
-                        Read More </a>
+              Read More </a>
 
-                        <span
-                            class="w-8 h-[1px] bg-xoom">
-                        </span>
+            <span class="w-8 h-[1px] bg-xoom">
+            </span>
 
-                    </a>
+            </a>
 
-                </div>
+          </div>
 
-            </article>
+        </article>
 
 
-        </div>
+      </div>
 
     </div>
 
-</section>
+  </section>
 
   <!-- ===== Hostinger CTA ===== -->
   <section class="relative z-20 container mx-auto px-4 mt-0 md:mt-5 lg:mt-5">
@@ -3089,43 +3062,45 @@
         </a>
 
         <a href="
-nexxoom99@gmail.com" class="text-nex hover:text-white transition text-xs sm:text-sm flex items-center gap-1 mt-2 font-medium">
+nexxoom99@gmail.com"
+          class="text-nex hover:text-white transition text-xs sm:text-sm flex items-center gap-1 mt-2 font-medium">
           <i class="fa fa-envelope text-[10px] sm:text-xs"></i>
           <span> nexxoom99@gmail.com</span>
         </a>
 
         <a href="
-nexxoom99@gmail.com" class="text-nex hover:text-white transition text-xs sm:text-sm flex items-center gap-1 mt-2 font-medium">
+nexxoom99@gmail.com"
+          class="text-nex hover:text-white transition text-xs sm:text-sm flex items-center gap-1 mt-2 font-medium">
           <i class="fa-solid fa-location-dot text-[10px] sm:text-xs"></i>
           <span> Housebuilding, Uttara, Dhaka, 1230</span>
         </a>
 
-       <div class="hidden sm:flex items-center mt-4 gap-2">
+         <div class=" sm:flex items-center justify-start gap-2 mt-3">
             <a href="#" aria-label="WhatsApp"
-              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#25D366] hover:bg-white hover:scale-110 transition-all duration-200"><i
+              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#25D366]   duration-200"><i
                 class="fa-brands fa-whatsapp"></i></a>
             <a href="#" aria-label="Facebook"
-              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#1877F2] hover:bg-white hover:scale-110 transition-all duration-200"><i
+              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#1877F2]   duration-200"><i
                 class="fa-brands fa-facebook-f"></i></a>
             <a href="#" aria-label="YouTube"
-              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#FF0000] hover:bg-white hover:scale-110 transition-all duration-200"><i
+              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#FF0000]  hover:scale-110 transition-all duration-200"><i
                 class="fa-brands fa-youtube"></i></a>
             <a href="#" aria-label="LinkedIn"
-              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#0A66C2] hover:bg-white hover:scale-110 transition-all duration-200"><i
+              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#0A66C2]  hover:scale-110 transition-all duration-200"><i
                 class="fa-brands fa-linkedin-in"></i></a>
             <a href="#" aria-label="Twitter"
-              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#1DA1F2] hover:bg-white hover:scale-110 transition-all duration-200"><i
+              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#1DA1F2]  hover:scale-110 transition-all duration-200"><i
                 class="fa-brands fa-twitter"></i></a>
             <a href="#" aria-label="GitHub"
-              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#181717] hover:bg-white hover:scale-110 transition-all duration-200"><i
+              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#181717]  hover:scale-110 transition-all duration-200"><i
                 class="fa-brands fa-github"></i></a>
           </div>
       </div>
 
       <!-- Our Menu -->
       <div>
-        <h4 class="font-semibold text-nex text-lg mb-4">Our Menu</h4>
-        <ul class="space-y-3 font-medium text-gray-400">
+        <h4 class="font-semibold text-nex text-2xl mb-4">Our Menu</h4>
+        <ul class="space-y-3 font-medium text-md text-nex">
           <li>
             <a href="#" class="hover:text-white text-nex transition">Import Plugin</a>
           </li>
@@ -3143,8 +3118,8 @@ nexxoom99@gmail.com" class="text-nex hover:text-white transition text-xs sm:text
 
       <!-- Information -->
       <div>
-        <h4 class="font-semibold text-nex text-lg mb-4">Information</h4>
-        <ul class="space-y-3 text-sm text-gray-400 font-medium">
+        <h4 class="font-semibold text-nex text-2xl mb-4">Information</h4>
+        <ul class="space-y-3 text-md text-gray-400 font-medium">
           <li>
             <a href="#" class="hover:text-white text-nex transition">Terms &amp; Condition</a>
           </li>
@@ -3162,8 +3137,8 @@ nexxoom99@gmail.com" class="text-nex hover:text-white transition text-xs sm:text
 
       <!-- Our Info -->
       <div>
-        <h4 class="font-semibold text-nex text-lg mb-4">Service</h4>
-        <ul class="space-y-3 text-sm text-gray-400 font-medium">
+        <h4 class="font-semibold text-nex text-2xl mb-4">Service</h4>
+        <ul class="space-y-3 text-md text-gray-400 font-medium">
           <li>
             <a href="#" class="hover:text-white text-nex transition">Terms &amp; Condition</a>
           </li>
@@ -3189,10 +3164,18 @@ nexxoom99@gmail.com" class="text-nex hover:text-white transition text-xs sm:text
 
   <!-- ===== Bottom Bar ===== -->
   <hr />
-  <footer class="relative w-full bg-nex text-white fw-bold p-2">
-    <p class="text-gray-400 text-sm text-center">
-      © 2026 Copyrights by <span class="text-white border-b-2"> NexXoom </span>All Rights Reserved by <span class="text-white border-b-2"> NexXoom </span>    </p>
-  </footer>
+ <footer class="relative w-full bg-nex text-white font-bold p-2">
+  <p class="text-white text-sm text-center">
+    © 2026 Copyrights by
+    <span class="text-white border-b-2 border-xoom">
+      NexXoom
+    </span>
+    All Rights Reserved by
+    <span class="text-white border-b-2 border-xoom">
+      NexXoom
+    </span>
+  </p>
+</footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"

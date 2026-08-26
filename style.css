@@ -140,11 +140,12 @@
   overflow: hidden;
   transition: box-shadow .2s, transform .2s;
   background: #fff;
+  border: 1px solid var(--nex-color);
 }
 .product-card:hover {
   box-shadow: 0 4px 16px rgba(0,0,0,.1);
   transform: translateY(-2px);
-  border: 1px solid  var(--nex-color);
+  border: 1px solid  var(--xoom-color);
 }
 .product-card .card-body {
   display: flex;
@@ -162,7 +163,7 @@
 .eye-btn {
   width: 30px;
   height: 28px;
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--nex-color);
   border-radius: 4px;
   background: #fff;
   display: flex;
@@ -177,6 +178,7 @@
 .eye-btn:hover {
   background: var(--xoom-color);
   color: #fff;
+  border: none;
 }
 
 .card-thumb {
@@ -780,6 +782,7 @@ body { overflow-x: hidden; }
         border: 1px solid #eee;
         border-radius: 10px;
         overflow: hidden;
+        border: 1px solid var(--nex-color);
 
         display: flex;
         flex-direction: column;
@@ -790,7 +793,7 @@ body { overflow-x: hidden; }
     }
 
     .nex-tpl-card:hover {
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  
         transform: translateY(-3px);
     }
 
