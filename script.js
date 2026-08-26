@@ -442,3 +442,92 @@ $(document).ready(function () {
     });
 
 });
+
+
+
+
+// faq page start 
+
+
+
+    function toggleFAQ(button) {
+
+        const currentItem = button.closest('.faq-item');
+        const currentAnswer = currentItem.querySelector('.faq-answer');
+        const currentIcon = currentItem.querySelector('.faq-icon i');
+
+        // Close all other FAQs
+        document.querySelectorAll('.faq-item').forEach(item => {
+
+            if (item !== currentItem) {
+
+                const answer = item.querySelector('.faq-answer');
+                const icon = item.querySelector('.faq-icon i');
+
+                answer.classList.add('hidden');
+
+                icon.classList.remove('fa-minus');
+                icon.classList.add('fa-plus');
+
+                item.classList.remove(
+                    'border-nex',
+                    'shadow-[0_5px_20px_rgba(0,0,0,0.08)]'
+                );
+            }
+
+        });
+
+        // Toggle current FAQ
+        if (currentAnswer.classList.contains('hidden')) {
+
+            currentAnswer.classList.remove('hidden');
+
+            currentIcon.classList.remove('fa-plus');
+            currentIcon.classList.add('fa-minus');
+
+            currentItem.classList.add(
+                'border-nex',
+                'shadow-[0_5px_20px_rgba(0,0,0,0.08)]'
+            );
+
+        } else {
+
+            currentAnswer.classList.add('hidden');
+
+            currentIcon.classList.remove('fa-minus');
+            currentIcon.classList.add('fa-plus');
+
+            currentItem.classList.remove(
+                'border-nex',
+                'shadow-[0_5px_20px_rgba(0,0,0,0.08)]'
+            );
+        }
+    }
+
+
+    // ==============================
+    // FIRST FAQ OPEN BY DEFAULT
+    // ==============================
+    document.addEventListener('DOMContentLoaded', function () {
+
+        const firstItem = document.querySelector('.faq-item');
+
+        if (firstItem) {
+
+            const answer = firstItem.querySelector('.faq-answer');
+            const icon = firstItem.querySelector('.faq-icon i');
+
+            answer.classList.remove('hidden');
+
+            icon.classList.remove('fa-plus');
+            icon.classList.add('fa-minus');
+
+            firstItem.classList.add(
+                'border-nex',
+                'shadow-[0_5px_20px_rgba(0,0,0,0.08)]'
+            );
+        }
+
+    });
+
+// faq page  end
