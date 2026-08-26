@@ -413,121 +413,135 @@
         <!-- ========================= -->
         <!-- RIGHT SIDE IMAGE -->
         <!-- ========================= -->
-       <section class="container mx-auto bg-white py-5 px-2 sm:px-6 lg:px-8">
+       <section class="container mx-auto bg-white py-5 px-2 sm:px-6 lg:px-8 border border-nex rounded-2xl">
 
-  <div class="max-w-full">
+<div class="max-w-full">
 
     <!-- Heading -->
     <h4
-      class="text-center text-nex text-3xl sm:text-4xl md:text-[30px]
-             font-bold leading-tight mb-10"
+        class="text-center text-nex text-3xl sm:text-4xl md:text-[30px]
+               font-bold leading-tight mb-10"
     >
-      Register Domain Name here!
+        Register Domain Name here!
     </h4>
 
     <!-- Search Box -->
     <div class="w-full flex flex-col gap-2">
 
-      <!-- INPUT CONTAINER -->
-      <div
-        class="w-full bg-white rounded-2xl
-                p-2"
-      >
-        <div class="flex items-center w-full h-[25px] px-3 sm:px-5">
-
-          <!-- Search Icon -->
-          <i
-            class="fa-solid fa-magnifying-glass
-                   text-nex text-[16px] sm:text-[18px] mr-3 shrink-0"
-          ></i>
-
-          <!-- Input -->
-          <input
-            type="text"
-            placeholder="Find your new domain name"
-            class="w-full h-full outline-none border-none bg-transparent
-                   text-[14px] sm:text-[16px] text-gray-700
-                   placeholder:text-nex placeholder:font-normal"
-          />
-
-        </div>
-      </div>
-
-      <!-- Search Button -->
-      <div class="w-full flex justify-center mt-2">
-
-        <button
-          class="w-[150px] h-[34px] rounded-lg bg-nex hover:bg-xoom
-                 text-white text-[16px] font-bold
-                 transition duration-200"
+        <!-- INPUT CONTAINER -->
+        <div
+            class="w-full bg-white rounded-2xl p-2
+                   border-2 border-nex/70
+                   shadow-[0_4px_20px_rgba(0,0,0,0.06)]
+                   transition-all duration-300
+                   focus-within:border-nex
+                   focus-within:shadow-[0_0_0_3px_rgba(0,0,0,0.08)]"
         >
-          Search
-        </button>
 
-      </div>
+            <div class="flex items-center w-full h-[25px] px-3 sm:px-5">
+
+                <!-- Search Icon -->
+                <i
+                    class="fa-solid fa-magnifying-glass
+                           text-nex text-[16px] sm:text-[18px]
+                           mr-3 shrink-0
+                           transition-transform duration-300
+                           group-focus-within:scale-110"
+                ></i>
+
+                <!-- Input -->
+                <input
+                    type="text"
+                    placeholder="Find your new domain name"
+                    class="w-full h-full outline-none
+                           border-none bg-transparent
+                           text-[14px] sm:text-[16px]
+                           text-gray-700
+                           placeholder:text-nex
+                           placeholder:font-normal
+                           focus:ring-0"
+                />
+
+            </div>
+        </div>
+
+        <!-- Search Button -->
+        <div class="w-full flex justify-center mt-2">
+            <button
+                class="w-[150px] h-[34px]
+                       rounded-lg
+                       bg-nex hover:bg-xoom
+                       text-white text-[16px]
+                       font-bold
+                       shadow-md hover:shadow-lg
+                       transition-all duration-200
+                       hover:-translate-y-[1px]"
+            >
+                Search
+            </button>
+        </div>
 
     </div>
-
 
     <!-- Domain Prices -->
     <div
-      class="mt-8 flex items-center justify-between
-             gap-3 overflow-hidden"
+        class="mt-8 flex items-center justify-between
+               gap-3 overflow-hidden"
     >
 
-      <!-- .com -->
-      <div class="flex items-center gap-1 whitespace-nowrap">
-        <span class="text-nex text-[18px] sm:text-[20px] font-bold">
-          .com
-        </span>
-        <span class="text-xoom text-[13px] sm:text-[15px]">
-          ৳1199
-        </span>
-      </div>
+        <!-- .com -->
+        <div class="flex items-center gap-1 whitespace-nowrap">
+            <span class="text-nex text-[18px] sm:text-[20px] font-bold">
+                .com
+            </span>
+            <span class="text-xoom text-[13px] sm:text-[15px]">
+                ৳1199
+            </span>
+        </div>
 
-      <!-- .net -->
-      <div class="flex items-center gap-1 whitespace-nowrap">
-        <span class="text-nex text-[18px] sm:text-[20px] font-bold">
-          .net
-        </span>
-        <span class="text-xoom text-[13px] sm:text-[15px]">
-          ৳1399
-        </span>
-      </div>
+        <!-- .net -->
+        <div class="flex items-center gap-1 whitespace-nowrap">
+            <span class="text-nex text-[18px] sm:text-[20px] font-bold">
+                .net
+            </span>
+            <span class="text-xoom text-[13px] sm:text-[15px]">
+                ৳1399
+            </span>
+        </div>
 
-      <!-- .org -->
-      <div class="flex items-center gap-1 whitespace-nowrap">
-        <span class="text-nex text-[18px] sm:text-[20px] font-bold">
-          .org
-        </span>
-        <span class="text-xoom text-[13px] sm:text-[15px]">
-          ৳999
-        </span>
-      </div>
+        <!-- .org -->
+        <div class="flex items-center gap-1 whitespace-nowrap">
+            <span class="text-nex text-[18px] sm:text-[20px] font-bold">
+                .org
+            </span>
+            <span class="text-xoom text-[13px] sm:text-[15px]">
+                ৳999
+            </span>
+        </div>
 
-      <!-- .info -->
-      <div class="flex items-center gap-1 whitespace-nowrap">
-        <span class="text-nex text-[18px] sm:text-[20px] font-bold">
-          .info
-        </span>
-        <span class="text-xoom text-[13px] sm:text-[15px]">
-          ৳499
-        </span>
-      </div>
+        <!-- .info -->
+        <div class="flex items-center gap-1 whitespace-nowrap">
+            <span class="text-nex text-[18px] sm:text-[20px] font-bold">
+                .info
+            </span>
+            <span class="text-xoom text-[13px] sm:text-[15px]">
+                ৳499
+            </span>
+        </div>
 
-      <!-- .xyz -->
-      <div class="flex items-center gap-1 whitespace-nowrap">
-        <span class="text-nex text-[18px] sm:text-[20px] font-bold">
-          .xyz
-        </span>
-        <span class="text-xoom text-[13px] sm:text-[15px]">
-          ৳299
-        </span>
-      </div>
+        <!-- .xyz -->
+        <div class="flex items-center gap-1 whitespace-nowrap">
+            <span class="text-nex text-[18px] sm:text-[20px] font-bold">
+                .xyz
+            </span>
+            <span class="text-xoom text-[13px] sm:text-[15px]">
+                ৳299
+            </span>
+        </div>
 
     </div>
 
-  </div>
+</div>
  <div class="flex justify-center   mt-[50px]">
 
       <button type="button"
@@ -548,18 +562,26 @@
 
   <!-- all custom talmplet start  -->
 
-  <section class="container mx-auto px-4 md:py-6">
+<section class="container mx-auto px-4 md:py-6">
 
     <!-- HEADER -->
-
     <div class="flex items-center justify-between mb-4">
 
-      <h2 class="text-nex font-bold md:text-2xl text-sm border-b-2 border-nex pb-1 font-medium">
-        All Custom Template
-      </h2>
-      <a href="#" class="bg-nex text-white text-xs px-4 py-1.5 rounded hover:bg-xoom transition">
-        View More
-      </a>
+        <h2
+            class="text-nex font-bold md:text-2xl text-sm
+                   border-b-2 border-nex pb-1 font-medium"
+        >
+            All Custom Template
+        </h2>
+
+        <a
+            href="#"
+            class="bg-nex text-white text-xs
+                   px-4 py-1.5 rounded
+                   hover:bg-xoom transition"
+        >
+            View More
+        </a>
 
     </div>
 
@@ -568,223 +590,334 @@
          GRID
     ====================================================== -->
 
-    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
+    <div
+        class="grid grid-cols-2 sm:grid-cols-2
+               md:grid-cols-3 lg:grid-cols-5
+               gap-3 sm:gap-4"
+    >
 
 
-      <!-- =================================================
+        <!-- =================================================
              CARD 1
         ================================================== -->
 
-      <div class="nex-tpl-card">
+        <div class="nex-tpl-card">
 
-        <div class="nex-tpl-thumb">
+            <!-- IMAGE -->
+            <div class="nex-tpl-thumb">
+                <img
+                    src="image and icon/custom-1.png"
+                    alt="ShopMart"
+                >
+            </div>
 
-          <img src="image and icon/custom-1.png" alt="ShopMart">
+            <!-- BODY -->
+            <div class="nex-tpl-body px-2.5 pt-3 pb-2.5">
 
+                <!-- DESCRIPTION -->
+                <p
+                    class="text-xs font-semibold
+                           leading-tight mb-3"
+                >
+                    ShopMart – Premium Daraz Website Template
+                </p>
+
+                <!-- BUTTONS -->
+                <div class="flex gap-1.5">
+
+                    <button
+                        type="button"
+                        class="eye-btn"
+                        title="Quick View"
+                    >
+                        <i class="fa fa-info-circle"></i>
+                    </button>
+
+                    <button
+                        type="button"
+                        class="flex-1 bg-nex
+                               text-white text-xs
+                               py-1.5 rounded
+                               hover:bg-xoom transition"
+                    >
+                        Buy Now
+                    </button>
+
+                    <button
+                        type="button"
+                        class="eye-btn"
+                        title="Preview"
+                    >
+                        <i class="fa fa-eye"></i>
+                    </button>
+
+                </div>
+
+            </div>
         </div>
 
-        <div class="nex-tpl-body">
 
-          <p class="text-xs font-semibold leading-tight mb-2">
-            ShopMart – Premium Daraz Website Template
-          </p>
-
-          <div class="flex gap-1">
-
-            <button type="button" class="eye-btn" title="Quick View">
-              <i class="fa fa-info-circle"></i>
-            </button>
-
-            <button type="button" class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-xoom transition">
-              Buy Now
-            </button>
-
-            <button type="button" class="eye-btn" title="Preview">
-              <i class="fa fa-eye"></i>
-            </button>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- =================================================
+        <!-- =================================================
              CARD 2
         ================================================== -->
 
-      <div class="nex-tpl-card">
+        <div class="nex-tpl-card">
 
-        <div class="nex-tpl-thumb">
+            <!-- IMAGE -->
+            <div class="nex-tpl-thumb">
+                <img
+                    src="image and icon/custom-2.png"
+                    alt="ShopMart"
+                >
+            </div>
 
-          <img src="image and icon/custom-2.png" alt="ShopMart">
+            <!-- BODY -->
+            <div class="nex-tpl-body px-2.5 pt-3 pb-2.5">
 
+                <!-- DESCRIPTION -->
+                <p
+                    class="text-xs font-semibold
+                           leading-tight mb-3"
+                >
+                    ShopMart – Premium Daraz Website Template
+                </p>
+
+                <!-- BUTTONS -->
+                <div class="flex gap-1.5">
+
+                    <button
+                        type="button"
+                        class="eye-btn"
+                        title="Quick View"
+                    >
+                        <i class="fa fa-info-circle"></i>
+                    </button>
+
+                    <button
+                        type="button"
+                        class="flex-1 bg-nex
+                               text-white text-xs
+                               py-1.5 rounded
+                               hover:bg-xoom transition"
+                    >
+                        Buy Now
+                    </button>
+
+                    <button
+                        type="button"
+                        class="eye-btn"
+                        title="Preview"
+                    >
+                        <i class="fa fa-eye"></i>
+                    </button>
+
+                </div>
+
+            </div>
         </div>
 
-        <div class="nex-tpl-body">
 
-          <p class="text-xs font-semibold leading-tight mb-2">
-            ShopMart – Premium Daraz Website Template
-          </p>
-
-          <div class="flex gap-1">
-
-            <button type="button" class="eye-btn" title="Quick View">
-              <i class="fa fa-info-circle"></i>
-            </button>
-
-            <button type="button" class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-xoom transition">
-              Buy Now
-            </button>
-
-            <button type="button" class="eye-btn" title="Preview">
-              <i class="fa fa-eye"></i>
-            </button>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- =================================================
+        <!-- =================================================
              CARD 3
         ================================================== -->
 
-      <div class="nex-tpl-card">
+        <div class="nex-tpl-card">
 
-        <div class="nex-tpl-thumb">
+            <!-- IMAGE -->
+            <div class="nex-tpl-thumb">
+                <img
+                    src="image and icon/custom-3.png"
+                    alt="ShopMart"
+                >
+            </div>
 
-          <img src="image and icon/custom-3.png" alt="ShopMart">
+            <!-- BODY -->
+            <div class="nex-tpl-body px-2.5 pt-3 pb-2.5">
 
+                <!-- DESCRIPTION -->
+                <p
+                    class="text-xs font-semibold
+                           leading-tight mb-3"
+                >
+                    ShopMart – Premium Daraz Website Template
+                </p>
+
+                <!-- BUTTONS -->
+                <div class="flex gap-1.5">
+
+                    <button
+                        type="button"
+                        class="eye-btn"
+                        title="Quick View"
+                    >
+                        <i class="fa fa-info-circle"></i>
+                    </button>
+
+                    <button
+                        type="button"
+                        class="flex-1 bg-nex
+                               text-white text-xs
+                               py-1.5 rounded
+                               hover:bg-xoom transition"
+                    >
+                        Buy Now
+                    </button>
+
+                    <button
+                        type="button"
+                        class="eye-btn"
+                        title="Preview"
+                    >
+                        <i class="fa fa-eye"></i>
+                    </button>
+
+                </div>
+
+            </div>
         </div>
 
-        <div class="nex-tpl-body">
 
-          <p class="text-xs font-semibold leading-tight mb-2">
-            ShopMart – Premium Daraz Website Template
-          </p>
-
-          <div class="flex gap-1">
-
-            <button type="button" class="eye-btn" title="Quick View">
-              <i class="fa fa-info-circle"></i>
-            </button>
-
-            <button type="button" class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-xoom transition">
-              Buy Now
-            </button>
-
-            <button type="button" class="eye-btn" title="Preview">
-              <i class="fa fa-eye"></i>
-            </button>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- =================================================
+        <!-- =================================================
              CARD 4
         ================================================== -->
 
-      <div class="nex-tpl-card">
+        <div class="nex-tpl-card">
 
-        <div class="nex-tpl-thumb">
+            <!-- IMAGE -->
+            <div class="nex-tpl-thumb">
+                <img
+                    src="image and icon/custom-4.png"
+                    alt="ShopMart"
+                >
+            </div>
 
-          <img src="image and icon/custom-4.png" alt="ShopMart">
+            <!-- BODY -->
+            <div class="nex-tpl-body px-2.5 pt-3 pb-2.5">
 
+                <!-- DESCRIPTION -->
+                <p
+                    class="text-xs font-semibold
+                           leading-tight mb-3"
+                >
+                    ShopMart – Premium Daraz Website Template
+                </p>
+
+                <!-- BUTTONS -->
+                <div class="flex gap-1.5">
+
+                    <button
+                        type="button"
+                        class="eye-btn"
+                        title="Quick View"
+                    >
+                        <i class="fa fa-info-circle"></i>
+                    </button>
+
+                    <button
+                        type="button"
+                        class="flex-1 bg-nex
+                               text-white text-xs
+                               py-1.5 rounded
+                               hover:bg-xoom transition"
+                    >
+                        Buy Now
+                    </button>
+
+                    <button
+                        type="button"
+                        class="eye-btn"
+                        title="Preview"
+                    >
+                        <i class="fa fa-eye"></i>
+                    </button>
+
+                </div>
+
+            </div>
         </div>
 
-        <div class="nex-tpl-body">
 
-          <p class="text-xs font-semibold leading-tight mb-2">
-            ShopMart – Premium Daraz Website Template
-          </p>
-
-          <div class="flex gap-1">
-
-            <button type="button" class="eye-btn" title="Quick View">
-              <i class="fa fa-info-circle"></i>
-            </button>
-
-            <button type="button" class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-xoom transition">
-              Buy Now
-            </button>
-
-            <button type="button" class="eye-btn" title="Preview">
-              <i class="fa fa-eye"></i>
-            </button>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- =================================================
+        <!-- =================================================
              CARD 5
         ================================================== -->
 
-      <div class="nex-tpl-card">
+        <div class="nex-tpl-card">
 
-        <div class="nex-tpl-thumb">
+            <!-- IMAGE -->
+            <div class="nex-tpl-thumb">
+                <img
+                    src="image and icon/custom-5.png"
+                    alt="ShopMart"
+                >
+            </div>
 
-          <img src="image and icon/custom-5.png" alt="ShopMart">
+            <!-- BODY -->
+            <div class="nex-tpl-body px-2.5 pt-3 pb-2.5">
 
+                <!-- DESCRIPTION -->
+                <p
+                    class="text-xs font-semibold
+                           leading-tight mb-3"
+                >
+                    ShopMart – Premium Daraz Website Template
+                </p>
+
+                <!-- BUTTONS -->
+                <div class="flex gap-1.5">
+
+                    <button
+                        type="button"
+                        class="eye-btn"
+                        title="Quick View"
+                    >
+                        <i class="fa fa-info-circle"></i>
+                    </button>
+
+                    <button
+                        type="button"
+                        class="flex-1 bg-nex
+                               text-white text-xs
+                               py-1.5 rounded
+                               hover:bg-xoom transition"
+                    >
+                        Buy Now
+                    </button>
+
+                    <button
+                        type="button"
+                        class="eye-btn"
+                        title="Preview"
+                    >
+                        <i class="fa fa-eye"></i>
+                    </button>
+
+                </div>
+
+            </div>
         </div>
-
-        <div class="nex-tpl-body">
-
-          <p class="text-xs font-semibold leading-tight mb-2">
-            ShopMart – Premium Daraz Website Template
-          </p>
-
-          <div class="flex gap-1">
-
-            <button type="button" class="eye-btn" title="Quick View">
-              <i class="fa fa-info-circle"></i>
-            </button>
-
-            <button type="button" class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-xoom transition">
-              Buy Now
-            </button>
-
-            <button type="button" class="eye-btn" title="Preview">
-              <i class="fa fa-eye"></i>
-            </button>
-
-          </div>
-
-        </div>
-
-      </div>
 
     </div>
 
 
-    <!-- LOAD MORE -->
+    <!-- =====================================================
+         LOAD MORE
+    ====================================================== -->
 
-    <div class="flex justify-center   mt-2">
+    <div class="flex justify-center mt-4">
 
-      <button type="button"
-        class="border px-8 py-2 rounded bg-nex text-white hover:bg-xoom transition text-sm font-medium">
-        Load More
-      </button>
+        <button
+            type="button"
+            class="border px-8 py-2
+                   rounded bg-nex text-white
+                   hover:bg-xoom transition
+                   text-sm font-medium"
+        >
+            Load More
+        </button>
 
     </div>
 
-  </section>
-
+</section>
 
   <!-- all custom talmplet end -->
 
@@ -1565,7 +1698,7 @@
       <!-- CSS -->
       <div class="bg-white rounded-xl h-32 sm:h-36 flex flex-col items-center justify-center text-center p-3 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
         <img
-          src="image and icon/technology/css.png"
+          src="image and icon/tec-image/css.png"
           alt="CSS"
           class="w-12 h-12 sm:w-14 sm:h-14 object-contain mb-2"
         >
@@ -1578,7 +1711,7 @@
       <!-- JavaScript -->
       <div class="bg-white rounded-xl h-32 sm:h-36 flex flex-col items-center justify-center text-center p-3 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
         <img
-          src="image and icon/technology/javascript.png"
+          src="image and icon/tec-image/js.png"
           alt="JavaScript"
           class="w-12 h-12 sm:w-14 sm:h-14 object-contain mb-2"
         >
@@ -1591,7 +1724,7 @@
       <!-- PHP -->
       <div class="bg-white rounded-xl h-32 sm:h-36 flex flex-col items-center justify-center text-center p-3 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
         <img
-          src="image and icon/technology/php.png"
+          src="image and icon/tec-image/php.png"
           alt="PHP"
           class="w-12 h-12 sm:w-14 sm:h-14 object-contain mb-2"
         >
@@ -1604,7 +1737,7 @@
       <!-- Laravel -->
       <div class="bg-white rounded-xl h-32 sm:h-36 flex flex-col items-center justify-center text-center p-3 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
         <img
-          src="image and icon/technology/laravel.png"
+          src="image and icon/tec-image/laravel.png"
           alt="Laravel"
           class="w-12 h-12 sm:w-14 sm:h-14 object-contain mb-2"
         >
@@ -1617,7 +1750,7 @@
       <!-- MySQL -->
       <div class="bg-white rounded-xl h-32 sm:h-36 flex flex-col items-center justify-center text-center p-3 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
         <img
-          src="image and icon/technology/mysql.png"
+          src="image and icon/tec-image/mysql.png"
           alt="MySQL"
           class="w-12 h-12 sm:w-14 sm:h-14 object-contain mb-2"
         >
@@ -1630,7 +1763,7 @@
       <!-- React -->
       <div class="bg-white rounded-xl h-32 sm:h-36 flex flex-col items-center justify-center text-center p-3 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
         <img
-          src="image and icon/technology/react.png"
+          src="image and icon/tec-image/react.png"
           alt="React"
           class="w-12 h-12 sm:w-14 sm:h-14 object-contain mb-2"
         >
@@ -1643,7 +1776,7 @@
       <!-- Next.js -->
       <div class="bg-white rounded-xl h-32 sm:h-36 flex flex-col items-center justify-center text-center p-3 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
         <img
-          src="image and icon/technology/nextjs.png"
+          src="image and icon/tec-image/nextjs.png"
           alt="Next.js"
           class="w-12 h-12 sm:w-14 sm:h-14 object-contain mb-2"
         >
@@ -1656,7 +1789,7 @@
       <!-- GitHub -->
       <div class="bg-white rounded-xl h-32 sm:h-36 flex flex-col items-center justify-center text-center p-3 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
         <img
-          src="image and icon/technology/github.png"
+          src="image and icon/tec-image/github.png"
           alt="GitHub"
           class="w-12 h-12 sm:w-14 sm:h-14 object-contain mb-2"
         >
@@ -1669,7 +1802,7 @@
       <!-- cPanel -->
       <div class="bg-white rounded-xl h-32 sm:h-36 flex flex-col items-center justify-center text-center p-3 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
         <img
-          src="image and icon/technology/cpanel.png"
+          src="image and icon/tec-image/cpanel.png"
           alt="cPanel"
           class="w-12 h-12 sm:w-14 sm:h-14 object-contain mb-2"
         >
@@ -1682,7 +1815,7 @@
       <!-- Tailwind CSS -->
       <div class="bg-white rounded-xl h-32 sm:h-36 flex flex-col items-center justify-center text-center p-3 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
         <img
-          src="image and icon/technology/tailwind.png"
+          src="image and icon/tec-image/taildwind.png"
           alt="Tailwind CSS"
           class="w-12 h-12 sm:w-14 sm:h-14 object-contain mb-2"
         >
@@ -1693,29 +1826,8 @@
 
 
       <!-- Bootstrap -->
-      <div class="bg-white rounded-xl h-32 sm:h-36 flex flex-col items-center justify-center text-center p-3 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
-        <img
-          src="image and icon/technology/bootstrap.png"
-          alt="Bootstrap"
-          class="w-12 h-12 sm:w-14 sm:h-14 object-contain mb-2"
-        >
-        <span class="text-base sm:text-lg text-nex font-medium">
-          Bootstrap
-        </span>
-      </div>
+      
 
-
-      <!-- REST API -->
-      <div class="bg-white rounded-xl h-32 sm:h-36 flex flex-col items-center justify-center text-center p-3 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
-        <img
-          src="image and icon/technology/api.png"
-          alt="REST API"
-          class="w-12 h-12 sm:w-14 sm:h-14 object-contain mb-2"
-        >
-        <span class="text-base sm:text-lg text-nex font-medium">
-          REST API
-        </span>
-      </div>
 
 
       <!-- Node.js -->
@@ -1732,16 +1844,7 @@
 
 
       <!-- Many More -->
-      <div class="bg-white rounded-xl h-32 sm:h-36 flex flex-col items-center justify-center text-center p-3 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
-        <img
-          src="image and icon/technology/more.png"
-          alt="Many More"
-          class="w-12 h-12 sm:w-14 sm:h-14 object-contain mb-2"
-        >
-        <span class="text-base sm:text-lg text-nex font-medium">
-          Many More
-        </span>
-      </div>
+     
 
     </div>
 
