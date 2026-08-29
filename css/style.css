@@ -651,7 +651,7 @@ body { overflow-x: hidden; }
 /* Hover */
 .main-slider .slick-prev:hover,
 .main-slider .slick-next:hover {
-    background-color: #000000 !important;
+    background-color: var(--xoom-color) !important;
 }
 
 
