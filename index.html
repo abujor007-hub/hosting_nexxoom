@@ -145,31 +145,40 @@
 
   <ul class="flex items-center gap-7">
 
-    <!-- FACEBOOK -->
+    <!-- HOME -->
     <li>
       <a
         href="#"
-        aria-label=""
-        class="w-6 h-6 flex items-center justify-center text-white font-medium
-               hover:text-xoom transition duration-200  bg-nex w-[50px] rounded-sm p-3"
+        class="w-[50px] h-6 flex items-center justify-center text-white font-medium
+               hover:text-xoom transition duration-200 bg-nex rounded-sm p-3"
       >
         Home
       </a>
     </li>
 
-
-    <!-- ALL PRODUCT -->
-    <li>
+    <!-- SERVICE WITH DROPDOWN -->
+    <li class="relative group">
       <a
         href="#"
-        class="text-nex font-medium hover:text-xoom transition duration-200"
+        class="text-nex font-medium hover:text-xoom transition duration-200 flex items-center gap-1"
       >
         Service
+        <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-200"></i>
       </a>
+
+      <!-- DROPDOWN BOX -->
+      <div class="absolute left-0 top-full pt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+        <div class="bg-white shadow-lg rounded-lg border border-gray-100 py-2">
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-nex hover:text-white transition">Web Design</a>
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-nex hover:text-white transition">Web Development</a>
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-nex hover:text-white transition">Digital Marketing</a>
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-nex hover:text-white transition">SEO Service</a>
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-nex hover:text-white transition">Hosting</a>
+        </div>
+      </div>
     </li>
 
-
-    <!-- MEMBERSHIP -->
+    <!-- GALLERY -->
     <li>
       <a
         href="#"
@@ -178,7 +187,6 @@
         Gallery
       </a>
     </li>
-
 
     <!-- CART -->
     <li>
@@ -189,7 +197,6 @@
                text-nex hover:text-nex-light
                transition duration-200"
       >
-
         <i class="fa-solid fa-cart-shopping text-sm"></i>
 
         <!-- CART COUNT -->
@@ -202,10 +209,8 @@
         >
           0
         </span>
-
       </button>
     </li>
-
 
     <!-- USER / ACCOUNT -->
     <li>
