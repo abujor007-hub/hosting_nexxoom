@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -110,7 +111,7 @@
             <!-- HOME -->
             <li>
               <a href="index.html" class="w-[50px] h-6 flex items-center justify-center text-white font-medium
-               hover:text-xoom transition duration-200 text-nex">
+               hover:text-xoom transition duration-200 bg-nex rounded-sm p-3">
                 Home
               </a>
             </li>
@@ -134,14 +135,14 @@
 
             <!-- GALLERY WITH DROPDOWN -->
             <li class="relative group">
-              <a href="#" class="text-white font-medium text-sm hover:text-xoom transition duration-200 flex items-center gap-1 bg-nex rounded-sm p-1 ">
+              <a href="#" class="text-nex font-medium text-sm hover:text-xoom transition duration-200 flex items-center gap-1">
                 Gallery
                 <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-200"></i>
               </a>
               <div class="absolute left-0 top-full pt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 <div class="bg-white shadow-lg rounded-lg border border-gray-100 py-2">
                   <a href="image_gallery.html" class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-nex hover:text-white transition">
-                  
+                 
                     <span>Image Gallery</span>
                   </a>
                   <a href="vide_gallery.html" class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-nex hover:text-white transition">
@@ -153,8 +154,8 @@
             </li>
 
             <!-- PRICING WITH DROPDOWN -->
-           <li class="relative group">
-              <a href="domain.html" class="text-nex font-medium text-sm hover:text-xoom transition duration-200 flex items-center gap-1">
+          <li class="relative group">
+              <a href="domain.html" class="text-nex font-medium text-sm hover:text-xoom transition duration-200 flex items-center gap-1 ">
                 Domain
                
               </a>
@@ -168,35 +169,37 @@
             <li class="relative group">
               <a href="blog.html" class="text-nex font-medium text-sm hover:text-xoom transition duration-200 flex items-center gap-1">
                 Blog
-                
+             
               </a>
-            
+             
             </li>
 
-             <!-- BLOG WITH DROPDOWN -->
+              <!-- BLOG WITH DROPDOWN -->
             <li class="relative group">
               <a href="team.html" class="text-nex font-medium text-sm hover:text-xoom transition duration-200 flex items-center gap-1">
                 Team
-                
+             
               </a>
-            
+             
             </li>
 
-            <li class="relative group">
+
+               <li class="relative group">
               <a href="contact.html" class="text-nex font-medium text-sm hover:text-xoom transition duration-200 flex items-center gap-1">
                 Contact
-                
+             
               </a>
-            
+             
             </li>
 
+
             
-            <li class="relative group">
-              <a href="carrer.html" class="text-nex font-medium text-sm hover:text-xoom transition duration-200 flex items-center gap-1">
+               <li class="relative group">
+              <a href="carrer.html" class="text-white font-medium text-sm hover:text-xoom transition duration-200 flex items-center gap-1 bg-nex rounded-sm p-1">
                 Career
-                
+             
               </a>
-            
+             
             </li>
 
             <li class="relative group">
@@ -206,7 +209,6 @@
               </a>
             
             </li>
-
 
             <!-- CART -->
             <li>
@@ -382,8 +384,8 @@
           </details>
         </li>
 
-        <!-- domain-->
-     <li>
+        <!-- domaing -->
+       <li>
                 <a href="domain.html" class="flex items-center gap-3 py-2.5 text-sm text-gray-600 hover:text-nex transition">
                   <i class="fa-solid fa-globe text-[9px] text-nex"></i>
                   <span>Domain</span>
@@ -397,8 +399,9 @@
                   <span>Hosting</span>
                 </a>
               </li>
+
         <!-- BLOG -->
-              
+             
 <li class="border-b border-gray-100">
     <a href="blog.html"
        class="flex items-center gap-3 py-3 text-nex font-medium text-sm hover:text-xoom transition duration-200">
@@ -410,7 +413,7 @@
 <li class="border-b border-gray-100">
     <a href="team.html"
        class="flex items-center gap-3 py-3 text-nex font-medium text-sm hover:text-xoom transition duration-200">
-        <i class="fa-solid fa-newspaper w-5 text-nex shrink-0"></i>
+        <i class="fa-solid fa-address-book w-5 text-nex shrink-0"></i>
         <span>Team</span>
     </a>
 </li>
@@ -423,13 +426,15 @@
     </a>
 </li>
 
+
 <li class="border-b border-gray-100">
     <a href="carrer.html"
-       class="flex items-center gap-3 py-3 text-nex font-medium text-sm hover:text-xoom transition duration-200">
-        <i class="fa-solid fa-briefcase w-5 text-nex shrink-0"></i>
+       class="flex items-center gap-3 py-3 text-nex font-medium text-sm hover:text-xoom transition duration-200 ">
+        <i class="fa-solid fa-briefcase w-5 text-nex shrink-0 "></i>
         <span>Career</span>
     </a>
 </li>
+
         <!-- CART + ACCOUNT -->
         <li class="mt-5 pt-4 border-t border-gray-200">
           <ul>
@@ -462,140 +467,93 @@
 
   </div>
 
+<div class="max-w-5xl mx-auto px-6 py-10 group/tabs">
 
+  <!-- Job category pills -->
+  <div class="flex flex-wrap justify-center gap-4 mb-8">
 
+    <label class="cursor-pointer px-6 py-3 rounded-md text-sm font-semibold text-white bg-nex hover:bg-xoom hover:scale-110 transition-all duration-200" >
+      <input type="radio" name="job" id="r-wp" checked class="hidden">
+      WordPress Developer
+    </label>
 
-  <!-- =========================
-     GALLERY HERO
-========================= -->
+    <label class="cursor-pointer px-6 py-3 rounded-md text-sm font-semibold text-white bg-nex hover:bg-xoom hover:scale-110 transition-all duration-200 ">
+      <input type="radio" name="job" id="r-php" class="hidden">
+      PHP (Laravel) Developer
+    </label>
 
+    <label class="cursor-pointer px-6 py-3 rounded-md text-sm font-semibold text-white bg-nex hover:bg-xoom hover:scale-110 transition-all duration-200">
+      <input type="radio" name="job" id="r-marketing" class="hidden">
+      Marketing Executive
+    </label>
 
-<!-- =========================
-     GALLERY SECTION
-========================= -->
-<section class="bg-white py-12 sm:py-14 lg:py-16">
+    <label class="cursor-pointer px-6 py-3 rounded-md text-sm font-semibold text-white bg-nex hover:bg-xoom hover:scale-110 transition-all duration-200">
+      <input type="radio" name="job" id="r-support" class="hidden">
+      Support Executive
+    </label>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  </div>
 
-        <!-- Gallery Grid -->
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
+  <hr class="border-slate-200 mb-10">
 
-            <!-- Image 01 -->
-            <div class="group overflow-hidden">
-                <img
-                    src="image and icon/pandashop.png"
-                    alt="Gallery Image 01"
-                    class="w-full h-auto block transition duration-500 group-hover:scale-110"
-                >
-            </div>
-
-            <!-- Image 02 -->
-            <div class="group overflow-hidden">
-                <img
-                    src="image and icon/school management.png"
-                    alt="Gallery Image 02"
-                    class="w-full h-auto block transition duration-500 group-hover:scale-110"
-                >
-            </div>
-
-            <!-- Image 03 -->
-            <div class="group overflow-hidden">
-                <img
-                    src="image and icon/railway.avif"
-                    alt="Gallery Image 03"
-                    class="w-full h-auto block transition duration-500 group-hover:scale-110"
-                >
-            </div>
-
-            <!-- Image 04 -->
-            <div class="group overflow-hidden">
-                <img
-                    src="image and icon/recipi.avif"
-                    alt="Gallery Image 04"
-                    class="w-full h-auto block transition duration-500 group-hover:scale-110"
-                >
-            </div>
-
-            <!-- Image 05 -->
-            <div class="group overflow-hidden">
-                <img
-                    src="image and icon/Md Rashidul.jpeg"
-                    alt="Gallery Image 05"
-                    class="w-full h-auto block transition duration-500 group-hover:scale-110"
-                >
-            </div>
-
-            <!-- Image 06 -->
-            <div class="group overflow-hidden">
-                <img
-                    src="image and icon/web-dev-1.jpg"
-                    alt="Gallery Image 06"
-                    class="w-full h-auto block transition duration-500 group-hover:scale-110"
-                >
-            </div>
-
-            <!-- Image 07 -->
-            <div class="group overflow-hidden">
-                <img
-                    src="image and icon/web-dev-2.jpg"
-                    alt="Gallery Image 07"
-                    class="w-full h-auto block transition duration-500 group-hover:scale-110"
-                >
-            </div>
-
-            <!-- Image 08 -->
-            <div class="group overflow-hidden">
-                <img
-                    src="image and icon/web-dev-3.jpg"
-                    alt="Gallery Image 08"
-                    class="w-full h-auto block transition duration-500 group-hover:scale-110"
-                >
-            </div>
-
-            <!-- Image 09 -->
-            <div class="group overflow-hidden">
-                <img
-                    src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80"
-                    alt="Gallery Image 09"
-                    class="w-full h-auto block transition duration-500 group-hover:scale-110"
-                >
-            </div>
-
-            <!-- Image 10 -->
-            <div class="group overflow-hidden">
-                <img
-                    src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=800&q=80"
-                    alt="Gallery Image 10"
-                    class="w-full h-auto block transition duration-500 group-hover:scale-110"
-                >
-            </div>
-
-            <!-- Image 11 -->
-            <div class="group overflow-hidden">
-                <img
-                    src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=800&q=80"
-                    alt="Gallery Image 11"
-                    class="w-full h-auto block transition duration-500 group-hover:scale-110"
-                >
-            </div>
-
-            <!-- Image 12 -->
-            <div class="group overflow-hidden">
-                <img
-                    src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80"
-                    alt="Gallery Image 12"
-                    class="w-full h-auto block transition duration-500 group-hover:scale-110"
-                >
-            </div>
-
-        </div>
-
+  <!-- Job detail panels -->
+  <div class="hidden group-has-[#r-wp:checked]/tabs:block">
+    <h1 class="text-3xl font-medium text-slate-800 text-center mb-8">WordPress Theme Developer ( Intern )</h1>
+    <div class="space-y-6">
+      <div>
+        <h2 class="text-lg text-slate-800 mb-2">Applied Deadline</h2>
+        <ul class="list-disc list-inside text-slate-600 text-sm"><li>No</li></ul>
+      </div>
+      <div>
+        <h2 class="text-lg text-slate-800 mb-2">Vacancy</h2>
+        <ul class="list-disc list-inside text-slate-600 text-sm"><li>No Vacancy</li></ul>
+      </div>
     </div>
+  </div>
 
-</section>
+  <div class="hidden group-has-[#r-php:checked]/tabs:block">
+    <h1 class="text-3xl font-medium text-slate-800 text-center mb-8">PHP (Laravel) Developer</h1>
+    <div class="space-y-6">
+      <div>
+        <h2 class="text-lg text-slate-800 mb-2">Applied Deadline</h2>
+        <ul class="list-disc list-inside text-slate-600 text-sm"><li>No</li></ul>
+      </div>
+      <div>
+        <h2 class="text-lg text-slate-800 mb-2">Vacancy</h2>
+        <ul class="list-disc list-inside text-slate-600 text-sm"><li>2 Positions</li></ul>
+      </div>
+    </div>
+  </div>
 
+  <div class="hidden group-has-[#r-marketing:checked]/tabs:block">
+    <h1 class="text-3xl font-medium text-slate-800 text-center mb-8">Marketing Executive</h1>
+    <div class="space-y-6">
+      <div>
+        <h2 class="text-lg text-slate-800 mb-2">Applied Deadline</h2>
+        <ul class="list-disc list-inside text-slate-600 text-sm"><li>No</li></ul>
+      </div>
+      <div>
+        <h2 class="text-lg text-slate-800 mb-2">Vacancy</h2>
+        <ul class="list-disc list-inside text-slate-600 text-sm"><li>1 Position</li></ul>
+      </div>
+    </div>
+  </div>
 
+  <div class="hidden group-has-[#r-support:checked]/tabs:block">
+    <h1 class="text-3xl font-medium text-slate-800 text-center mb-8">Support Executive</h1>
+    <div class="space-y-6">
+      <div>
+        <h2 class="text-lg text-slate-800 mb-2">Applied Deadline</h2>
+        <ul class="list-disc list-inside text-slate-600 text-sm"><li>No</li></ul>
+      </div>
+      <div>
+        <h2 class="text-lg text-slate-800 mb-2">Vacancy</h2>
+        <ul class="list-disc list-inside text-slate-600 text-sm"><li>No Vacancy</li></ul>
+      </div>
+    </div>
+  </div>
 
+</div>
 
 
 <!-- ===== Footer ===== -->
@@ -728,10 +686,15 @@ nexxoom99@gmail.com"
   </p>
 </footer>
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/video-lightbox.js"></script>
 
   <!-- ================= MOBILE BOTTOM NAV ================= -->
-  <div class="mobile-bottom-nav">
+<div class="mobile-bottom-nav">
     <ul class="flex items-center justify-around w-full">
 
         <li>
@@ -779,31 +742,16 @@ nexxoom99@gmail.com"
     <i class="fa-solid fa-wand-magic-sparkles"></i>
     <span>Ask AI</span>
   </button>
-
-
-
-
-<!-- Back To Top Button -->
-<button
-    id="backToTop"
-    type="button"
-    aria-label="Back to top"
-    class="fixed bottom-20 right-5 z-[9999] w-11 h-11 rounded-full bg-nex text-white flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-xoom">
-
-    <i class="fa-solid fa-arrow-up"></i>
-
-</button>
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./js/script.js"></script>
-  <script src="./js/video-lightbox.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+
+
 
 
 
