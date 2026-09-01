@@ -585,3 +585,72 @@ backToTop.addEventListener("click", () => {
 
 
 
+// time couning
+
+
+function animateCount(el) {
+    const target = parseFloat(el.dataset.target);
+    const prefix = el.dataset.prefix || "";
+    const suffix = el.dataset.suffix || "";
+    const decimals = parseInt(el.dataset.decimal || "0");
+    const duration = 3500;
+    const startTime = performance.now();
+
+    function tick(now) {
+      const progress = Math.min((now - startTime) / duration, 1);
+      const eased = 1 - (1 - progress) * (1 - progress);
+      const current = (target * eased).toFixed(decimals);
+      el.textContent = prefix + current + suffix;
+      if (progress < 1) {
+        requestAnimationFrame(tick);
+      } else {
+        el.textContent = prefix + target.toFixed(decimals) + suffix;
+      }
+    }
+    requestAnimationFrame(tick);
+  }
+
+  function animateTimer(el) {
+    const targetSeconds = parseInt(el.dataset.targetSeconds);
+    const duration = 3500;
+    const startTime = performance.now();
+
+    function tick(now) {
+      const progress = Math.min((now - startTime) / duration, 1);
+      const eased = 1 - (1 - progress) * (1 - progress);
+      const currentSeconds = Math.round(targetSeconds * eased);
+      const mins = Math.floor(currentSeconds / 60);
+      const secs = currentSeconds % 60;
+      el.textContent = mins + ":" + String(secs).padStart(2, "0");
+      if (progress < 1) {
+        requestAnimationFrame(tick);
+      } else {
+        el.textContent = (targetSeconds / 60) + " min";
+      }
+    }
+    requestAnimationFrame(tick);
+  }
+
+  const nums = document.querySelectorAll(".stat-num:not(.stat-timer)");
+  const timers = document.querySelectorAll(".stat-timer");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCount(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.4 });
+
+  const timerObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateTimer(entry.target);
+        timerObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.4 });
+
+  nums.forEach(el => observer.observe(el));
+  timers.forEach(el => timerObserver.observe(el));
