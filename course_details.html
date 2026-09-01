@@ -1,0 +1,2127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexXoom</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="bg-white font-medium text-gray-800">
+  <!-- ========================================================= -->
+  <!-- TOP NAV -->
+  <!-- ========================================================= -->
+  <div class="bg-nex text-white">
+    <div class="container mx-auto py-1.5">
+      <div class="flex items-center justify-between gap-3 px-8">
+        <!-- LEFT : PHONE + EMAIL -->
+        <div
+          class="flex flex-col sm:flex-row sm:items-center gap-0.5 sm:gap-5 text-[11px] sm:text-sm min-w-0 text-white font-medium">
+          <a href="tel:+8801823552979"
+            class="flex items-center gap-1 hover:text-nex-light transition whitespace-nowrap">
+            <i class="fa-solid fa-phone text-[9px] sm:text-[11px]"></i>
+            <span>01823-552979</span>
+          </a>
+          <a href="mailto:info@example.com"
+            class="flex items-center gap-1.5 text-white hover:text-nex-light transition leading-none font-medium">
+            <i class="fa-solid fa-envelope text-[10px] sm:text-[11px] shrink-0 leading-none"></i>
+            <span class="truncate max-w-[150px] sm:max-w-none leading-none">
+              nexxoom999@gmail.com
+            </span>
+          </a>
+        </div>
+
+        <!-- CENTER : SOCIAL ICONS (DESKTOP ONLY) -->
+        <div class="hidden sm:flex items-center bg-white border border-white rounded-full px-2 py-1 w-[350px] h-[25px]">
+          <i class="fa-solid fa-magnifying-glass text-nex text-[10px] shrink-0 mr-1.5"></i>
+          <input type="text" placeholder="Search..."
+            class="bg-transparent outline-none text-nex placeholder-nex flex-1 min-w-0 text-[10px] sm:text-xs" />
+          <button type="button"
+            class="bg-nex text-white w-[21px] h-[21px] rounded-full flex items-center justify-center shrink-0 hover:bg-xoom transition ">
+            <i class="fa-solid fa-magnifying-glass text-[9px]"></i>
+          </button>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="flex items-center justify-end gap-1.5">
+          <div class="hidden sm:flex items-center justify-center gap-2">
+            <a href="+880 1731-131878" target="_blank" aria-label="WhatsApp"
+              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#25D366] hover:bg-white hover:scale-110 transition-all duration-200"><i
+                class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/nexxoom" target="_blank" aria-label="Facebook"
+              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#1877F2] hover:bg-white hover:scale-110 transition-all duration-200"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@NexXoom" target="_blank" aria-label="YouTube"
+              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#FF0000] hover:bg-white hover:scale-110 transition-all duration-200"><i
+                class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/search/results/all/?keywords=NexXoom&origin=RICH_QUERY_SUGGESTION&heroEntityKey=urn%3Ali%3Aorganization%3A108094276&position=0"
+              target="_blank" aria-label="LinkedIn"
+              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#0A66C2] hover:bg-white hover:scale-110 transition-all duration-200"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+
+          <div class="flex sm:hidden items-center gap-1">
+            <a href="+880 1731-131878" target="_blank" aria-label="WhatsApp"
+              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#25D366] hover:bg-white hover:scale-110 transition-all duration-200"><i
+                class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/nexxoom" target="_blank" aria-label="Facebook"
+              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#1877F2] hover:bg-white hover:scale-110 transition-all duration-200"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@NexXoom" target="_blank" aria-label="YouTube"
+              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#FF0000] hover:bg-white hover:scale-110 transition-all duration-200"><i
+                class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/search/results/all/?keywords=NexXoom&origin=RICH_QUERY_SUGGESTION&heroEntityKey=urn%3Ali%3Aorganization%3A108094276&position=0"
+              target="_blank" aria-label="LinkedIn"
+              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#0A66C2] hover:bg-white hover:scale-110 transition-all duration-200"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- MAIN NAV -->
+  <!-- ========================================================= -->
+  <nav class="bg-white shadow-sm sticky top-0 z-50 h-[45px] border-b border-nex">
+    <div class="container mx-auto px-3 sm:px-4 lg:px-6">
+      <div class="h-[45px] flex items-center justify-between">
+
+        <!-- LOGO -->
+        <div class="logo" style="width: 150px; height: 30px">
+          <img src="image and icon/logo.png" alt="logo NexXoom" style="width: 100%; width: 100%" />
+        </div>
+
+        <!-- DESKTOP MENU -->
+        <div class="hidden md:flex items-center gap-7">
+          <ul class="flex items-center gap-7">
+
+            <!-- HOME -->
+            <li>
+              <a href="index.html" class="w-[50px] h-6 flex items-center justify-center text-nex font-medium
+               hover:text-xoom transition duration-200 ">
+                Home
+              </a>
+            </li>
+
+            <!-- SERVICE WITH DROPDOWN -->
+            <li class="relative group">
+              <a href="#" class="text-nex font-medium hover:text-xoom transition duration-200 flex items-center gap-1">
+                Service
+                <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-200"></i>
+              </a>
+              <div class="absolute left-0 top-full pt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div class="bg-white shadow-lg rounded-lg border border-gray-100 py-2">
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-nex hover:text-white transition">Web Design</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-nex hover:text-white transition">Web Development</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-nex hover:text-white transition">Digital Marketing</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-nex hover:text-white transition">SEO Service</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-nex hover:text-white transition">Hosting</a>
+                </div>
+              </div>
+            </li>
+
+            <!-- GALLERY WITH DROPDOWN -->
+            <li class="relative group">
+              <a href="#" class="text-nex font-medium text-sm hover:text-xoom transition duration-200 flex items-center gap-1">
+                Gallery
+                <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-200"></i>
+              </a>
+              <div class="absolute left-0 top-full pt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div class="bg-white shadow-lg rounded-lg border border-gray-100 py-2">
+                  <a href="image_gallery.html" class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-nex hover:text-white transition">
+                 
+                    <span>Image Gallery</span>
+                  </a>
+                  <a href="vide_gallery.html" class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-nex hover:text-white transition">
+                 
+                    <span>Video Gallery</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- PRICING WITH DROPDOWN -->
+          <li class="relative group">
+              <a href="domain.html" class="text-nex font-medium text-sm hover:text-xoom transition duration-200 flex items-center gap-1">
+                Domain
+               
+              </a>
+
+               <li class="relative group">
+              <a href="hosting.html" class="text-nex font-medium text-sm hover:text-xoom transition duration-200 flex items-center gap-1 ">
+                Hosting
+               
+              </a>
+            <!-- BLOG WITH DROPDOWN -->
+            <li class="relative group">
+              <a href="blog.html" class="text-nex font-medium text-sm hover:text-xoom transition duration-200 flex items-center gap-1">
+                Blog
+             
+              </a>
+             
+            </li>
+
+              <!-- BLOG WITH DROPDOWN -->
+            <li class="relative group">
+              <a href="team.html" class="text-nex font-medium text-sm hover:text-xoom transition duration-200 flex items-center gap-1">
+                Team
+             
+              </a>
+             
+            </li>
+
+
+               <li class="relative group">
+              <a href="contact.html" class="text-nex font-medium text-sm hover:text-xoom transition duration-200 flex items-center gap-1">
+                Contact
+             
+              </a>
+             
+            </li>
+
+
+            
+               <li class="relative group">
+              <a href="carrer.html" class="text-nex font-medium text-sm hover:text-xoom transition duration-200 flex items-center gap-1">
+                Career
+             
+              </a>
+             
+            </li>
+
+            <li class="relative group">
+              <a href="faq.html" class="text-nex font-medium text-sm hover:text-xoom transition duration-200 flex items-center gap-1 ">
+                FAQ
+               
+              </a>
+            
+            </li>
+
+            <!-- CART -->
+            <li>
+              <button type="button" aria-label="Cart" class="relative w-7 h-7 flex items-center justify-center
+               text-nex hover:text-nex-light
+               transition duration-200">
+                <i class="fa-solid fa-cart-shopping text-sm"></i>
+                <span class="absolute -top-1 -right-1
+                 bg-xoom text-white
+                 text-[8px] font-medium
+                 w-4 h-4 rounded-full
+                 flex items-center justify-center">
+                  0
+                </span>
+              </button>
+            </li>
+
+            <!-- USER / ACCOUNT -->
+            <li>
+              <button type="button" aria-label="Account" class="w-7 h-7 flex items-center justify-center
+               text-nex hover:text-nex-light
+               transition duration-200">
+                <i class="fa-solid fa-user text-sm"></i>
+              </button>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- MOBILE MENU BUTTON -->
+        <button id="menuBtn" type="button" class="md:hidden
+                       w-9 h-9
+                       rounded-lg
+                       bg-nex-light
+                       text-nex
+                       flex items-center justify-center
+                       hover:bg-nex-light/50
+                       transition duration-200" aria-label="Open Menu">
+          <i class="fa-solid fa-bars text-lg"></i>
+        </button>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================= -->
+  <!-- MOBILE OVERLAY -->
+  <!-- ========================================================= -->
+  <div id="mobileOverlay" class="fixed inset-0 bg-black/50 opacity-0 invisible transition-all duration-300 z-[998]">
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- MOBILE LEFT SIDEBAR -->
+  <!-- ========================================================= -->
+  <div id="mobileMenu" class="fixed top-0 left-0 h-full w-[280px] sm:w-[320px] bg-white shadow-2xl
+         -translate-x-full transition-transform duration-300 ease-in-out
+         z-[999] overflow-y-auto">
+
+    <!-- HEADER -->
+    <div class="h-[60px] sm:h-[65px] px-4 flex items-center justify-between
+           border-b border-gray-200 shrink-0">
+      <a href="#" class="flex items-center min-w-0">
+        <img src="image and icon/logo.png" alt="Logo"
+          class="w-[145px] sm:w-[160px] h-[28px] sm:h-[30px] object-contain" />
+      </a>
+      <button id="closeMenu" type="button" class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-gray-100
+             text-gray-600 flex items-center justify-center
+             hover:bg-red-100 hover:text-red-500 transition shrink-0" aria-label="Close Menu">
+        <i class="fa-solid fa-xmark text-sm"></i>
+      </button>
+    </div>
+
+    <!-- SEARCH -->
+    <div class="px-4 sm:px-5 pt-4">
+      <div class="flex items-center bg-white border border-nex rounded-full
+             px-2 py-1 w-full h-[30px]">
+        <i class="fa-solid fa-magnifying-glass text-nex
+               text-[10px] shrink-0 mr-1.5"></i>
+        <input type="text" placeholder="Search..." class="bg-transparent outline-none text-nex
+               placeholder-nex flex-1 min-w-0
+               text-[10px] sm:text-xs" />
+        <button type="button" class="bg-nex text-white w-[22px] h-[22px]
+               rounded-full flex items-center justify-center
+               shrink-0 hover:bg-nex-light transition" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass text-[9px]"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- MENU ITEMS: সব <ul><li>, Service/Gallery/Pricing/Blog = details/summary, JS ছাড়া -->
+    <div class="px-4 sm:px-5 pt-3 pb-5">
+      <ul>
+
+        <!-- HOME -->
+        <li class="border-b border-gray-100">
+          <a href="index.html" class="flex items-center gap-3 py-3 text-gray-700 hover:text-nex transition">
+            <i class="fa-solid fa-house w-5 text-nex shrink-0"></i>
+            <span class="text-sm">Home</span>
+          </a>
+        </li>
+
+        <!-- SERVICE -->
+        <li class="border-b border-gray-100">
+          <details class="group">
+            <summary class="flex items-center justify-between py-3 text-gray-700 hover:text-nex transition
+                             cursor-pointer list-none marker:hidden [&::-webkit-details-marker]:hidden">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-layer-group w-5 text-nex shrink-0"></i>
+                <span class="text-sm">Service</span>
+              </div>
+              <i class="fa-solid fa-chevron-down text-[10px] transition-transform duration-200 group-open:rotate-180"></i>
+            </summary>
+            <ul class="pl-8 pb-2">
+              <li>
+                <a href="#" class="flex items-center gap-3 py-2.5 text-sm text-gray-600 hover:text-nex transition">
+                  <i class="fa-solid fa-angle-right text-[9px] text-nex"></i>
+                  <span>Web Design</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center gap-3 py-2.5 text-sm text-gray-600 hover:text-nex transition">
+                  <i class="fa-solid fa-angle-right text-[9px] text-nex"></i>
+                  <span>Web Development</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center gap-3 py-2.5 text-sm text-gray-600 hover:text-nex transition">
+                  <i class="fa-solid fa-angle-right text-[9px] text-nex"></i>
+                  <span>Digital Marketing</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center gap-3 py-2.5 text-sm text-gray-600 hover:text-nex transition">
+                  <i class="fa-solid fa-angle-right text-[9px] text-nex"></i>
+                  <span>SEO Service</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center gap-3 py-2.5 text-sm text-gray-600 hover:text-nex transition">
+                  <i class="fa-solid fa-angle-right text-[9px] text-nex"></i>
+                  <span>Hosting</span>
+                </a>
+              </li>
+            </ul>
+          </details>
+        </li>
+
+        <!-- GALLERY -->
+        <li class="border-b border-gray-100">
+          <details class="group">
+            <summary class="flex items-center justify-between py-3 text-gray-700 hover:text-nex transition
+                             cursor-pointer list-none marker:hidden [&::-webkit-details-marker]:hidden">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-images w-5 text-nex shrink-0"></i>
+                <span class="text-sm">Gallery</span>
+              </div>
+              <i class="fa-solid fa-chevron-down text-[10px] transition-transform duration-200 group-open:rotate-180"></i>
+            </summary>
+            <ul class="pl-8 pb-2">
+              <li>
+                <a href="image_gallery.html" class="flex items-center gap-3 py-2.5 text-sm text-gray-600 hover:text-nex transition">
+                  <i class="fa-solid fa-angle-right text-[9px] text-nex"></i>
+                  <span>Image Gallery</span>
+                </a>
+              </li>
+              <li>
+                <a href="vide_gallery.html" class="flex items-center gap-3 py-2.5 text-sm text-gray-600 hover:text-nex transition">
+                  <i class="fa-solid fa-angle-right text-[9px] text-nex"></i>
+                  <span>Video Gallery</span>
+                </a>
+              </li>
+            </ul>
+          </details>
+        </li>
+
+        <!-- domaing -->
+       <li>
+                <a href="domain.html" class="flex items-center gap-3 py-2.5 text-sm text-gray-600 hover:text-nex transition">
+                  <i class="fa-solid fa-globe text-[9px] text-nex"></i>
+                  <span>Domain</span>
+                </a>
+              </li>
+
+
+                <li>
+                <a href="hosting.html" class="flex items-center gap-3 py-2.5 text-sm text-gray-600 hover:text-nex transition">
+                  <i class="fa-solid fa-server text-[9px] text-nex"></i>
+                  <span>Hosting</span>
+                </a>
+              </li>
+
+        <!-- BLOG -->
+             
+<li class="border-b border-gray-100">
+    <a href="blog.html"
+       class="flex items-center gap-3 py-3 text-nex font-medium text-sm hover:text-xoom transition duration-200">
+        <i class="fa-solid fa-newspaper w-5 text-nex shrink-0"></i>
+        <span>Blog</span>
+    </a>
+</li>
+
+<li class="border-b border-gray-100">
+    <a href="team.html"
+       class="flex items-center gap-3 py-3 text-nex font-medium text-sm hover:text-xoom transition duration-200">
+        <i class="fa-solid fa-address-book w-5 text-nex shrink-0"></i>
+        <span>Team</span>
+    </a>
+</li>
+
+<li class="border-b border-gray-100">
+    <a href="contact.html"
+       class="flex items-center gap-3 py-3 text-nex font-medium text-sm hover:text-xoom transition duration-200">
+        <i class="fa-solid fa-address-book w-5 text-nex shrink-0"></i>
+        <span>Contact</span>
+    </a>
+</li>
+
+
+<li class="border-b border-gray-100">
+    <a href="carrer.html"
+       class="flex items-center gap-3 py-3 text-nex font-medium text-sm hover:text-xoom transition duration-200">
+        <i class="fa-solid fa-briefcase w-5 text-nex shrink-0"></i>
+        <span>Career</span>
+    </a>
+</li>
+
+
+
+<li class="border-b border-gray-100">
+    <a href="faq.html"
+       class="flex items-center gap-3 py-3 text-nex font-medium text-sm hover:text-xoom transition duration-200">
+        <i class="fa-solid fa-circle-question w-5 text-nex shrink-0"></i>
+        <span>FAQ</span>
+    </a>
+</li>
+
+
+
+
+
+
+
+        <!-- CART + ACCOUNT -->
+        <li class="mt-5 pt-4 border-t border-gray-200">
+          <ul>
+            <li>
+              <a href="#" class="flex items-center justify-between py-3
+                     text-gray-700 hover:text-nex transition">
+                <div class="flex items-center gap-3">
+                  <i class="fa-solid fa-cart-shopping w-5 text-nex shrink-0"></i>
+                  <span class="text-sm">Cart</span>
+                </div>
+                <span class="bg-xoom text-white text-[10px]
+                       w-5 h-5 rounded-full
+                       flex items-center justify-center shrink-0">
+                  0
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center gap-3 py-3
+                     text-gray-700 hover:text-nex transition">
+                <i class="fa-solid fa-user w-5 text-nex shrink-0"></i>
+                <span class="text-sm">Account</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+<!-- ========================================================= -->
+<!-- COURSE HERO SECTION -->
+<!-- ========================================================= -->
+
+<section class="container mx-auto bg-nex text-white">
+
+  <div class=" px-4 sm:px-6 lg:px-8">
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 relative">
+
+
+      <!-- ================================================= -->
+      <!-- LEFT SIDE -->
+      <!-- ================================================= -->
+
+      <div class="lg:col-span-8 py-10 sm:py-12 lg:py-14">
+
+        <!-- BADGES -->
+        <div class="flex items-center gap-2 mb-4">
+
+          <span
+            class="inline-flex items-center gap-1 rounded-md bg-yellow-500/20 px-2.5 py-1 text-[11px] font-semibold text-yellow-400">
+            <i class="fa-solid fa-cube"></i>
+            Batch - 2
+          </span>
+
+          <span
+            class="inline-flex items-center gap-1 rounded-md bg-green-500/20 px-2.5 py-1 text-[11px] font-semibold text-green-400">
+            <i class="fa-solid fa-signal"></i>
+            লাইভ কোর্স
+          </span>
+
+        </div>
+
+
+        <!-- COURSE TITLE -->
+        <h1
+          class="text-2xl sm:text-3xl lg:text-[26px] font-bold leading-tight text-white mb-3">
+
+          Mastering Claude Cowork for Daily Automation
+
+        </h1>
+
+
+        <!-- SHORT DESCRIPTION -->
+        <p
+          class="text-sm sm:text-base leading-7 text-gray-300 max-w-3xl mb-2">
+
+          AI দিয়ে কাজ করা নয়, AI দিয়ে পুরো একটা টিম চালানো শিখুন:
+          Claude Cowork দিয়ে অটোমেশনের A to Z
+
+        </p>
+
+
+        <!-- DESCRIPTION -->
+        <p
+          class="text-xs sm:text-sm leading-6 text-gray-300 max-w-3xl">
+
+          আপনি কি প্রতিদিন অফিসের বা নিজের ব্যবসার একই কাজ বারবার করেন?
+          রিপোর্ট বানানো, ইমেইল ফলোআপ, রিসার্চ করা, ডেটা এন্ট্রি কিংবা
+          কনটেন্ট তৈরি করতে গিয়ে ঘণ্টার পর ঘণ্টা সময় চলে যায়?
+          Claude-এর প্রশ্ন করে উত্তর নেওয়া আর AI-কে দিয়ে পুরো একটা কাজ
+          নিজে থেকে শেষ করিয়ে দেওয়ার মধ্যে যে বিশাল পার্থক্য, সেটাই এই
+          কোর্সে শেখানো হবে।
+
+        </p>
+
+
+        <p
+          class="text-xs sm:text-sm leading-6 text-gray-300 max-w-3xl mt-1">
+
+          Claude Cowork হলো এমন একটি প্র্যাকটিক্যাল ওয়ার্কস্পেস, যেখানে
+          আপনি একটি কাজ বুঝিয়ে দিলে সেটি নিজে প্ল্যান করে, ব্রাউজ করে,
+          ফাইল তৈরি করে, ডেটা বিশ্লেষণ করে এবং কাজ শেষ করে দেয়।
+          এই কোর্সে আপনি শিখবেন কীভাবে নিজের জন্য একটি পূর্ণাঙ্গ
+          AI Coworker এবং শেষে একটি পুরো AI Department বানানো যায়।
+
+        </p>
+
+
+        <!-- ================================================= -->
+        <!-- PRICE + BUTTON -->
+        <!-- ================================================= -->
+
+        <div
+          class="flex flex-wrap items-center gap-3 mt-5">
+
+
+          <!-- JOIN BUTTON -->
+          <a
+            href="#"
+            class="inline-flex items-center justify-center gap-2 rounded-md bg-xoom hover:bg-xoom px-6 py-3 text-sm font-bold text-gray-900 transition duration-200">
+
+            ব্যাচ ভর্তি হন
+
+            <i class="fa-solid fa-chevron-right text-xs"></i>
+
+          </a>
+
+
+          <!-- PRICE -->
+          <div class="flex items-center gap-2">
+
+            <span
+              class="text-2xl sm:text-3xl font-bold text-white">
+
+              ৳২,২৮০
+
+            </span>
+
+            <span
+              class="text-sm text-gray-400 line-through">
+
+              ৳৩৫,০০০
+
+            </span>
+
+          </div>
+
+
+          <!-- AVAILABLE -->
+          <span
+            class="inline-flex items-center gap-1 text-xs text-green-400">
+
+            <i class="fa-solid fa-check-double"></i>
+
+            ধামা আপডেট
+
+          </span>
+
+
+          <!-- SEAT -->
+          <span
+            class="inline-flex items-center gap-1 rounded-md bg-gray-800 px-2 py-1 text-xs font-semibold text-white">
+
+            <i class="fa-solid fa-xmark text-gray-400"></i>
+
+            9/9
+
+          </span>
+
+        </div>
+
+
+        <!-- ================================================= -->
+        <!-- COURSE INFO BOX -->
+        <!-- ================================================= -->
+
+        <div
+          class="mt-8 max-w-2xl rounded-md border border-gray-500/70 bg-white/5">
+
+          <div
+            class="grid grid-cols-1 sm:grid-cols-3">
+
+
+            <!-- BATCH START -->
+            <div
+              class="border-b sm:border-b-0 sm:border-r border-gray-500/70 p-4">
+
+              <div
+                class="flex items-center gap-2 text-xs text-gray-300 mb-2">
+
+                <i
+                  class="fa-regular fa-calendar text-yellow-400">
+                </i>
+
+                ব্যাচ শুরু
+
+              </div>
+
+
+              <span
+                class="inline-block rounded bg-gray-600 px-2 py-1 text-xs font-semibold text-white">
+
+                বুধবার ৩০ সেপ্টেম্বর
+
+              </span>
+
+            </div>
+
+
+            <!-- LIVE CLASS -->
+            <div
+              class="border-b sm:border-b-0 sm:border-r border-gray-500/70 p-4">
+
+              <div
+                class="flex items-center gap-2 text-xs text-gray-300 mb-2">
+
+                <i
+                  class="fa-regular fa-calendar text-yellow-400">
+                </i>
+
+                লাইভ ক্লাস
+
+              </div>
+
+
+              <p
+                class="text-xs font-semibold text-white">
+
+                সকাল ৯:০০ - ১০:০০
+
+                <span class="text-gray-400">
+                  (শনি, বুধ)
+                </span>
+
+              </p>
+
+            </div>
+
+
+            <!-- SEAT -->
+            <div class="p-4">
+
+              <div
+                class="flex items-center gap-2 text-xs text-gray-300 mb-2">
+
+                <i
+                  class="fa-solid fa-couch text-yellow-400">
+                </i>
+
+                সিট বাকি
+
+              </div>
+
+
+              <p
+                class="text-xs font-bold text-white">
+
+                ৫৫ টি
+
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ================================================= -->
+      <!-- RIGHT SIDE COURSE CARD -->
+      <!-- ================================================= -->
+
+      <div
+        class="lg:col-span-4 lg:-mb-24 relative z-10">
+
+        <div
+          class="w-full rounded-2xl border border-gray-300 bg-white p-2 shadow-xl">
+
+
+          <!-- COURSE IMAGE -->
+          <div
+            class="relative h-[220px] sm:h-[250px] lg:h-[250px] overflow-hidden rounded-xl bg-gray-100">
+
+            <img
+              src="image and icon/school management.png"
+              alt="Mastering Claude Cowork"
+              class="h-full w-full object-cover">
+
+
+            <!-- PLAY BUTTON -->
+            <div
+              class="absolute inset-0 flex items-center justify-center">
+
+              <div
+                class="flex h-16 w-16 items-center justify-center rounded-full bg-pink-200/90 shadow-lg">
+
+                <i
+                  class="fa-solid fa-play ml-1 text-2xl text-pink-500">
+                </i>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- CARD BODY -->
+          <div class="p-2">
+
+
+            <!-- TABS -->
+            <div
+              class="flex border-b border-gray-300 mb-4">
+
+              <div
+                class="w-1/2 border-b border-nex pb-3 text-center text-sm font-semibold text-nex">
+
+                Personal
+
+              </div>
+
+
+              <div
+                class="w-1/2 pb-3 text-center text-sm font-semibold text-gray-500">
+
+                একসাথে (Group)
+
+              </div>
+
+            </div>
+
+
+            <!-- PRICE -->
+            <div
+              class="flex flex-wrap items-center justify-between gap-2 mb-3">
+
+
+              <div class="flex items-center gap-2">
+
+                <span
+                  class="text-2xl font-bold text-nex">
+
+                  ৳২,২৮০
+
+                </span>
+
+
+                <span
+                  class="text-xs text-red-400 line-through">
+
+                  ৳৩৫,০০০
+
+                </span>
+
+              </div>
+
+
+              <div
+                class="flex items-center gap-1">
+
+                <span
+                  class="text-[10px] font-semibold text-green-500">
+
+                  <i class="fa-solid fa-check-double"></i>
+
+                  ধামা আপডেট
+
+                </span>
+
+
+                <span
+                  class="rounded bg-green-100 px-2 py-1 text-[10px] font-semibold text-green-600">
+
+                  9/9
+
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <!-- JOIN BUTTON -->
+            <a
+              href="#"
+              class="flex w-full items-center justify-center gap-2 rounded-lg bg-xoom hover:bg-xoom py-3 text-sm font-semibold text-gray-900 transition duration-200">
+
+              ব্যাচ ভর্তি হন
+
+              <i
+                class="fa-solid fa-chevron-right text-xs">
+              </i>
+
+            </a>
+
+
+            <!-- COUNTDOWN -->
+            <div
+              class="flex flex-wrap items-center justify-center gap-2 py-3">
+
+              <span
+                class="text-[10px] text-red-500">
+
+                <i class="fa-regular fa-clock"></i>
+
+                ব্যাচ শুরু হতে সময় বাকি:
+
+              </span>
+
+
+              <span
+                class="rounded bg-red-50 px-2 py-1 text-[10px] text-red-500">
+
+                28d : 15h : 44m : 45s
+
+              </span>
+
+            </div>
+
+
+            <!-- FEATURES TITLE -->
+            <h3
+              class="mb-3 text-lg font-bold text-gray-900">
+
+              এই কোর্সে আপনি পাচ্ছেন:
+
+            </h3>
+
+
+            <!-- FEATURES -->
+            <div
+              class="grid grid-cols-2 gap-x-3 gap-y-2 pb-3">
+
+
+              <div
+                class="flex items-start gap-2 text-xs text-gray-700">
+
+                <i
+                  class="fa-regular fa-circle-check mt-0.5 shrink-0 text-nex">
+                </i>
+
+                <span>
+                  ৩ মাসের রেকর্ডেড ভিডিও
+                </span>
+
+              </div>
+
+
+              <div
+                class="flex items-start gap-2 text-xs text-gray-700">
+
+                <i
+                  class="fa-regular fa-circle-check mt-0.5 shrink-0 text-nex">
+                </i>
+
+                <span>
+                  ৪ টি মডিউল
+                </span>
+
+              </div>
+
+
+              <div
+                class="flex items-start gap-2 text-xs text-gray-700">
+
+                <i
+                  class="fa-regular fa-circle-check mt-0.5 shrink-0 text-nex">
+                </i>
+
+                <span>
+                  ৬ টি লাইভ ক্লাস
+                </span>
+
+              </div>
+
+
+              <div
+                class="flex items-start gap-2 text-xs text-gray-700">
+
+                <i
+                  class="fa-regular fa-circle-check mt-0.5 shrink-0 text-nex">
+                </i>
+
+                <span>
+                  ৬ টি রিয়েল-লাইফ অ্যাসাইনমেন্ট
+                </span>
+
+              </div>
+
+
+              <div
+                class="flex items-start gap-2 text-xs text-gray-700">
+
+                <i
+                  class="fa-regular fa-circle-check mt-0.5 shrink-0 text-nex">
+                </i>
+
+                <span>
+                  ইন্ডাস্ট্রি-স্পেসিফিক AI Coworker ভিডিও-সেশন
+                </span>
+
+              </div>
+
+
+              <div
+                class="flex items-start gap-2 text-xs text-gray-700">
+
+                <i
+                  class="fa-regular fa-circle-check mt-0.5 shrink-0 text-nex">
+                </i>
+
+                <span>
+                  অ্যাসেসমেন্ট ও সার্টিফিকেট
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ========================================================= -->
+<!-- COURSE DETAILS SECTION -->
+<!-- ========================================================= -->
+
+<section class="bg-white py-10 sm:py-12 lg:py-14">
+
+  <div
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="lg:w-8/12">
+
+
+      <!-- HEADING -->
+      <h2
+        class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+
+        কোর্স সম্পর্কে:
+
+      </h2>
+
+
+      <!-- SUB HEADING -->
+      <h3
+        class="text-base sm:text-lg font-bold text-gray-900 mb-2">
+
+        আমাদের এই লাইভ ব্যাচে যা থাকছে:
+
+      </h3>
+
+
+      <!-- ================================================= -->
+      <!-- CHECKBOX -->
+      <!-- ================================================= -->
+
+      <input
+        type="checkbox"
+        id="course-more"
+        class="peer hidden">
+
+
+      <!-- ================================================= -->
+      <!-- FIRST VISIBLE TEXT -->
+      <!-- ================================================= -->
+
+      <div
+        class="text-sm sm:text-base leading-7 text-gray-800">
+
+        <p>
+
+          - প্রতিটি ক্লাসেই একটি করে রিয়েল-ওয়ার্ল্ড প্রজেক্ট:
+          Personal AI Executive Assistant, Company Knowledge Assistant,
+          KPI Dashboard, AI Research Assistant, Connected AI Workspace,
+          Reusable AI Employee, Industry-Specific AI Coworker এবং
+          সর্বশেষ ক্যাপ্টেন হিসেবে আপনার নিজের একটি সম্পূর্ণ AI Department।
+
+        </p>
+
+      </div>
+
+
+      <!-- ================================================= -->
+      <!-- ALL HIDDEN TEXT -->
+      <!-- SEE MORE CLICK করলে এগুলো সব একসাথে দেখাবে -->
+      <!-- ================================================= -->
+
+      <div
+        class="hidden peer-checked:block text-sm sm:text-base leading-7 text-gray-800">
+
+
+        <p class="mt-2">
+
+          - ফাউন্ডেশন অংশে থাকছে Claude Cowork Setup, Cowork Sessions,
+          Task Planning, Autonomous Workflow এবং AI Automation-এর
+          বাস্তব ব্যবহার।
+
+        </p>
+
+
+        <p class="mt-2">
+
+          - কীভাবে Claude-কে শুধু প্রশ্ন করার পরিবর্তে একটি সম্পূর্ণ
+          AI Coworker হিসেবে ব্যবহার করবেন এবং নিজের প্রতিদিনের
+          কাজগুলোকে অটোমেট করবেন তা হাতে-কলমে শেখানো হবে।
+
+        </p>
+
+
+        <p class="mt-2">
+
+          - Personal এবং Professional কাজের জন্য AI Workspace তৈরি,
+          বিভিন্ন ধরনের ডকুমেন্ট ও ফাইল নিয়ে কাজ করা এবং Reusable
+          AI Employee তৈরি করার পদ্ধতি শেখানো হবে।
+
+        </p>
+
+
+        <p class="mt-2">
+
+          - বাস্তব ব্যবসায়িক সমস্যা সমাধানের জন্য AI Workflow,
+          Research Automation, Data Processing এবং Content Automation
+          তৈরি করা শেখানো হবে।
+
+        </p>
+
+
+        <p class="mt-2">
+
+          - Claude Cowork ব্যবহার করে কীভাবে একটি সম্পূর্ণ Workflow
+          তৈরি করতে হয় এবং একাধিক কাজকে একসাথে পরিচালনা করা যায়
+          সেটিও বিস্তারিতভাবে শেখানো হবে।
+
+        </p>
+
+
+        <p class="mt-2">
+
+          - নিজের ব্যবসা, অফিস অথবা ব্যক্তিগত কাজের জন্য বিভিন্ন
+          ধরনের AI Agent এবং AI Assistant তৈরি করার বাস্তব কৌশল
+          শেখানো হবে।
+
+        </p>
+
+
+        <p class="mt-2">
+
+          - কোর্স শেষে আপনি নিজের কাজ ও ব্যবসার জন্য একটি সম্পূর্ণ
+          AI-powered Department তৈরি করার বাস্তব ধারণা ও দক্ষতা
+          অর্জন করবেন।
+
+        </p>
+
+
+        <p class="mt-2">
+
+          - AI ব্যবহার করে দৈনন্দিন কাজের সময় কমিয়ে কীভাবে
+          productivity বৃদ্ধি করা যায় এবং repetitive কাজগুলোকে
+          automation-এর মাধ্যমে পরিচালনা করা যায় তা শেখানো হবে।
+
+        </p>
+
+
+        <p class="mt-2">
+
+          - বাস্তব উদাহরণের মাধ্যমে AI Coworker-এর সাথে কাজ করার
+          সঠিক workflow, task management এবং automation strategy
+          তৈরি করার পদ্ধতি দেখানো হবে।
+
+        </p>
+
+
+      </div>
+
+
+      <!-- ================================================= -->
+      <!-- SEE MORE BUTTON -->
+      <!-- ================================================= -->
+
+      <label
+        for="course-more"
+        class="peer-checked:hidden mt-5 inline-flex cursor-pointer items-center gap-2 rounded-md bg-nex px-5 py-2.5 text-sm font-semibold text-white transition duration-200 hover:bg-xoom">
+
+        See More
+
+        <i
+          class="fa-solid fa-chevron-down text-xs">
+        </i>
+
+      </label>
+
+
+      <!-- ================================================= -->
+      <!-- SEE LESS BUTTON -->
+      <!-- ================================================= -->
+
+      <label
+        for="course-more"
+        class="hidden peer-checked:inline-flex mt-5 cursor-pointer items-center gap-2 rounded-md bg-nex px-5 py-2.5 text-sm font-semibold text-white transition duration-200 hover:bg-xoom">
+
+        See Less
+
+        <i
+          class="fa-solid fa-chevron-up text-xs">
+        </i>
+
+      </label>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="container mx-auto px-2 sm:px-4">
+  <div class="flex items-center justify-center mb-4">
+    <h2 class="text-nex font-bold text-sm sm:text-lg md:text-2xl border-b-2 border-nex pb-1 font-medium text-center">
+      কোর্স করার আগে ডেমো ক্লাস করে দেখুন
+    </h2>
+  </div>
+
+  <!-- Cards -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+
+    <!-- Card 1 -->
+    <div class="w-full h-[261px]">
+      <div class="product-card w-full h-full rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 border border-gray-100 bg-white">
+        
+        <div class="relative w-full h-[150px]">
+          <img
+            src="image and icon/pandashop.png"
+            alt="ShopMart"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <div class="card-body p-3">
+          <div class="card-info">
+            <p class="text-xs font-semibold leading-tight mb-1">
+              NexXoom – E-Commarce
+            </p>
+            <p class="text-xoom font-bold text-sm">Free</p>
+          </div>
+
+          <div class="card-footer mt-2">
+            <div class="flex gap-1">
+              <button class="eye-btn" title="Quick View">
+                <i class="fa fa-info-circle"></i>
+              </button>
+
+              <a
+                href="https://www.youtube.com/watch?v=Hpsyx_dDVDs&list=PLj4CtG5OUEDHj5PlcaZgwq4f0ixLp5asu"
+                target="_blank"
+                class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-xoom transition flex items-center justify-center gap-1"
+              >
+                See Detailed
+                <i class="fa fa-arrow-right text-[10px]"></i>
+              </a>
+
+              <button class="eye-btn" title="Quick View">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="w-full h-[261px]">
+      <div class="product-card w-full h-full rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 border border-gray-100 bg-white">
+
+        <div class="relative w-full h-[150px]">
+          <img
+            src="image and icon/school management.png"
+            alt="School Management"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <div class="card-body p-3">
+          <div class="card-info">
+            <p class="text-xs font-semibold leading-tight mb-1">
+              NexXoom – School Management
+            </p>
+            <p class="text-xoom font-bold text-sm">Free</p>
+          </div>
+
+          <div class="card-footer mt-2">
+            <div class="flex gap-1">
+              <button class="eye-btn" title="Quick View">
+                <i class="fa fa-info-circle"></i>
+              </button>
+
+              <a
+                href="https://www.youtube.com/watch?v=jfEb3YHNfBg&list=PLj4CtG5OUEDGpqCrae29uHpGcRAohn9OH&index=12"
+                target="_blank"
+                class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-xoom transition flex items-center justify-center gap-1"
+              >
+                See Detailed
+                <i class="fa fa-arrow-right text-[10px]"></i>
+              </a>
+
+              <button class="eye-btn" title="Quick View">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="w-full h-[261px]">
+      <div class="product-card w-full h-full rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 border border-gray-100 bg-white">
+
+        <div class="relative w-full h-[150px]">
+          <img
+            src="image and icon/railway.avif"
+            alt="Railway Deploy"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <div class="card-body p-3">
+          <div class="card-info">
+            <p class="text-xs font-semibold leading-tight mb-1">
+              NexXoom – Railway Diploy
+            </p>
+            <p class="text-xoom font-bold text-sm">Free</p>
+          </div>
+
+          <div class="card-footer mt-2">
+            <div class="flex gap-1">
+              <button class="eye-btn" title="Quick View">
+                <i class="fa fa-info-circle"></i>
+              </button>
+
+              <a
+                href="https://www.youtube.com/watch?v=m-awNfzSjzs&list=PLj4CtG5OUEDFwrmaJyD06gwCB8sJ4c7jN&index=4"
+                target="_blank"
+                class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-xoom transition flex items-center justify-center gap-1"
+              >
+                See Detailed
+                <i class="fa fa-arrow-right text-[10px]"></i>
+              </a>
+
+              <button class="eye-btn" title="Quick View">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="w-full h-[261px]">
+      <div class="product-card w-full h-full rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 border border-gray-100 bg-white">
+
+        <div class="relative w-full h-[150px]">
+          <img
+            src="image and icon/recipi.avif"
+            alt="Recipe Tutorial"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <div class="card-body p-3">
+          <div class="card-info">
+            <p class="text-xs font-semibold leading-tight mb-1">
+              ShopMart – Recipi Turorial
+            </p>
+            <p class="text-xoom font-bold text-sm">Free</p>
+          </div>
+
+          <div class="card-footer mt-2">
+            <div class="flex gap-1">
+              <button class="eye-btn" title="Quick View">
+                <i class="fa fa-info-circle"></i>
+              </button>
+
+              <a
+                href="https://www.youtube.com/watch?v=kloO6zVyZ6k&list=PLDEfoiQ8Hgc8"
+                target="_blank"
+                class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-xoom transition flex items-center justify-center gap-1"
+              >
+                See Detailed
+                <i class="fa fa-arrow-right text-[10px]"></i>
+              </a>
+
+              <button class="eye-btn" title="Quick View">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="w-full h-[261px]">
+      <div class="product-card w-full h-full rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 border border-gray-100 bg-white">
+
+        <div class="relative w-full h-[150px]">
+          <img
+            src="image and icon/trips and triks.jpg"
+            alt="Trips And Tricks"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <div class="card-body p-3">
+          <div class="card-info">
+            <p class="text-xs font-semibold leading-tight mb-1">
+              ShopMart – Trrips And Triks
+            </p>
+            <p class="text-xoom font-bold text-sm">Free</p>
+          </div>
+
+          <div class="card-footer mt-2">
+            <div class="flex gap-1">
+              <button class="eye-btn" title="Quick View">
+                <i class="fa fa-info-circle"></i>
+              </button>
+
+              <a
+                href="https://www.youtube.com/watch?v=2hmzcs8sCsw&list=PLj4CtG5OUEDGTJSEKEm5gHrSdHebFf5d5"
+                target="_blank"
+                class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-xoom transition flex items-center justify-center gap-1"
+              >
+                See Detailed
+                <i class="fa fa-arrow-right text-[10px]"></i>
+              </a>
+
+              <button class="eye-btn" title="Quick View">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="w-full h-[261px]">
+      <div class="product-card w-full h-full rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 border border-gray-100 bg-white">
+
+        <div class="relative w-full h-[150px]">
+          <img
+            src="image and icon/funny-video.jpg"
+            alt="Funny Video"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <div class="card-body p-3">
+          <div class="card-info">
+            <p class="text-xs font-semibold leading-tight mb-1">
+              ShopMart – Funny Video
+            </p>
+            <p class="text-xoom font-bold text-sm">Free</p>
+          </div>
+
+          <div class="card-footer mt-2">
+            <div class="flex gap-1">
+              <button class="eye-btn" title="Quick View">
+                <i class="fa fa-info-circle"></i>
+              </button>
+
+              <a
+                href="https://www.youtube.com/watch?v=qjSCIG8IFjM&list=PLJmx6sJADlfw"
+                target="_blank"
+                class="flex-1 bg-nex text-white text-xs py-1.5 rounded hover:bg-xoom transition flex items-center justify-center gap-1"
+              >
+                See Detailed
+                <i class="fa fa-arrow-right text-[10px]"></i>
+              </a>
+
+              <button class="eye-btn" title="Quick View">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Load More -->
+  <div class="flex justify-center mt-4">
+    <button
+      class="hover:border-xoom text-white bg-nex px-8 py-2 rounded hover:bg-xoom hover:text-white transition text-sm font-medium"
+    >
+      Load More
+    </button>
+  </div>
+
+</section>
+
+
+<section class="py-10 sm:py-12 lg:py-16">
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="flex items-center justify-center mb-4 px-2 sm:px-0">
+        <h2 class="text-nex font-bold md:text-2xl text-sm border-b-2 border-nex pb-1 font-medium">
+     ইন্সট্রাক্টর
+        </h2>
+
+      </div>
+
+
+   
+
+        <!-- ================= TEAM MEMBER 02 ================= -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center mb-16 lg:mb-20">
+
+            <!-- Image -->
+            <div class="lg:col-span-4 order-1 flex justify-center lg:justify-start">
+
+                <div class="w-full max-w-[280px] sm:max-w-[310px] lg:max-w-[345px]">
+
+                    <img
+                        src="image and icon/Md Rashidul.jpeg"
+                        alt="Md Rashidul Islam"
+                        class="w-full aspect-[4/4] object-cover rounded-lg shadow-[6px_8px_8px_rgba(0,0,0,0.35)]"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Text -->
+            <div class="lg:col-span-8 order-2">
+
+                <h2 class="text-2xl sm:text-3xl lg:text-[32px] font-bold text-nex leading-tight">
+                    Md Rashidul Islam
+                </h2>
+
+                <p class="text-lg sm:text-xl text-gray-800 mt-1 mb-5">
+                    Senior Developer
+                </p>
+
+                <div class="text-gray-700 text-sm sm:text-base leading-7 text-justify">
+
+                    <p>
+                        <strong class="text-gray-900">Rashidul Islam</strong>
+                        is a dedicated
+                        <strong class="text-gray-900">full-stack software developer</strong>
+                        with strong expertise in PHP and Laravel around
+                        <strong class="text-gray-900">2years+</strong>.
+                        He focuses on writing clean, efficient, and maintainable
+                        code, delivering high-quality solutions that are both
+                        scalable and performance-oriented.
+                    </p>
+
+                    <p class="mt-1">
+                        With a solid grasp of full-stack development, he effectively
+                        integrates back-end functionality with responsive front-end
+                        interfaces to build user-centric applications. His experience
+                        spans creating secure server-side logic, designing scalable
+                        architectures, and managing relational databases like MySQL,
+                        ensuring reliable and optimized performance across projects.
+                    </p>
+
+                    <p class="mt-1">
+                        He is passionate about continuous learning, regularly
+                        exploring the latest updates in Laravel and the broader
+                        PHP ecosystem to stay current with modern development
+                        practices.
+                        <a
+                            href="#"
+                            class="font-bold text-nex hover:text-xoom transition duration-200 whitespace-nowrap"
+                        >
+                            &gt;&gt; read more
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+   
+    </div>
+
+</section>
+
+
+<section class="container mx-auto px-4 py-8 sm:py-12">
+
+    <!-- =========================
+         FAQ HEADER
+    ========================== -->
+    <div class="text-center mb-8 sm:mb-10">
+
+        <span
+            class="inline-block bg-nex/10 text-nex
+                   text-xs sm:text-sm font-semibold
+                   px-4 py-1.5 rounded-full mb-3"
+        >
+            FAQ
+        </span>
+
+        <h1
+            class="text-nex text-2xl sm:text-3xl md:text-4xl
+                   font-bold leading-tight"
+        >
+            Frequently Asked Questions
+        </h1>
+
+        <p
+            class="text-gray-500 text-sm sm:text-base
+                   max-w-2xl mx-auto mt-3"
+        >
+            Find answers to the most common questions about
+            our services, templates, domains and hosting.
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         FAQ LIST
+    ========================== -->
+    <div class="max-w-4xl mx-auto space-y-3">
+
+
+        <!-- FAQ 01 -->
+        <div
+            class="faq-item bg-white border border-gray-200
+                   rounded-xl overflow-hidden
+                   transition-all duration-300
+                   hover:border-nex/50"
+        >
+
+            <button
+                type="button"
+                onclick="toggleFAQ(this)"
+                class="w-full flex items-center justify-between
+                       gap-4 text-left px-4 sm:px-6 py-4
+                       focus:outline-none"
+            >
+
+                <span
+                    class="text-sm sm:text-base
+                           font-semibold text-gray-800"
+                >
+                    What is a domain name?
+                </span>
+
+                <span
+                    class="faq-icon shrink-0 w-7 h-7
+                           flex items-center justify-center
+                           rounded-full bg-nex/10 text-nex
+                           transition-transform duration-300"
+                >
+                    <i class="fa-solid fa-plus text-xs"></i>
+                </span>
+
+            </button>
+
+            <div
+                class="faq-answer hidden px-4 sm:px-6 pb-4"
+            >
+                <p
+                    class="text-gray-500 text-sm
+                           leading-6"
+                >
+                    A domain name is the unique address of your
+                    website on the internet. For example,
+                    example.com is a domain name.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- FAQ 02 -->
+        <div
+            class="faq-item bg-white border border-gray-200
+                   rounded-xl overflow-hidden
+                   transition-all duration-300
+                   hover:border-nex/50"
+        >
+
+            <button
+                type="button"
+                onclick="toggleFAQ(this)"
+                class="w-full flex items-center justify-between
+                       gap-4 text-left px-4 sm:px-6 py-4
+                       focus:outline-none"
+            >
+
+                <span
+                    class="text-sm sm:text-base
+                           font-semibold text-gray-800"
+                >
+                    What is web hosting?
+                </span>
+
+                <span
+                    class="faq-icon shrink-0 w-7 h-7
+                           flex items-center justify-center
+                           rounded-full bg-nex/10 text-nex
+                           transition-transform duration-300"
+                >
+                    <i class="fa-solid fa-plus text-xs"></i>
+                </span>
+
+            </button>
+
+            <div class="faq-answer hidden px-4 sm:px-6 pb-4">
+
+                <p
+                    class="text-gray-500 text-sm
+                           leading-6"
+                >
+                    Web hosting is a service that stores your
+                    website files and makes your website
+                    accessible on the internet.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FAQ 03 -->
+        <div
+            class="faq-item bg-white border border-gray-200
+                   rounded-xl overflow-hidden
+                   transition-all duration-300
+                   hover:border-nex/50"
+        >
+
+            <button
+                type="button"
+                onclick="toggleFAQ(this)"
+                class="w-full flex items-center justify-between
+                       gap-4 text-left px-4 sm:px-6 py-4
+                       focus:outline-none"
+            >
+
+                <span
+                    class="text-sm sm:text-base
+                           font-semibold text-gray-800"
+                >
+                    How can I register a domain?
+                </span>
+
+                <span
+                    class="faq-icon shrink-0 w-7 h-7
+                           flex items-center justify-center
+                           rounded-full bg-nex/10 text-nex
+                           transition-transform duration-300"
+                >
+                    <i class="fa-solid fa-plus text-xs"></i>
+                </span>
+
+            </button>
+
+            <div class="faq-answer hidden px-4 sm:px-6 pb-4">
+
+                <p
+                    class="text-gray-500 text-sm
+                           leading-6"
+                >
+                    Search for your preferred domain name,
+                    select an available domain extension,
+                    complete your order and provide the
+                    required information.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FAQ 04 -->
+        <div
+            class="faq-item bg-white border border-gray-200
+                   rounded-xl overflow-hidden
+                   transition-all duration-300
+                   hover:border-nex/50"
+        >
+
+            <button
+                type="button"
+                onclick="toggleFAQ(this)"
+                class="w-full flex items-center justify-between
+                       gap-4 text-left px-4 sm:px-6 py-4
+                       focus:outline-none"
+            >
+
+                <span
+                    class="text-sm sm:text-base
+                           font-semibold text-gray-800"
+                >
+                    Do you provide website templates?
+                </span>
+
+                <span
+                    class="faq-icon shrink-0 w-7 h-7
+                           flex items-center justify-center
+                           rounded-full bg-nex/10 text-nex
+                           transition-transform duration-300"
+                >
+                    <i class="fa-solid fa-plus text-xs"></i>
+                </span>
+
+            </button>
+
+            <div class="faq-answer hidden px-4 sm:px-6 pb-4">
+
+                <p
+                    class="text-gray-500 text-sm
+                           leading-6"
+                >
+                    Yes. We provide professionally designed
+                    website templates for different types of
+                    businesses and online services.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FAQ 05 -->
+        <div
+            class="faq-item bg-white border border-gray-200
+                   rounded-xl overflow-hidden
+                   transition-all duration-300
+                   hover:border-nex/50"
+        >
+
+            <button
+                type="button"
+                onclick="toggleFAQ(this)"
+                class="w-full flex items-center justify-between
+                       gap-4 text-left px-4 sm:px-6 py-4
+                       focus:outline-none"
+            >
+
+                <span
+                    class="text-sm sm:text-base
+                           font-semibold text-gray-800"
+                >
+                    What is Digital Marketing?
+                </span>
+
+                <span
+                    class="faq-icon shrink-0 w-7 h-7
+                           flex items-center justify-center
+                           rounded-full bg-nex/10 text-nex
+                           transition-transform duration-300"
+                >
+                    <i class="fa-solid fa-plus text-xs"></i>
+                </span>
+
+            </button>
+
+            <div class="faq-answer hidden px-4 sm:px-6 pb-4">
+
+                <p
+                    class="text-gray-500 text-sm
+                           leading-6"
+                >
+                    Digital Marketing is the process of
+                    promoting products or services through
+                    online channels such as Google, Facebook,
+                    YouTube, social media and websites.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FAQ 06 -->
+        <div
+            class="faq-item bg-white border border-gray-200
+                   rounded-xl overflow-hidden
+                   transition-all duration-300
+                   hover:border-nex/50"
+        >
+
+            <button
+                type="button"
+                onclick="toggleFAQ(this)"
+                class="w-full flex items-center justify-between
+                       gap-4 text-left px-4 sm:px-6 py-4
+                       focus:outline-none"
+            >
+
+                <span
+                    class="text-sm sm:text-base
+                           font-semibold text-gray-800"
+                >
+                    How can I contact support?
+                </span>
+
+                <span
+                    class="faq-icon shrink-0 w-7 h-7
+                           flex items-center justify-center
+                           rounded-full bg-nex/10 text-nex
+                           transition-transform duration-300"
+                >
+                    <i class="fa-solid fa-plus text-xs"></i>
+                </span>
+
+            </button>
+
+            <div class="faq-answer hidden px-4 sm:px-6 pb-4">
+
+                <p
+                    class="text-gray-500 text-sm
+                           leading-6"
+                >
+                    You can contact our support team through
+                    phone, email or our online support channel.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+  <!-- ===== Footer ===== -->
+<section class=" px-4 py-8 sm:py-12 mb-10 sm:mb-14">
+    <div class="container mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- About -->
+      <div>
+        <div class="logo" style="width: 150px; height: 30px">
+          <img src="image and icon/logo.png" alt="logo NexXoom" style="width: 100%; width: 100%" />
+        </div>
+        <a href="tel:01823552979"
+          class="text-nex hover:text-white transition  text-md  flex items-center gap-1 mt-3 font-medium">
+          <i class="fa fa-phone text-[10px] sm:text-xs"></i>
+          <span>01823-552979</span>
+        </a>
+
+        <a href="
+nexxoom99@gmail.com"
+          class="text-nex hover:text-white transition  text-md flex items-center gap-1 mt-2 font-medium">
+          <i class="fa fa-envelope text-[10px] sm:text-xs"></i>
+          <span> nexxoom99@gmail.com</span>
+        </a>
+
+        <a href="
+nexxoom99@gmail.com"
+          class="text-nex hover:text-white transition   text-md flex items-center gap-1 mt-2 font-medium">
+          <i class="fa-solid fa-location-dot text-[10px] sm:text-xs"></i>
+          <span> Housebuilding, Uttara, Dhaka, 1230</span>
+        </a>
+
+         <div class=" sm:flex items-center justify-start gap-2 mt-3">
+             <a href="+880 1731-131878" target="_blank" aria-label="WhatsApp"
+              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#25D366] hover:bg-white hover:scale-110 transition-all duration-200"><i
+                class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/nexxoom" target="_blank" aria-label="Facebook"
+              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#1877F2] hover:bg-white hover:scale-110 transition-all duration-200"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@NexXoom" target="_blank" aria-label="YouTube"
+              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#FF0000] hover:bg-white hover:scale-110 transition-all duration-200"><i
+                class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/search/results/all/?keywords=NexXoom&origin=RICH_QUERY_SUGGESTION&heroEntityKey=urn%3Ali%3Aorganization%3A108094276&position=0" target="_blank" aria-label="LinkedIn"
+              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#0A66C2] hover:bg-white hover:scale-110 transition-all duration-200"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+            <!-- <a href="#" aria-label="Twitter"
+              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#1DA1F2] hover:bg-white hover:scale-110 transition-all duration-200"><i
+                class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="GitHub"
+              class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#181717] hover:bg-white hover:scale-110 transition-all duration-200"><i
+                class="fa-brands fa-github"></i></a> -->
+          </div>
+      </div>
+
+      <!-- Our Menu -->
+      <div>
+        <h4 class="font-semibold text-nex text-2xl mb-4">Our Menu</h4>
+        <ul class="space-y-3 font-medium text-md text-nex">
+          <li>
+            <a href="#" class="hover:text-white text-nex transition">Import Plugin</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-white text-nex transition">Membership</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-white text-nex transition">About Us</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-white text-nex transition">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Information -->
+      <div>
+        <h4 class="font-semibold text-nex text-2xl mb-4">Information</h4>
+        <ul class="space-y-3 text-md text-nex font-medium">
+          <li>
+            <a href="#" class="hover:text-white text-nex transition">Terms &amp; Condition</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-white text-nex transition">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-white text-nex transition">Delivery Policy</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-white text-nex transition">Refund Policy</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Our Info -->
+      <div>
+        <h4 class="font-semibold text-nex text-2xl mb-4">Service</h4>
+        <ul class="space-y-3 text-md text-nex font-medium">
+          <li>
+            <a href="#" class="hover:text-white text-nex transition">App Development</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-white text-nex transition">Web Development</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-white text-nex transition"> Softower Development</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-white text-nex transition">Digital Marketing</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Payment -->
+    <div class="px-4 py-4">
+      <img src="image and icon/payment.png" alt="Payment Methods"
+        class="max-w-full sm:max-w-3xl mx-auto h-auto opacity-90" />
+    </div>
+  </footer>
+
+  <!-- ===== Bottom Bar ===== -->
+  <hr />
+ <footer class="relative w-full bg-nex text-white font-bold p-2">
+  <p class="text-white text-sm text-center">
+    © 2026 Copyrights by
+    <span class="text-white border-b-2 border-xoom">
+      NexXoom
+    </span>
+    All Rights Reserved by
+    <span class="text-white border-b-2 border-xoom">
+      NexXoom
+    </span>
+  </p>
+</footer>
+
+
+  <!-- ================= MOBILE BOTTOM NAV ================= -->
+<div class="mobile-bottom-nav">
+    <ul class="flex items-center justify-around w-full">
+
+        <li>
+            <a href="index.html" class="mobile-nav-item active">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#" class="mobile-nav-item">
+                <i class="fa-solid fa-border-all"></i>
+                <span>Browse</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#" class="mobile-nav-item mobile-cart">
+                <div class="cart-icon-wrapper">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="mobile-cart-badge">0</span>
+                </div>
+                <span>Cart</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#" class="mobile-nav-item">
+                <i class="fa-regular fa-user"></i>
+                <span>Account</span>
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+  <!-- ================= WHATSAPP BUTTON ================= -->
+  <a href="https://wa.me/8801823552979" class="mobile-whatsapp" target="_blank" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>WhatsApp</span>
+  </a>
+
+  <!-- ================= ASK AI BUTTON ================= -->
+  <button class="mobile-ask-ai">
+    <i class="fa-solid fa-wand-magic-sparkles"></i>
+    <span>Ask AI</span>
+  </button>
+
+
+  <!-- Back To Top Button -->
+<button
+    id="backToTop"
+    type="button"
+    aria-label="Back to top"
+    class="fixed bottom-20 right-5 z-[9999] w-11 h-11 rounded-full bg-nex text-white flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-xoom">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/video-lightbox.js"></script>
+
+</body>
+
+</html>
+
+
+
