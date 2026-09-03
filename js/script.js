@@ -654,3 +654,106 @@ function animateCount(el) {
 
   nums.forEach(el => observer.observe(el));
   timers.forEach(el => timerObserver.observe(el));
+
+
+
+
+
+
+  // timer in products details page start
+
+
+        // ==========================================
+        // SET YOUR TIMER HERE
+        // ==========================================
+
+        let hours = 1;
+        let minutes = 2;
+        let seconds = 3;
+
+
+        // ==========================================
+        // GET HTML ELEMENTS
+        // ==========================================
+
+        const hoursElement = document.getElementById("hours");
+        const minutesElement = document.getElementById("minutes");
+        const secondsElement = document.getElementById("seconds");
+
+
+        // ==========================================
+        // SHOW TIMER
+        // ==========================================
+
+        function showTimer() {
+
+            hoursElement.innerText =
+                String(hours).padStart(2, "0");
+
+            minutesElement.innerText =
+                String(minutes).padStart(2, "0");
+
+            secondsElement.innerText =
+                String(seconds).padStart(2, "0");
+
+        }
+
+
+        // Show initial time
+        showTimer();
+
+
+        // ==========================================
+        // COUNTDOWN
+        // ==========================================
+
+        const countdown = setInterval(function () {
+
+
+            // Seconds available
+            if (seconds > 0) {
+
+                seconds--;
+
+            }
+
+
+            // Seconds finished
+            else if (minutes > 0) {
+
+                minutes--;
+
+                seconds = 59;
+
+            }
+
+
+            // Minutes finished
+            else if (hours > 0) {
+
+                hours--;
+
+                minutes = 59;
+
+                seconds = 59;
+
+            }
+
+
+            // Everything finished
+            else {
+
+                clearInterval(countdown);
+
+            }
+
+
+            // Update display
+            showTimer();
+
+
+        }, 1000);
+
+    
+  
+  // timer in products details page end
